@@ -92,7 +92,7 @@ tailwind.config = {
 </div>
 <!-- Live Telemetry Status Bar -->
 <div class="px-4 py-1">
-<div class="rounded-xl p-2.5 shadow-lg flex items-center justify-between gap-2" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.18); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg shrink-0" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.12);"><div class="w-6 h-6 rounded-full bg-emerald-950 flex items-center justify-center shrink-0 border border-emerald-500/20"><span class="material-symbols-outlined text-emerald-400 text-[16px]">location_on</span></div><span class="font-semibold text-[13.5px] text-white">Ramanagar</span></div><div class="flex items-center gap-2 shrink-0"><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors text-left active:scale-95 cursor-pointer" id="weatherPill" onclick="openWeatherModal()" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.12);" title="Tap for live weather" type="button"><span class="material-symbols-outlined text-amber-400 text-[17px]" id="weatherIcon">partly_cloudy_day</span><span class="font-bold text-[13.5px] text-white" id="weatherTemp">29°C</span><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" id="liveDot" title="Live Open-Meteo Feed"></span></button><div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.12);"><span class="material-symbols-outlined text-emerald-300 text-[17px]">water_drop</span><span class="font-bold text-[13.5px] text-white">64% <span class="text-[11px] text-emerald-400 font-medium">opt</span></span></div></div></div>
+<div class="rounded-xl p-2.5 shadow-lg flex items-center justify-between gap-2" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.18); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg shrink-0" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.12);"><div class="w-6 h-6 rounded-full bg-emerald-950 flex items-center justify-center shrink-0 border border-emerald-500/20"><span class="material-symbols-outlined text-emerald-400 text-[16px]">location_on</span></div><span class="font-semibold text-[13.5px] text-white">Ramanagar</span></div><div class="flex items-center gap-2 shrink-0"><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors text-left active:scale-95 cursor-pointer" id="weatherPill" onclick="openWeatherModal()" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.12);" title="Tap for live weather" type="button"><span class="material-symbols-outlined text-amber-400 text-[17px]" id="weatherIcon">partly_cloudy_day</span><span class="font-bold text-[13.5px] text-white" id="weatherTemp">28°C</span><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" id="liveDot" title="Live Open-Meteo Feed"></span></button><div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.12);"><span class="material-symbols-outlined text-emerald-300 text-[17px]">water_drop</span><span class="font-bold text-[13.5px] text-white">64% <span class="text-[11px] text-emerald-400 font-medium">opt</span></span></div></div></div>
 </div>
 <!-- Real-time Google Sheets Sync Banner on Home Dashboard -->
 <!-- Section Title -->
@@ -111,7 +111,7 @@ tailwind.config = {
 </div>
 <!-- Recent Field Activity Feed -->
 <div class="px-4 pt-3.5 pb-2">
-<div class="rounded-2xl p-3.5 shadow-lg" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);"><div class="flex items-center justify-between mb-2.5"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-400 text-[18px]">history</span><span class="text-[13.5px] text-white font-bold">Recent Field Activity</span></div><button class="text-[11.5px] text-emerald-300 font-bold hover:underline cursor-pointer" onclick="openExpensesModal()">View All</button></div><div class="space-y-2" id="recentActivityList"><div class="flex items-start gap-3 p-2.5 rounded-xl" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.1);"><div class="w-7 h-7 rounded-full bg-emerald-950 border border-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-emerald-300 text-[16px]">water</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="text-[12px] font-bold text-white truncate">Drip Irrigation - Mango &amp; Coconut</span><span class="text-[10px] text-gray-400 shrink-0">4h ago</span></div><p class="text-[11px] text-gray-300 truncate">Sub-lateral drip 45 mins • 4,200 L delivered across 52 Guntas</p></div></div><div class="flex items-start gap-3 p-2.5 rounded-xl cursor-pointer transition-colors" onclick="openExpensesModal()" style="background-color: #163022; border: 1px solid rgba(74, 222, 128, 0.25);"><div class="w-7 h-7 rounded-full bg-emerald-500 text-gray-950 flex items-center justify-center shrink-0 mt-0.5 font-bold"><span class="material-symbols-outlined text-[16px]">table_chart</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="text-[12px] font-bold text-emerald-200 truncate">Mango Advance: +₹45,000</span><span class="text-[10px] text-emerald-300 font-bold shrink-0 flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">cloud_done</span>Synced</span></div><p class="text-[11px] text-emerald-300/80 truncate">Harvest advance (Alphonso &amp; Mallika) via Bank Transfer • Row #2</p></div></div></div></div>
+<div class="rounded-2xl p-3.5 shadow-lg" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);"><div class="flex items-center justify-between mb-2.5"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-400 text-[18px]">history</span><span class="text-[13.5px] text-white font-bold">Recent Field Activity</span></div><button class="text-[11.5px] text-emerald-300 font-bold hover:underline cursor-pointer" onclick="openExpensesModal()">View All</button></div><div class="space-y-2" id="recentActivityList"><div class="flex items-start gap-3 p-2.5 rounded-xl" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.1);"><div class="w-7 h-7 rounded-full bg-emerald-950 border border-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-emerald-300 text-[16px]">water</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="text-[12px] font-bold text-white truncate">Drip Irrigation - Mango &amp; Coconut</span><span class="text-[10px] text-gray-400 shrink-0">4h ago</span></div><p class="text-[11px] text-gray-300 truncate">Sub-lateral drip 45 mins • 4,200 L delivered across 52 Guntas</p></div></div><div class="flex items-start gap-3 p-2.5 rounded-xl cursor-pointer transition-colors" onclick="openExpensesModal()" style="background-color: rgb(22, 48, 34); border: 1px solid rgba(74, 222, 128, 0.25);"><div class="w-7 h-7 rounded-full bg-emerald-950 border border-emerald-500/20 text-emerald-300 flex items-center justify-center shrink-0 mt-0.5 font-bold"><span class="material-symbols-outlined text-[16px]">receipt_long</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="text-[12px] font-bold text-emerald-200 truncate">Farm Maintenance: -₹5,000</span><span class="text-[10px] text-emerald-300 font-bold shrink-0 flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">cloud_done</span>Synced</span></div><p class="text-[11px] text-emerald-300/80 truncate">Organic Manure &amp; Labor Operations • Row #2</p></div></div></div></div>
 </div>
 <!-- Contact Banner -->
 <div class="px-4 pt-1 pb-4">
@@ -164,7 +164,7 @@ tailwind.config = {
 <span class="text-[13px] font-bold leading-tight truncate">Google Sheets Active</span>
 <span class="px-1.5 py-0.2 rounded text-[9.5px] bg-emerald-400/25 border border-emerald-400/30 text-emerald-200 font-semibold" id="sheetBadge">Connected</span>
 </div>
-<p class="text-[11px] text-emerald-200/80 leading-tight truncate" id="sheetSyncTimestamp">Last synced: Just now • 7 rows matching in Sheet</p>
+<p class="text-[11px] text-emerald-200/80 leading-tight truncate" id="sheetSyncTimestamp">Last synced: Just now • 2 rows matching in Sheet</p>
 </div>
 </div>
 <div class="flex items-center gap-1 shrink-0">
@@ -198,7 +198,7 @@ tailwind.config = {
 <span class="material-symbols-outlined text-[14px]">arrow_downward</span>
 <span class="text-[10px] font-bold uppercase tracking-wider">Inflow</span>
 </div>
-<div class="text-[16px] sm:text-[18px] font-bold text-secondary mt-1 tracking-tight truncate" id="kpiTotalIncome">₹51,000</div>
+<div class="text-[16px] sm:text-[18px] font-bold text-secondary mt-1 tracking-tight truncate" id="kpiTotalIncome">₹0</div>
 <span class="text-[9.5px] text-on-surface-variant font-medium mt-0.5">Harvest Sales</span>
 </div>
 <div class="bg-surface-container-lowest p-3 rounded-2xl border border-red-500/20 shadow-2xs flex flex-col justify-between">
@@ -206,7 +206,7 @@ tailwind.config = {
 <span class="material-symbols-outlined text-[14px]">arrow_upward</span>
 <span class="text-[10px] font-bold uppercase tracking-wider">Outflow</span>
 </div>
-<div class="text-[16px] sm:text-[18px] font-bold text-error mt-1 tracking-tight truncate" id="kpiTotalExpense">₹26,350</div>
+<div class="text-[16px] sm:text-[18px] font-bold text-error mt-1 tracking-tight truncate" id="kpiTotalExpense">₹8,000</div>
 <span class="text-[9.5px] text-on-surface-variant font-medium mt-0.5">Farm Costs</span>
 </div>
 <div class="bg-surface-container-lowest p-3 rounded-2xl border border-gray-200 shadow-2xs flex flex-col justify-between">
@@ -214,8 +214,8 @@ tailwind.config = {
 <span class="material-symbols-outlined text-[14px]">account_balance_wallet</span>
 <span class="text-[10px] font-bold uppercase tracking-wider">Net Cash</span>
 </div>
-<div class="text-[16px] sm:text-[18px] font-extrabold text-secondary mt-1 tracking-tight truncate" id="kpiNetBalance">₹24,650</div>
-<span class="text-[9.5px] font-semibold text-secondary mt-0.5" id="kpiStatus">+ Net Profit Surplus</span>
+<div class="text-[16px] sm:text-[18px] font-extrabold text-error mt-1 tracking-tight truncate" id="kpiNetBalance">-₹8,000</div>
+<span class="text-[9.5px] font-semibold text-error mt-0.5" id="kpiStatus">- Net Outflow</span>
 </div>
 </div>
 <!-- Quick Action Buttons -->
@@ -250,237 +250,13 @@ tailwind.config = {
 <div class="flex items-center gap-1.5">
 <span class="material-symbols-outlined text-primary text-[18px]">receipt_long</span>
 <span class="text-[13.5px] text-on-surface font-bold">Transaction History</span>
-<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold" id="recordCountBadge">7 entries</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold" id="recordCountBadge">2 entries</span>
 </div>
 <button class="text-[11px] font-semibold text-secondary hover:underline flex items-center gap-1" onclick="resetToSampleRecords()">
 <span class="material-symbols-outlined text-[13px]">restart_alt</span> Reset Demo
           </button>
 </div>
-<div class="space-y-2" id="transactionsList">
-        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
-          <div class="flex items-center gap-2.5 min-w-0 flex-1">
-            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-secondary flex items-center justify-center shrink-0">
-              <span class="material-symbols-outlined text-[18px]">trending_up</span>
-            </div>
-            <div class="min-w-0 flex-1 pr-1.5">
-              <div class="flex items-center gap-1.5 flex-wrap">
-                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Mango Harvest Advance (Alphonso &amp; Mallika)</span>
-                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
-                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
-                </span>
-              </div>
-              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
-                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Produce Sales</span>
-                <span>•</span>
-                <span>10 May 2025</span>
-                <span>•</span>
-                <span class="text-[9.5px] text-gray-500 font-medium truncate">Bank Transfer</span>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2 shrink-0">
-            <div class="text-right">
-              <div class="text-[13px] text-secondary font-extrabold">+₹45,000</div>
-              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">income</span>
-            </div>
-            <button onclick="deleteTransaction('tx-1')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
-              <span class="material-symbols-outlined text-[15px]">delete</span>
-            </button>
-          </div>
-        </div>
-      
-        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
-          <div class="flex items-center gap-2.5 min-w-0 flex-1">
-            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-secondary flex items-center justify-center shrink-0">
-              <span class="material-symbols-outlined text-[18px]">trending_up</span>
-            </div>
-            <div class="min-w-0 flex-1 pr-1.5">
-              <div class="flex items-center gap-1.5 flex-wrap">
-                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Tender Coconut Batch Sale (120 nuts)</span>
-                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
-                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
-                </span>
-              </div>
-              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
-                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Produce Sales</span>
-                <span>•</span>
-                <span>8 May 2025</span>
-                <span>•</span>
-                <span class="text-[9.5px] text-gray-500 font-medium truncate">UPI / PhonePe</span>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2 shrink-0">
-            <div class="text-right">
-              <div class="text-[13px] text-secondary font-extrabold">+₹6,000</div>
-              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">income</span>
-            </div>
-            <button onclick="deleteTransaction('tx-2')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
-              <span class="material-symbols-outlined text-[15px]">delete</span>
-            </button>
-          </div>
-        </div>
-      
-        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
-          <div class="flex items-center gap-2.5 min-w-0 flex-1">
-            <div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
-              <span class="material-symbols-outlined text-[18px]">build</span>
-            </div>
-            <div class="min-w-0 flex-1 pr-1.5">
-              <div class="flex items-center gap-1.5 flex-wrap">
-                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Texmo 10HP Submersible Motor Service &amp; Oiling</span>
-                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
-                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
-                </span>
-              </div>
-              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
-                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Irrigation &amp; Electricity</span>
-                <span>•</span>
-                <span>6 May 2025</span>
-                <span>•</span>
-                <span class="text-[9.5px] text-gray-500 font-medium truncate">UPI / PhonePe</span>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2 shrink-0">
-            <div class="text-right">
-              <div class="text-[13px] text-error font-extrabold">-₹3,800</div>
-              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span>
-            </div>
-            <button onclick="deleteTransaction('tx-3')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
-              <span class="material-symbols-outlined text-[15px]">delete</span>
-            </button>
-          </div>
-        </div>
-      
-        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
-          <div class="flex items-center gap-2.5 min-w-0 flex-1">
-            <div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
-              <span class="material-symbols-outlined text-[18px]">compost</span>
-            </div>
-            <div class="min-w-0 flex-1 pr-1.5">
-              <div class="flex items-center gap-1.5 flex-wrap">
-                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Cow Dung Compost &amp; Organic Manure (2 tractor loads)</span>
-                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
-                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
-                </span>
-              </div>
-              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
-                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Fertilizers &amp; Nutrients</span>
-                <span>•</span>
-                <span>2 May 2025</span>
-                <span>•</span>
-                <span class="text-[9.5px] text-gray-500 font-medium truncate">Cash</span>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2 shrink-0">
-            <div class="text-right">
-              <div class="text-[13px] text-error font-extrabold">-₹12,000</div>
-              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span>
-            </div>
-            <button onclick="deleteTransaction('tx-4')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
-              <span class="material-symbols-outlined text-[15px]">delete</span>
-            </button>
-          </div>
-        </div>
-      
-        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
-          <div class="flex items-center gap-2.5 min-w-0 flex-1">
-            <div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
-              <span class="material-symbols-outlined text-[18px]">water</span>
-            </div>
-            <div class="min-w-0 flex-1 pr-1.5">
-              <div class="flex items-center gap-1.5 flex-wrap">
-                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Drip Irrigation Lateral Replacement &amp; Micro-drippers</span>
-                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
-                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
-                </span>
-              </div>
-              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
-                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Irrigation &amp; Electricity</span>
-                <span>•</span>
-                <span>28 Apr 2025</span>
-                <span>•</span>
-                <span class="text-[9.5px] text-gray-500 font-medium truncate">UPI / PhonePe</span>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2 shrink-0">
-            <div class="text-right">
-              <div class="text-[13px] text-error font-extrabold">-₹4,500</div>
-              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span>
-            </div>
-            <button onclick="deleteTransaction('tx-5')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
-              <span class="material-symbols-outlined text-[15px]">delete</span>
-            </button>
-          </div>
-        </div>
-      
-        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
-          <div class="flex items-center gap-2.5 min-w-0 flex-1">
-            <div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
-              <span class="material-symbols-outlined text-[18px]">group</span>
-            </div>
-            <div class="min-w-0 flex-1 pr-1.5">
-              <div class="flex items-center gap-1.5 flex-wrap">
-                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Monthly Farm Maintenance &amp; Weeding Labor (3 days)</span>
-                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
-                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
-                </span>
-              </div>
-              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
-                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Labor &amp; Weeding</span>
-                <span>•</span>
-                <span>25 Apr 2025</span>
-                <span>•</span>
-                <span class="text-[9.5px] text-gray-500 font-medium truncate">Cash</span>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2 shrink-0">
-            <div class="text-right">
-              <div class="text-[13px] text-error font-extrabold">-₹4,200</div>
-              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span>
-            </div>
-            <button onclick="deleteTransaction('tx-6')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
-              <span class="material-symbols-outlined text-[15px]">delete</span>
-            </button>
-          </div>
-        </div>
-      
-        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
-          <div class="flex items-center gap-2.5 min-w-0 flex-1">
-            <div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
-              <span class="material-symbols-outlined text-[18px]">pest_control</span>
-            </div>
-            <div class="min-w-0 flex-1 pr-1.5">
-              <div class="flex items-center gap-1.5 flex-wrap">
-                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Cold-Pressed Neem Oil Organic Pest Spray (10 L)</span>
-                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
-                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
-                </span>
-              </div>
-              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
-                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Fertilizers &amp; Nutrients</span>
-                <span>•</span>
-                <span>20 Apr 2025</span>
-                <span>•</span>
-                <span class="text-[9.5px] text-gray-500 font-medium truncate">UPI / PhonePe</span>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center gap-2 shrink-0">
-            <div class="text-right">
-              <div class="text-[13px] text-error font-extrabold">-₹1,850</div>
-              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span>
-            </div>
-            <button onclick="deleteTransaction('tx-7')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
-              <span class="material-symbols-outlined text-[15px]">delete</span>
-            </button>
-          </div>
-        </div>
-      </div>
+<div class="space-y-2" id="transactionsList"><div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100"><div class="flex items-center gap-2.5 min-w-0 flex-1"><div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[18px]">compost</span></div><div class="min-w-0 flex-1 pr-1.5"><div class="flex items-center gap-1.5 flex-wrap"><span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Organic Manure &amp; Farm Operations</span><span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet"><span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet</span></div><div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant"><span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Fertilizers &amp; Nutrients</span><span>•</span><span>10 May 2025</span><span>•</span><span class="text-[9.5px] text-gray-500 font-medium truncate">Cash</span></div></div></div><div class="flex items-center gap-2 shrink-0"><div class="text-right"><div class="text-[13px] text-error font-extrabold">-₹5,000</div><span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span></div><button onclick="deleteTransaction('tx-1')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[15px]">delete</span></button></div></div><div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100"><div class="flex items-center gap-2.5 min-w-0 flex-1"><div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[18px]">water</span></div><div class="min-w-0 flex-1 pr-1.5"><div class="flex items-center gap-1.5 flex-wrap"><span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Drip Irrigation Maintenance</span><span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet"><span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet</span></div><div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant"><span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Irrigation &amp; Electricity</span><span>•</span><span>6 May 2025</span><span>•</span><span class="text-[9.5px] text-gray-500 font-medium truncate">UPI / PhonePe</span></div></div></div><div class="flex items-center gap-2 shrink-0"><div class="text-right"><div class="text-[13px] text-error font-extrabold">-₹3,000</div><span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span></div><button onclick="deleteTransaction('tx-2')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[15px]">delete</span></button></div></div></div>
 </div>
 </div>
 </div>
@@ -1755,4 +1531,8 @@ function doGet(e) {
 </script>
 
 
-<script>if (typeof farmDetailsData !== 'undefined') { farmDetailsData.map = { title: 'Farm Location & Map', icon: 'map', category: 'Cadastral & Satellite Location', content: '<div class="space-y-3"><div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200 text-on-surface"><div class="flex items-center justify-between mb-2"><span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">Bannikuppe, Ramanagara</span><a class="px-2.5 py-1 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-500/20 text-[11px] font-bold flex items-center gap-1 hover:text-white" href="https://www.google.com/maps/search/?api=1&query=Bannikuppe,+Ramanagara,+Karnataka+562159" target="_blank" rel="noopener noreferrer"><span>Open in Maps</span><span class="material-symbols-outlined text-[13px]">open_in_new</span></a></div><p class="text-[11.5px] text-gray-300">Pin: Bannikuppe, Ramanagara, Karnataka 562159</p><p class="text-[11.5px] text-emerald-400 font-mono mt-0.5">Coords: 12.7209° N, 77.2799° E</p></div><div class="relative w-full h-56 rounded-xl overflow-hidden border border-emerald-500/20 shadow-sm"><iframe allowfullscreen="" class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Bannikuppe,%20Ramanagara,%20Karnataka%20562159&t=&z=13&ie=UTF8&iwloc=&output=embed" title="SR Farm Location Map"></iframe></div></div>' }; }</script></body></html>
+<script>if (typeof farmDetailsData !== 'undefined') { farmDetailsData.map = { title: 'Farm Location & Map', icon: 'map', category: 'Cadastral & Satellite Location', content: '<div class="space-y-3"><div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200 text-on-surface"><div class="flex items-center justify-between mb-2"><span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">Bannikuppe, Ramanagara</span><a class="px-2.5 py-1 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-500/20 text-[11px] font-bold flex items-center gap-1 hover:text-white" href="https://www.google.com/maps/search/?api=1&query=Bannikuppe,+Ramanagara,+Karnataka+562159" target="_blank" rel="noopener noreferrer"><span>Open in Maps</span><span class="material-symbols-outlined text-[13px]">open_in_new</span></a></div><p class="text-[11.5px] text-gray-300">Pin: Bannikuppe, Ramanagara, Karnataka 562159</p><p class="text-[11.5px] text-emerald-400 font-mono mt-0.5">Coords: 12.7209° N, 77.2799° E</p></div><div class="relative w-full h-56 rounded-xl overflow-hidden border border-emerald-500/20 shadow-sm"><iframe allowfullscreen="" class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Bannikuppe,%20Ramanagara,%20Karnataka%20562159&t=&z=13&ie=UTF8&iwloc=&output=embed" title="SR Farm Location Map"></iframe></div></div>' }; }</script>
+
+<script>if (typeof farmDetailsData !== 'undefined') { if (farmDetailsData.crops) { farmDetailsData.crops.content = '<div class="space-y-3"><div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200"><span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Primary Crop</span><div class="text-[16px] text-primary font-bold mt-0.5">Mango (Mallika, Banganapalli, Badam, Sindhura)</div><p class="text-[11.5px] text-gray-600 mt-1">• <strong>Harvest Season:</strong> April to June</p><p class="text-[11.5px] text-gray-600">• <strong>Varieties:</strong> Mallika, Banganapalli, Badam, Sindhura</p><p class="text-[11.5px] text-gray-600">• <strong>Intercrops:</strong> Guava, Banana, Papaya, Lemon, Star Fruits</p></div></div>'; } if (farmDetailsData.plants) { farmDetailsData.plants.content = '<div class="space-y-3"><div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200"><span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Total Perennial Census</span><div class="text-[24px] text-primary font-bold mt-0.5">170 Trees &amp; Plants</div><div class="grid grid-cols-2 gap-2 mt-2.5 text-[11.5px]"><div class="p-2 rounded bg-surface-container-low"><strong>80</strong> Mahogany Trees</div><div class="p-2 rounded bg-surface-container-low"><strong>40</strong> Mango Trees<br><span class="text-[10px] text-gray-500 font-medium">(Mallika, Banganapalli, Badam, Sindhura)</span></div><div class="p-2 rounded bg-surface-container-low"><strong>30</strong> Coconut Palms</div><div class="p-2 rounded bg-surface-container-low"><strong>20</strong> Mixed Fruit Trees</div></div></div></div>'; } }</script>
+
+</body></html>
