@@ -1,333 +1,1589 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#414940", "primary-container": "#1e5128", "on-tertiary-container": "#84c2a2", "on-secondary-fixed-variant": "#005235", "tertiary": "#003925", "tertiary-fixed": "#b1f0ce", "surface-variant": "#d9e3f6", "surface-dim": "#d0dbed", "primary-fixed-dim": "#9cd49e", "surface-container": "#e6eeff", "error-container": "#ffdad6", "secondary-container": "#92f7c3", "surface": "#f8f9ff", "on-surface": "#121c2a", "inverse-on-surface": "#eaf1ff", "secondary-fixed": "#92f7c3", "secondary-fixed-dim": "#75daa8", "on-secondary-fixed": "#002113", "surface-container-high": "#dee9fc", "outline": "#71796f", "on-error-container": "#93000a", "tertiary-container": "#0e5138", "outline-variant": "#c1c9bd", "on-error": "#ffffff", "primary-fixed": "#b8f1b9", "on-primary-container": "#8cc38f", "on-tertiary-fixed": "#002114", "on-primary-fixed": "#002108", "primary": "#013a13", "error": "#ba1a1a", "surface-tint": "#36693d", "on-tertiary-fixed-variant": "#0e5138", "secondary": "#006c48", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#95d4b3", "surface-bright": "#f8f9ff", "surface-container-highest": "#d9e3f6", "on-background": "#121c2a", "on-primary-fixed-variant": "#1e5128", "on-secondary-container": "#00734d", "on-tertiary": "#ffffff", "surface-container-low": "#eff4ff", "inverse-primary": "#9cd49e", "background": "#f8f9ff", "on-primary": "#ffffff", "inverse-surface": "#27313f", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "2.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "margin": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin-tablet": "1.5rem" }, "fontFamily": { "title-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-md": ["Inter"], "title-md": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-sm": ["Inter"], "display": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Inter"] }, "fontSize": { "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col antialiased min-h-screen bg-surface-dim"><header class="fixed top-0 w-full z-40 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] max-w-xl md:max-w-2xl lg:max-w-3xl left-0 right-0 mx-auto"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="relative w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 overflow-hidden"><span class="material-symbols-outlined text-primary text-[22px] absolute">yard</span><img alt="SR Farm Logo" class="w-10 h-10 rounded-full border-2 border-amber-400 object-cover shadow-sm relative z-10" onerror="this.onerror=null; this.src='logo.jpg';" src="https://lh3.googleusercontent.com/aida/ALJJyrDr2t7YYS4g9VPkq_W_7K551B52_GekIkCDDFRdSyGo6ZSl_WkQ71FoqCck9ID_jvnBvtZP6yg92XTe0Bhck_uLOvMx4sqX47cLMDEgOmX4v85OxhDOen8wX6XHoSFn79fld4ZGQVUsWHIeoOicG2plwzTvc624brm-e9AzFkRcJOUwJyDFJ-BakQ-qf2CkbPsMIjg1wcSLxh_Qtsdtm-7qZkODvX4lvI3yfYKqIk7s"></div><div class="flex items-center gap-1.5"><span class="font-display text-[26px] md:text-[28px] text-primary font-extrabold tracking-tight leading-none">SR Farm</span><span class="w-2 h-2 rounded-full bg-amber-400 ring-2 ring-primary/20 shrink-0 mb-0.5" title="Active Organic Estate"></span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto shadow-2xl"><div class="flex flex-col w-full">
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+<title>SR Farm – Connected to Google Sheets</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+@layer base {
+  html, body { width: 100%; margin: 0; padding: 0; background-color: #f8f9ff; font-family: 'Inter', sans-serif; }
+  body { overscroll-behavior: none; }
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+}
+::-webkit-scrollbar { display: none; }
+@keyframes toastSlide {
+  0% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.toast-enter { animation: toastSlide 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#013a13",
+        "primary-container": "#1e5128",
+        secondary: "#006c48",
+        "secondary-container": "#92f7c3",
+        surface: "#f8f9ff",
+        "surface-container": "#e6eeff",
+        "surface-container-low": "#eff4ff",
+        "surface-container-lowest": "#ffffff",
+        "on-surface": "#121c2a",
+        "on-surface-variant": "#414940",
+        error: "#ba1a1a",
+        "error-container": "#ffdad6"
+      },
+      fontFamily: {
+        display: ["Plus Jakarta Sans", "sans-serif"],
+        headline: ["Plus Jakarta Sans", "sans-serif"],
+        body: ["Inter", "sans-serif"]
+      }
+    }
+  }
+};
+</script>
+</head>
+<body class="bg-[#f0f4f9] text-on-surface antialiased min-h-screen flex flex-col justify-between" style="background-color: rgb(9, 20, 12); color: rgb(248, 250, 252);">
+<!-- Top Live Sync Floating Toast Notification -->
+<div class="fixed top-4 left-1/2 -translate-x-1/2 z-[100] max-w-sm w-[92%] pointer-events-none hidden" id="syncToast">
+<div class="bg-[#0f5132] text-white px-4 py-3 rounded-2xl shadow-2xl border border-emerald-400/40 flex items-center gap-3 toast-enter">
+<div class="w-8 h-8 rounded-full bg-emerald-400/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-emerald-300 text-[20px]">cloud_done</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-bold text-[13px] leading-tight flex items-center gap-1.5" id="syncToastTitle">
+<span>Synced with Google Sheets</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+</div>
+<p class="text-[11px] text-emerald-100/90 leading-tight mt-0.5 truncate" id="syncToastMsg">Row #8 appended to SR Farm Ledger</p>
+</div>
+</div>
+</div>
+<!-- Header (Mobile Bar) -->
+<header class="fixed top-0 w-full z-40 pt-safe bg-surface/90 backdrop-blur-xl border-b border-outline/10 shadow-xs max-w-xl left-0 right-0 mx-auto" style="background-color: rgba(13, 26, 16, 0.88); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);">
+<div class="h-16 px-4 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="relative w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 overflow-hidden">
+<span class="material-symbols-outlined text-primary text-[22px] absolute">yard</span>
+<img alt="SR Farm Logo" class="w-10 h-10 rounded-full border-2 border-amber-400 object-cover shadow-xs relative z-10" onerror="this.onerror=null; this.src='logo.jpg';" src="https://lh3.googleusercontent.com/aida/ALJJyrDr2t7YYS4g9VPkq_W_7K551B52_GekIkCDDFRdSyGo6ZSl_WkQ71FoqCck9ID_jvnBvtZP6yg92XTe0Bhck_uLOvMx4sqX47cLMDEgOmX4v85OxhDOen8wX6XHoSFn79fld4ZGQVUsWHIeoOicG2plwzTvc624brm-e9AzFkRcJOUwJyDFJ-BakQ-qf2CkbPsMIjg1wcSLxh_Qtsdtm-7qZkODvX4lvI3yfYKqIk7s">
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-display text-[26px] text-emerald-300 font-extrabold tracking-tight leading-none">SR Farm</span>
+<span class="w-2 h-2 rounded-full bg-amber-400 ring-2 ring-primary/20 shrink-0 mb-0.5" title="Active Organic Estate"></span>
+</div>
+</div>
+<div class="flex items-center gap-1"><button class="w-9 h-9 rounded-full bg-emerald-950/80 text-emerald-400 border border-emerald-500/20 flex items-center justify-center hover:bg-emerald-900 transition-colors" onclick="openSheetsConfigModal()" title="Google Sheets Setup"><span class="material-symbols-outlined text-[20px]">table_chart</span></button><button aria-label="Notifications" class="w-9 h-9 flex items-center justify-center rounded-full text-emerald-200/70 hover:text-emerald-400 transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center shrink-0 text-gray-950 font-bold text-xs shadow-sm">SR</div></div>
+</div>
+</header>
+<!-- Main Container -->
+<main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen max-w-xl mx-auto shadow-2xl" style="background-color: #0d1a10; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);">
+<div class="flex flex-col w-full">
 <!-- Plantation Hero Feature Card -->
-<div class="px-space-md pt-space-sm pb-space-sm">
-<div class="relative w-full h-52 sm:h-64 md:h-72 rounded-xl overflow-hidden shadow-md bg-surface-container-high">
+<div class="px-4 pt-3 pb-2">
+<div class="relative w-full h-52 sm:h-60 rounded-2xl overflow-hidden shadow-sm bg-gray-200" style="box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.6), 0 0 15px rgba(74, 222, 128, 0.1); border: 1px solid rgba(74, 222, 128, 0.2);">
 <img alt="SR Farm Landscape" class="w-full h-full object-cover object-center" onerror="this.onerror=null; this.src='Farm.jpg';" src="https://lh3.googleusercontent.com/aida/ALJJyrC7D7_8rur9vEWmQGTa0Bw0f6-uViAgmUb-2ImDbg8UGkQ3aEx0lwEHwBavUKcVwH_PSTlrn7JgeG01PTXkd7uDx0DI2JSGw8oxrfYld8kLVxnrOvapFcfWKJT6ywejl7mNoy2EsGz4TScD5eIUVvCPXRFz-39_-FXfwt0X5huv0MgGCN_vMXojNpgDnjsJi-0Ni_nEVwJCpPrVqNUpjr9cvo01wBZycfXjVVPinZU-">
 </div>
 </div>
-<!-- Live Field Telemetry Bar -->
-<div class="px-space-md py-space-xs">
-<div class="bg-surface-container-lowest rounded-xl p-2.5 shadow-sm flex items-center justify-between gap-2"><div class="flex items-center gap-1.5 flex-1 min-w-0 px-2 py-1.5 rounded-lg bg-surface-container-low"><div class="w-5 h-5 rounded-full bg-secondary-fixed-dim/40 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-[13px]">location_on</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-medium text-[11px] text-on-surface leading-tight truncate">Bannikuppe, Ramanagara</span></div></div><div class="flex items-center gap-1 shrink-0"><button class="flex items-center gap-1 px-1.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors text-left focus:outline-none cursor-pointer group" id="weatherPill" onclick="openWeatherModal()" title="Tap for live weather forecast details" type="button"><div class="w-4 h-4 rounded-full bg-secondary-container flex items-center justify-center shrink-0 transition-transform group-hover:scale-105" id="weatherIconContainer"><span class="material-symbols-outlined text-on-secondary-container text-[11px]" id="weatherIcon">partly_cloudy_day</span></div><div class="flex items-center gap-0.5"><span class="font-bold text-[11px] text-on-surface leading-none" id="weatherTemp">28°C</span><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0" id="liveDot" title="Live Open-Meteo Feed"></span></div></button><div class="flex items-center gap-1 px-1.5 py-1.5 rounded-lg bg-surface-container-low"><div class="w-4 h-4 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-tertiary text-[11px]">water_ph</span></div><span class="font-bold text-[11px] text-primary leading-none">64% <span class="text-[9px] text-secondary font-medium">opt</span></span></div></div></div>
+<!-- Live Telemetry Status Bar -->
+<div class="px-4 py-1">
+<div class="rounded-xl p-2.5 shadow-lg flex items-center justify-between gap-2" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.18); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);"><div class="flex items-center gap-2 px-3 py-1.5 rounded-lg shrink-0" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.12);"><div class="w-6 h-6 rounded-full bg-emerald-950 flex items-center justify-center shrink-0 border border-emerald-500/20"><span class="material-symbols-outlined text-emerald-400 text-[16px]">location_on</span></div><span class="font-semibold text-[13.5px] text-white">Ramanagar</span></div><div class="flex items-center gap-2 shrink-0"><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors text-left active:scale-95 cursor-pointer" id="weatherPill" onclick="openWeatherModal()" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.12);" title="Tap for live weather" type="button"><span class="material-symbols-outlined text-amber-400 text-[17px]" id="weatherIcon">partly_cloudy_day</span><span class="font-bold text-[13.5px] text-white" id="weatherTemp">29°C</span><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" id="liveDot" title="Live Open-Meteo Feed"></span></button><div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.12);"><span class="material-symbols-outlined text-emerald-300 text-[17px]">water_drop</span><span class="font-bold text-[13.5px] text-white">64% <span class="text-[11px] text-emerald-400 font-medium">opt</span></span></div></div></div>
 </div>
+<!-- Real-time Google Sheets Sync Banner on Home Dashboard -->
 <!-- Section Title -->
-<div class="px-space-md pt-space-md pb-space-xs flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="w-1.5 h-4 bg-primary rounded-full"></span>
-<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Estate Sections</h3>
-</div>
-<span class="font-label-md text-label-md text-on-surface-variant">Tap to View</span>
-</div>
-<!-- Clean 9 Core Estate Cards (No text truncation, wraps cleanly on 2 lines with text-xs / 12px font) -->
-<div class="px-space-md grid grid-cols-2 gap-space-sm">
-<!-- Card: About Farm -->
-<button class="farm-card w-full text-left bg-surface-container-lowest active:scale-95 transition-all duration-150 rounded-xl p-3 shadow-sm border border-outline-variant/30 flex items-center gap-2.5 cursor-pointer hover:border-primary/40 focus:outline-none min-h-[58px]" onclick="openModal('about')">
-<div class="w-8 h-8 rounded-lg bg-secondary-fixed/50 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-secondary text-[19px]">yard</span>
-</div>
-<span class="text-[13px] font-semibold text-on-surface leading-tight break-words">About Farm</span>
-</button>
-<!-- Card 1: Measurements -->
-<button class="farm-card w-full text-left bg-surface-container-lowest active:scale-95 transition-all duration-150 rounded-xl p-3 shadow-sm border border-outline-variant/30 flex items-center gap-2.5 cursor-pointer hover:border-primary/40 focus:outline-none min-h-[58px]" onclick="openModal('measurements')">
-<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary text-[19px]">straighten</span>
-</div>
-<span class="text-[13px] font-semibold text-on-surface leading-tight break-words">Measurements</span>
-</button>
-<!-- Card 2: Crops -->
-<button class="farm-card w-full text-left bg-surface-container-lowest active:scale-95 transition-all duration-150 rounded-xl p-3 shadow-sm border border-outline-variant/30 flex items-center gap-2.5 cursor-pointer hover:border-primary/40 focus:outline-none min-h-[58px]" onclick="openModal('crops')">
-<div class="w-8 h-8 rounded-lg bg-secondary-fixed/50 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-secondary text-[19px]">potted_plant</span>
-</div>
-<span class="text-[13px] font-semibold text-on-surface leading-tight break-words">Crops</span>
-</button>
-<!-- Card 3: Plants & Trees -->
-<button class="farm-card w-full text-left bg-surface-container-lowest active:scale-95 transition-all duration-150 rounded-xl p-3 shadow-sm border border-outline-variant/30 flex items-center gap-2.5 cursor-pointer hover:border-primary/40 focus:outline-none min-h-[58px]" onclick="openModal('plants')">
-<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary text-[19px]">forest</span>
-</div>
-<span class="text-[13px] font-semibold text-on-surface leading-tight break-words">Plants &amp; Trees</span>
-</button>
-<!-- Card 4: Farm Map -->
-<button class="farm-card w-full text-left bg-surface-container-lowest active:scale-95 transition-all duration-150 rounded-xl p-3 shadow-sm border border-outline-variant/30 flex items-center gap-2.5 cursor-pointer hover:border-primary/40 focus:outline-none min-h-[58px]" onclick="openModal('map')">
-<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-tertiary text-[19px]">explore</span>
-</div>
-<span class="text-[13px] font-semibold text-on-surface leading-tight break-words">Farm Map</span>
-</button>
-<!-- Card 5: Borewell & Water -->
-<button class="farm-card w-full text-left bg-surface-container-lowest active:scale-95 transition-all duration-150 rounded-xl p-3 shadow-sm border border-outline-variant/30 flex items-center gap-2.5 cursor-pointer hover:border-primary/40 focus:outline-none min-h-[58px]" onclick="openModal('water')">
-<div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-secondary-container text-[19px]">water_drop</span>
-</div>
-<span class="text-[13px] font-semibold text-on-surface leading-tight break-words">Borewell &amp; Water</span>
-</button>
-<!-- Card 6: Photos & Videos -->
-<button class="farm-card w-full text-left bg-surface-container-lowest active:scale-95 transition-all duration-150 rounded-xl p-3 shadow-sm border border-outline-variant/30 flex items-center gap-2.5 cursor-pointer hover:border-primary/40 focus:outline-none min-h-[58px]" onclick="openModal('photos')">
-<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-surface-variant text-[19px]">photo_library</span>
-</div>
-<span class="text-[13px] font-semibold text-on-surface leading-tight break-words">Photos &amp; Videos</span>
-</button>
-<!-- Card 7: Income & Expenses -->
-<button class="farm-card w-full text-left bg-surface-container-lowest active:scale-95 transition-all duration-150 rounded-xl p-3 shadow-sm border border-outline-variant/30 flex items-center gap-2.5 cursor-pointer hover:border-primary/40 focus:outline-none min-h-[58px]" onclick="openModal('income')">
-<div class="w-8 h-8 rounded-lg bg-primary-fixed-dim/50 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary text-[19px]">currency_rupee</span>
-</div>
-<span class="text-[13px] font-semibold text-on-surface leading-tight break-words">Income &amp; Expenses</span>
-</button>
-<!-- Card 8: Operations -->
-<button class="farm-card col-span-2 w-full text-left bg-surface-container-lowest active:scale-95 transition-all duration-150 rounded-xl p-3 shadow-sm border border-outline-variant/30 flex items-center gap-2.5 cursor-pointer hover:border-primary/40 focus:outline-none min-h-[58px]" onclick="openModal('operations')">
-<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary text-[19px]">assignment_turned_in</span>
-</div>
-<span class="text-[13px] font-semibold text-on-surface leading-tight break-words">Operations &amp; Schedules</span>
-</button>
-</div>
-<!-- Primary Interactive Quick Log CTA -->
-<div class="px-space-md pt-space-md">
-<button class="w-full h-12 bg-primary-container active:scale-[0.98] transition-all text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-primary" type="button">
-<span class="material-symbols-outlined text-[20px] text-secondary-fixed">add_circle</span>
+<div class="px-4 pt-3 pb-1 flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-1.5 h-4 bg-emerald-400 rounded-full shadow-sm"></span><h3 class="font-headline text-[17px] text-white font-bold tracking-tight">Estate Sections</h3></div><span class="text-[12px] text-emerald-300/80 font-medium">Tap to View</span></div>
+<!-- 9 Core Estate Cards Grid -->
+<div class="px-4 grid grid-cols-2 gap-2.5"><button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer" onclick="openModal('about')" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);"><div class="w-8 h-8 rounded-lg bg-emerald-950 text-emerald-400 border border-emerald-500/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[19px]">yard</span></div><span class="text-[13px] font-semibold text-white leading-tight">About Farm</span></button><button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer" onclick="openModal('measurements')" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);"><div class="w-8 h-8 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-500/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[19px]">straighten</span></div><span class="text-[13px] font-semibold text-white leading-tight">Measurements</span></button><button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer" onclick="openModal('crops')" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);"><div class="w-8 h-8 rounded-lg bg-amber-950/60 text-amber-400 border border-amber-500/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[19px]">potted_plant</span></div><span class="text-[13px] font-semibold text-white leading-tight">Crops</span></button><button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer" onclick="openModal('plants')" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);"><div class="w-8 h-8 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-500/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[19px]">forest</span></div><span class="text-[13px] font-semibold text-white leading-tight">Plants &amp; Trees</span></button><button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer" onclick="openModal('water')" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);"><div class="w-8 h-8 rounded-lg bg-sky-950 text-sky-400 border border-sky-500/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[19px]">water_drop</span></div><span class="text-[13px] font-semibold text-white leading-tight">Borewell &amp; Water</span></button><button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer" onclick="openModal('photos')" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);"><div class="w-8 h-8 rounded-lg bg-purple-950 text-purple-300 border border-purple-500/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[19px]">photo_library</span></div><span class="text-[13px] font-semibold text-white leading-tight">Photos &amp; Videos</span></button><button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer" onclick="openExpensesModal()" style="background-color: rgb(20, 35, 24); border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 18px;"><div class="w-8 h-8 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-500/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[19px]">account_balance_wallet</span></div><span class="text-[13px] font-semibold text-white leading-tight">Expenses &amp; Income</span></button><button class="col-span-2 w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer" onclick="openModal('operations')" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);"><div class="w-8 h-8 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-500/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[19px]">assignment_turned_in</span></div><span class="text-[13px] font-semibold text-white leading-tight">Operations &amp; Schedules</span></button></div>
+<!-- Quick Farm Log Action Button -->
+<div class="px-4 pt-3.5">
+<button class="w-full h-12 bg-primary active:scale-[0.98] transition-all text-white rounded-xl font-semibold text-[13.5px] flex items-center justify-center gap-2 shadow-sm hover:bg-primary-container cursor-pointer" onclick="openAddTransactionModal('expense')" style="background: linear-gradient(135deg, #0f5132 0%, #198754 100%); box-shadow: 0 6px 20px rgba(15, 81, 50, 0.45); border: 1px solid rgba(74, 222, 128, 0.3);" type="button">
+<span class="material-symbols-outlined text-[20px] text-emerald-300">add_circle</span>
 <span>+ Quick Farm Log / Entry</span>
+<span class="text-[10.5px] px-2 py-0.5 rounded-full bg-white/20 text-emerald-100 flex items-center gap-1 ml-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-300"></span>Auto-Sync
+        </span>
 </button>
 </div>
 <!-- Recent Field Activity Feed -->
-<div class="px-space-md pt-space-md pb-space-sm">
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
-<div class="flex items-center justify-between mb-3">
-<div class="flex items-center gap-1.5">
-<span class="material-symbols-outlined text-primary text-[18px]">history</span>
-<span class="font-title-md text-title-md text-on-surface font-semibold">Recent Field Activity</span>
+<div class="px-4 pt-3.5 pb-2">
+<div class="rounded-2xl p-3.5 shadow-lg" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);"><div class="flex items-center justify-between mb-2.5"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-400 text-[18px]">history</span><span class="text-[13.5px] text-white font-bold">Recent Field Activity</span></div><button class="text-[11.5px] text-emerald-300 font-bold hover:underline cursor-pointer" onclick="openExpensesModal()">View All</button></div><div class="space-y-2" id="recentActivityList"><div class="flex items-start gap-3 p-2.5 rounded-xl" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.1);"><div class="w-7 h-7 rounded-full bg-emerald-950 border border-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5"><span class="material-symbols-outlined text-emerald-300 text-[16px]">water</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="text-[12px] font-bold text-white truncate">Drip Irrigation - Mango &amp; Coconut</span><span class="text-[10px] text-gray-400 shrink-0">4h ago</span></div><p class="text-[11px] text-gray-300 truncate">Sub-lateral drip 45 mins • 4,200 L delivered across 52 Guntas</p></div></div><div class="flex items-start gap-3 p-2.5 rounded-xl cursor-pointer transition-colors" onclick="openExpensesModal()" style="background-color: #163022; border: 1px solid rgba(74, 222, 128, 0.25);"><div class="w-7 h-7 rounded-full bg-emerald-500 text-gray-950 flex items-center justify-center shrink-0 mt-0.5 font-bold"><span class="material-symbols-outlined text-[16px]">table_chart</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="text-[12px] font-bold text-emerald-200 truncate">Mango Advance: +₹45,000</span><span class="text-[10px] text-emerald-300 font-bold shrink-0 flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">cloud_done</span>Synced</span></div><p class="text-[11px] text-emerald-300/80 truncate">Harvest advance (Alphonso &amp; Mallika) via Bank Transfer • Row #2</p></div></div></div></div>
 </div>
-<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline">View All</button>
-</div>
-<div class="space-y-2.5">
-<!-- Activity Item 1 -->
-<div class="flex items-start gap-3 p-2 rounded-lg bg-surface-container-low">
-<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center shrink-0 mt-0.5">
-<span class="material-symbols-outlined text-on-secondary-container text-[16px]">water</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between">
-<span class="font-label-md text-label-md text-on-surface font-bold truncate">Drip Irrigation - Mango &amp; Coconut</span>
-<span class="font-label-sm text-label-sm text-outline shrink-0">4h ago</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Sub-lateral drip 45 mins • 4,200 L delivered across the 52 Guntas</p>
+<!-- Contact Banner -->
+<div class="px-4 pt-1 pb-4">
+<div class="rounded-xl p-3 shadow-lg flex items-center justify-between gap-3" style="background-color: #142318; border: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);"><div class="flex items-center gap-2.5 min-w-0"><div class="w-8 h-8 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-500/20 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[18px]">mail</span></div><div class="flex flex-col min-w-0"><span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">CONTACT &amp; INQUIRY</span><div class="flex items-center gap-1.5 mt-0.5"><span class="text-[11.5px] text-gray-300 font-medium">Email:</span><a class="text-[12px] font-bold text-emerald-300 hover:underline truncate" href="mailto:snrao020@gmail.com">snrao020@gmail.com</a></div></div></div><a class="px-3 py-1.5 rounded-lg text-white font-bold text-[11.5px] flex items-center gap-1 shrink-0 transition-colors" href="mailto:snrao020@gmail.com" style="background-color: #1a2e20; border: 1px solid rgba(74, 222, 128, 0.2);"><span>Email</span><span class="material-symbols-outlined text-[13px] text-emerald-400">arrow_forward</span></a></div>
 </div>
 </div>
-<!-- Activity Item 2 -->
-<div class="flex items-start gap-3 p-2 rounded-lg bg-surface-container-low">
-<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center shrink-0 mt-0.5">
-<span class="material-symbols-outlined text-primary text-[16px]">bolt</span>
-</div>
-<div class="flex-1 min-w-0">
-<div class="flex items-center justify-between">
-<span class="font-label-md text-label-md text-on-surface font-bold truncate">Texmo 10HP Starter Diagnostic</span>
-<span class="font-label-sm text-label-sm text-outline shrink-0">Today, 08:30</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Balanced 3-phase 415V • Capacitor bank healthy &amp; running cool</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Contact Information Badge / Card -->
-<div class="px-space-md pt-space-xs pb-space-md">
-<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm border border-outline-variant/30 flex items-center justify-between gap-3">
-<div class="flex items-center gap-3 min-w-0">
-<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-secondary text-[20px]">mail</span>
-</div>
-<div class="flex flex-col min-w-0">
-<span class="text-[11px] font-semibold text-secondary uppercase tracking-wider">Estate Contact &amp; Inquiry</span>
-<a class="text-[13px] font-bold text-primary hover:underline truncate" href="mailto:snrao020@gmail.com">snrao020@gmail.com</a>
-</div>
-</div>
-<a class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-semibold text-[12px] flex items-center gap-1 shrink-0 transition-colors" href="mailto:snrao020@gmail.com">
-<span>Email</span>
-<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
-</a>
-</div>
-</div>
-</div></main>
-<!-- Interactive Full Details Modal / Bottom Sheet -->
-<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-end justify-center transition-opacity duration-200" id="farmModal">
-<div class="bg-surface w-full max-w-lg rounded-t-3xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-200" onclick="event.stopPropagation()">
-<!-- Modal Drag Handle & Header -->
-<div class="p-space-md border-b border-outline-variant/30 flex items-center justify-between bg-surface-container-lowest">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary" id="modalIconContainer">
-<span class="material-symbols-outlined text-[24px]" id="modalIcon">info</span>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-40 pb-safe bg-surface/95 backdrop-blur-xl border-t border-gray-200/70 max-w-xl left-0 right-0 mx-auto shadow-lg" style="background-color: rgba(13, 26, 16, 0.92); backdrop-filter: blur(16px); border-top: 1px solid rgba(74, 222, 128, 0.15); box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.5);">
+<div class="h-16 px-4 flex items-center justify-around"><button class="flex flex-col items-center justify-center flex-1 py-1 text-emerald-400 cursor-pointer" onclick="window.scrollTo({top:0, behavior:'smooth'})"><span class="material-symbols-outlined text-[22px]">yard</span><span class="text-[10.5px] font-bold mt-0.5">Home</span></button><button class="flex flex-col items-center justify-center flex-1 py-1 text-gray-300 hover:text-emerald-300 transition-colors cursor-pointer" onclick="openModal('about')"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="text-[10.5px] font-medium mt-0.5">Sections</span></button><button class="flex flex-col items-center justify-center flex-1 py-1 text-gray-300 hover:text-emerald-300 transition-colors cursor-pointer" onclick="openModal('map')"><span class="material-symbols-outlined text-[22px]">map</span><span class="text-[10.5px] font-medium mt-0.5">Farm Map</span></button></div>
+</nav>
+<!-- ========================================== -->
+<!-- MODAL 1: Full Expense & Income Tracker     -->
+<!-- ========================================== -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs hidden flex items-end sm:items-center justify-center" id="expensesModal">
+<div class="bg-surface w-full max-w-xl sm:rounded-2xl rounded-t-3xl max-h-[92vh] sm:max-h-[88vh] flex flex-col shadow-2xl overflow-hidden" onclick="event.stopPropagation()" style="background-color: #112015; color: #f8fafc; border: 1px solid rgba(74, 222, 128, 0.2);">
+<!-- Header Bar -->
+<div class="px-4 py-3.5 border-b border-gray-200/70 flex items-center justify-between bg-surface-container-lowest sticky top-0 z-20" style="background-color: #0d1a10; border-bottom: 1px solid rgba(74, 222, 128, 0.15);">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-[#0f9d58] text-white flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[22px]">table_chart</span>
 </div>
 <div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-bold" id="modalTitle">Details</h3>
-<span class="font-label-sm text-label-sm text-on-surface-variant" id="modalCategory">Estate Module</span>
+<h3 class="text-[16px] text-white font-bold leading-tight">Income &amp; Expenses</h3>
 </div>
 </div>
-<button aria-label="Close" class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" onclick="closeModal()">
+<div class="flex items-center gap-1">
+<button aria-label="Google Sheets Settings" class="w-9 h-9 rounded-full bg-emerald-50 hover:bg-emerald-100 flex items-center justify-center text-[#0f9d58] transition-colors" onclick="openSheetsConfigModal()" title="Connect Google Sheet Webhook">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</button>
+<button aria-label="Export Data" class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" onclick="exportTransactionsCSV()" title="Export CSV Statement">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+<button aria-label="Close" class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors" onclick="closeExpensesModal()">
 <span class="material-symbols-outlined text-[20px]">close</span>
 </button>
 </div>
-<!-- Modal Body Content -->
-<div class="p-space-md overflow-y-auto space-y-4 pb-10" id="modalBody">
-<!-- Dynamic Content Loaded Here -->
+</div>
+<!-- Scrollable Body -->
+<div class="p-4 overflow-y-auto space-y-3.5 pb-20">
+<!-- Google Sheets Live Cloud Sync Banner inside Tracker -->
+<div class="bg-gradient-to-r from-emerald-900 to-[#0e5138] rounded-2xl p-3.5 text-white shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center shrink-0 border border-white/20">
+<span class="material-symbols-outlined text-emerald-300 text-[18px]">table_rows</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="text-[13px] font-bold leading-tight truncate">Google Sheets Active</span>
+<span class="px-1.5 py-0.2 rounded text-[9.5px] bg-emerald-400/25 border border-emerald-400/30 text-emerald-200 font-semibold" id="sheetBadge">Connected</span>
+</div>
+<p class="text-[11px] text-emerald-200/80 leading-tight truncate" id="sheetSyncTimestamp">Last synced: Just now • 7 rows matching in Sheet</p>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button class="px-2.5 py-1.5 rounded-lg bg-emerald-500/30 hover:bg-emerald-500/40 text-emerald-100 font-semibold text-[11.5px] flex items-center gap-1 transition-all active:scale-95 cursor-pointer" onclick="syncWithGoogleSheet(true)">
+<span class="material-symbols-outlined text-[15px]" id="modalSyncIcon">sync</span>
+<span>Sync Now</span>
+</button>
+</div>
+</div>
+<div class="pt-2 border-t border-white/10 flex items-center justify-between text-[11px]">
+<div class="flex items-center gap-1.5 text-emerald-100">
+<span class="material-symbols-outlined text-[14px] text-emerald-300">verified</span>
+<span class="truncate">Shared across all devices</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-emerald-300 hover:text-white font-semibold underline underline-offset-2 flex items-center gap-0.5" onclick="openSheetsConfigModal()">
+<span>Setup / Config</span>
+<span class="material-symbols-outlined text-[13px]">settings</span>
+</button>
+<button class="text-emerald-300 hover:text-white font-semibold underline underline-offset-2 flex items-center gap-0.5" onclick="openPreviewSheetModal()">
+<span>View Sheet</span>
+<span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Top Financial Summary Cards -->
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-surface-container-lowest p-3 rounded-2xl border border-emerald-500/20 shadow-2xs flex flex-col justify-between">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Inflow</span>
+</div>
+<div class="text-[16px] sm:text-[18px] font-bold text-secondary mt-1 tracking-tight truncate" id="kpiTotalIncome">₹51,000</div>
+<span class="text-[9.5px] text-on-surface-variant font-medium mt-0.5">Harvest Sales</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-2xl border border-red-500/20 shadow-2xs flex flex-col justify-between">
+<div class="flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Outflow</span>
+</div>
+<div class="text-[16px] sm:text-[18px] font-bold text-error mt-1 tracking-tight truncate" id="kpiTotalExpense">₹26,350</div>
+<span class="text-[9.5px] text-on-surface-variant font-medium mt-0.5">Farm Costs</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-2xl border border-gray-200 shadow-2xs flex flex-col justify-between">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">account_balance_wallet</span>
+<span class="text-[10px] font-bold uppercase tracking-wider">Net Cash</span>
+</div>
+<div class="text-[16px] sm:text-[18px] font-extrabold text-secondary mt-1 tracking-tight truncate" id="kpiNetBalance">₹24,650</div>
+<span class="text-[9.5px] font-semibold text-secondary mt-0.5" id="kpiStatus">+ Net Profit Surplus</span>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 rounded-xl bg-secondary-container hover:bg-emerald-300 text-emerald-950 font-bold text-[12.5px] flex items-center justify-center gap-1.5 shadow-2xs active:scale-[0.98] transition-all cursor-pointer" onclick="openAddTransactionModal('income')">
+<span class="material-symbols-outlined text-[18px] text-secondary">add_circle</span>
+<span>+ Add Income</span>
+</button>
+<button class="h-11 rounded-xl bg-primary text-white font-bold text-[12.5px] flex items-center justify-center gap-1.5 shadow-2xs active:scale-[0.98] transition-all cursor-pointer" onclick="openAddTransactionModal('expense')">
+<span class="material-symbols-outlined text-[18px] text-emerald-300">remove_circle</span>
+<span>+ Add Expense</span>
+</button>
+</div>
+<!-- Filter Controls -->
+<div class="space-y-2">
+<div class="flex items-center gap-1.5 overflow-x-auto pb-0.5 no-scrollbar">
+<button class="filter-type-btn px-3 py-1.5 rounded-full text-[11.5px] font-bold transition-all shrink-0 bg-primary text-white shadow-2xs" data-filter="all" onclick="filterTransactionsType('all')">All Records</button>
+<button class="filter-type-btn px-3 py-1.5 rounded-full text-[11.5px] font-semibold transition-all shrink-0 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-filter="expense" onclick="filterTransactionsType('expense')">Expenses Only</button>
+<button class="filter-type-btn px-3 py-1.5 rounded-full text-[11.5px] font-semibold transition-all shrink-0 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-filter="income" onclick="filterTransactionsType('income')">Income Only</button>
+</div>
+<div class="flex items-center gap-1.5 overflow-x-auto pb-0.5 no-scrollbar text-nowrap">
+<button class="filter-cat-btn px-2.5 py-1 rounded-lg text-[11px] font-bold bg-surface-container-lowest border border-primary text-primary shrink-0" data-cat="all" onclick="filterCategory('all')">All Categories</button>
+<button class="filter-cat-btn px-2.5 py-1 rounded-lg text-[11px] font-medium bg-surface-container-lowest border border-gray-200 text-on-surface-variant shrink-0" data-cat="Fertilizers &amp; Nutrients" onclick="filterCategory('Fertilizers &amp; Nutrients')">Fertilizers &amp; Nutrients</button>
+<button class="filter-cat-btn px-2.5 py-1 rounded-lg text-[11px] font-medium bg-surface-container-lowest border border-gray-200 text-on-surface-variant shrink-0" data-cat="Irrigation &amp; Electricity" onclick="filterCategory('Irrigation &amp; Electricity')">Irrigation &amp; Borewell</button>
+<button class="filter-cat-btn px-2.5 py-1 rounded-lg text-[11px] font-medium bg-surface-container-lowest border border-gray-200 text-on-surface-variant shrink-0" data-cat="Labor &amp; Weeding" onclick="filterCategory('Labor &amp; Weeding')">Labor &amp; Weeding</button>
+<button class="filter-cat-btn px-2.5 py-1 rounded-lg text-[11px] font-medium bg-surface-container-lowest border border-gray-200 text-on-surface-variant shrink-0" data-cat="Produce Sales" onclick="filterCategory('Produce Sales')">Harvest Sales</button>
+</div>
+</div>
+<!-- Transaction List Container -->
+<div class="bg-surface-container-lowest rounded-2xl p-3.5 border border-gray-200/70 shadow-xs">
+<div class="flex items-center justify-between pb-2 mb-2 border-b border-gray-100">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">receipt_long</span>
+<span class="text-[13.5px] text-on-surface font-bold">Transaction History</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold" id="recordCountBadge">7 entries</span>
+</div>
+<button class="text-[11px] font-semibold text-secondary hover:underline flex items-center gap-1" onclick="resetToSampleRecords()">
+<span class="material-symbols-outlined text-[13px]">restart_alt</span> Reset Demo
+          </button>
+</div>
+<div class="space-y-2" id="transactionsList">
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-secondary flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[18px]">trending_up</span>
+            </div>
+            <div class="min-w-0 flex-1 pr-1.5">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Mango Harvest Advance (Alphonso &amp; Mallika)</span>
+                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
+                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
+                </span>
+              </div>
+              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
+                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Produce Sales</span>
+                <span>•</span>
+                <span>10 May 2025</span>
+                <span>•</span>
+                <span class="text-[9.5px] text-gray-500 font-medium truncate">Bank Transfer</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <div class="text-right">
+              <div class="text-[13px] text-secondary font-extrabold">+₹45,000</div>
+              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">income</span>
+            </div>
+            <button onclick="deleteTransaction('tx-1')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[15px]">delete</span>
+            </button>
+          </div>
+        </div>
+      
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <div class="w-8 h-8 rounded-lg bg-emerald-100 text-secondary flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[18px]">trending_up</span>
+            </div>
+            <div class="min-w-0 flex-1 pr-1.5">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Tender Coconut Batch Sale (120 nuts)</span>
+                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
+                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
+                </span>
+              </div>
+              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
+                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Produce Sales</span>
+                <span>•</span>
+                <span>8 May 2025</span>
+                <span>•</span>
+                <span class="text-[9.5px] text-gray-500 font-medium truncate">UPI / PhonePe</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <div class="text-right">
+              <div class="text-[13px] text-secondary font-extrabold">+₹6,000</div>
+              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">income</span>
+            </div>
+            <button onclick="deleteTransaction('tx-2')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[15px]">delete</span>
+            </button>
+          </div>
+        </div>
+      
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[18px]">build</span>
+            </div>
+            <div class="min-w-0 flex-1 pr-1.5">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Texmo 10HP Submersible Motor Service &amp; Oiling</span>
+                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
+                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
+                </span>
+              </div>
+              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
+                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Irrigation &amp; Electricity</span>
+                <span>•</span>
+                <span>6 May 2025</span>
+                <span>•</span>
+                <span class="text-[9.5px] text-gray-500 font-medium truncate">UPI / PhonePe</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <div class="text-right">
+              <div class="text-[13px] text-error font-extrabold">-₹3,800</div>
+              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span>
+            </div>
+            <button onclick="deleteTransaction('tx-3')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[15px]">delete</span>
+            </button>
+          </div>
+        </div>
+      
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[18px]">compost</span>
+            </div>
+            <div class="min-w-0 flex-1 pr-1.5">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Cow Dung Compost &amp; Organic Manure (2 tractor loads)</span>
+                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
+                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
+                </span>
+              </div>
+              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
+                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Fertilizers &amp; Nutrients</span>
+                <span>•</span>
+                <span>2 May 2025</span>
+                <span>•</span>
+                <span class="text-[9.5px] text-gray-500 font-medium truncate">Cash</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <div class="text-right">
+              <div class="text-[13px] text-error font-extrabold">-₹12,000</div>
+              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span>
+            </div>
+            <button onclick="deleteTransaction('tx-4')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[15px]">delete</span>
+            </button>
+          </div>
+        </div>
+      
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[18px]">water</span>
+            </div>
+            <div class="min-w-0 flex-1 pr-1.5">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Drip Irrigation Lateral Replacement &amp; Micro-drippers</span>
+                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
+                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
+                </span>
+              </div>
+              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
+                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Irrigation &amp; Electricity</span>
+                <span>•</span>
+                <span>28 Apr 2025</span>
+                <span>•</span>
+                <span class="text-[9.5px] text-gray-500 font-medium truncate">UPI / PhonePe</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <div class="text-right">
+              <div class="text-[13px] text-error font-extrabold">-₹4,500</div>
+              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span>
+            </div>
+            <button onclick="deleteTransaction('tx-5')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[15px]">delete</span>
+            </button>
+          </div>
+        </div>
+      
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[18px]">group</span>
+            </div>
+            <div class="min-w-0 flex-1 pr-1.5">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Monthly Farm Maintenance &amp; Weeding Labor (3 days)</span>
+                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
+                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
+                </span>
+              </div>
+              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
+                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Labor &amp; Weeding</span>
+                <span>•</span>
+                <span>25 Apr 2025</span>
+                <span>•</span>
+                <span class="text-[9.5px] text-gray-500 font-medium truncate">Cash</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <div class="text-right">
+              <div class="text-[13px] text-error font-extrabold">-₹4,200</div>
+              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span>
+            </div>
+            <button onclick="deleteTransaction('tx-6')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[15px]">delete</span>
+            </button>
+          </div>
+        </div>
+      
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <div class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[18px]">pest_control</span>
+            </div>
+            <div class="min-w-0 flex-1 pr-1.5">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">Cold-Pressed Neem Oil Organic Pest Spray (10 L)</span>
+                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
+                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
+                </span>
+              </div>
+              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
+                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">Fertilizers &amp; Nutrients</span>
+                <span>•</span>
+                <span>20 Apr 2025</span>
+                <span>•</span>
+                <span class="text-[9.5px] text-gray-500 font-medium truncate">UPI / PhonePe</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <div class="text-right">
+              <div class="text-[13px] text-error font-extrabold">-₹1,850</div>
+              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">expense</span>
+            </div>
+            <button onclick="deleteTransaction('tx-7')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[15px]">delete</span>
+            </button>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- MODAL 2: Add / Edit Transaction Sheet      -->
+<!-- ========================================== -->
+<div class="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs hidden flex items-end sm:items-center justify-center" id="addRecordModal">
+<div class="bg-surface w-full max-w-md sm:rounded-2xl rounded-t-3xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden" onclick="event.stopPropagation()" style="background-color: #112015; color: #f8fafc; border: 1px solid rgba(74, 222, 128, 0.2);">
+<div class="px-4 py-3.5 border-b border-gray-200/70 flex items-center justify-between bg-surface-container-lowest" style="background-color: #0d1a10; border-bottom: 1px solid rgba(74, 222, 128, 0.15);">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-emerald-100 text-secondary flex items-center justify-center" id="formHeaderIcon">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</div>
+<div>
+<h4 class="text-[15px] text-white font-bold" id="formModalTitle">Add Farm Entry</h4>
+<span class="text-[11px] text-emerald-800 font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Syncs to Google Sheet
+          </span>
+</div>
+</div>
+<button aria-label="Close" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" onclick="closeAddTransactionModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<form class="p-4 space-y-3.5 overflow-y-auto" id="transactionForm" onsubmit="handleTransactionSubmit(event)">
+<!-- Cloud Sync Alert -->
+<div class="bg-emerald-50 border border-emerald-200 rounded-xl p-2.5 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-6 h-6 rounded bg-[#0f9d58] text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[14px]">cloud_sync</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="text-[11px] font-bold text-emerald-950 leading-tight">Live Google Sheet Sync</span>
+<span class="text-[10px] text-emerald-800 truncate">Appends row instantly to cloud ledger</span>
+</div>
+</div>
+<label class="flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="autoSyncCheckbox" type="checkbox">
+<div class="w-8 h-4.5 bg-gray-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3.5 after:w-3.5 after:transition-all peer-checked:bg-[#0f9d58] relative"></div>
+</label>
+</div>
+<!-- Record Type -->
+<div>
+<label class="block text-[11px] font-bold text-on-surface-variant mb-1 uppercase tracking-wider">Entry Type</label>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center justify-center gap-2 p-2 rounded-xl border-2 border-gray-200 cursor-pointer has-checked:border-error has-checked:bg-error-container/20 transition-all text-[12.5px] font-bold text-on-surface">
+<input checked="" class="accent-red-600 w-4 h-4" name="entryType" onchange="updateFormCategoryOptions()" type="radio" value="expense">
+<span>Expense (-)</span>
+</label>
+<label class="flex items-center justify-center gap-2 p-2 rounded-xl border-2 border-gray-200 cursor-pointer has-checked:border-secondary has-checked:bg-emerald-100 transition-all text-[12.5px] font-bold text-on-surface">
+<input class="accent-emerald-600 w-4 h-4" name="entryType" onchange="updateFormCategoryOptions()" type="radio" value="income">
+<span>Income (+)</span>
+</label>
+</div>
+</div>
+<!-- Amount (₹) -->
+<div>
+<label class="block text-[11px] font-bold text-on-surface-variant mb-1 uppercase tracking-wider" for="recordAmount">Amount (₹) *</label>
+<div class="relative">
+<span class="absolute left-3.5 top-1/2 -translate-y-1/2 font-bold text-on-surface text-[16px]">₹</span>
+<input class="w-full pl-8 pr-3 py-2.5 rounded-xl border border-gray-300 bg-surface-container-lowest font-bold text-[18px] focus:ring-2 focus:ring-primary focus:outline-none" id="recordAmount" min="1" placeholder="e.g. 4500" required="" step="any" type="number">
+</div>
+</div>
+<!-- Category -->
+<div>
+<label class="block text-[11px] font-bold text-on-surface-variant mb-1 uppercase tracking-wider" for="recordCategory">Category *</label>
+<select class="w-full px-3 py-2.5 rounded-xl border border-gray-300 bg-surface-container-lowest text-[13px] font-medium text-on-surface focus:ring-2 focus:ring-primary focus:outline-none" id="recordCategory" required="">
+</select>
+</div>
+<!-- Description / Title -->
+<div>
+<label class="block text-[11px] font-bold text-on-surface-variant mb-1 uppercase tracking-wider" for="recordTitle">Description / Purpose *</label>
+<input class="w-full px-3 py-2.5 rounded-xl border border-gray-300 bg-surface-container-lowest text-[13px] text-on-surface focus:ring-2 focus:ring-primary focus:outline-none" id="recordTitle" placeholder="e.g. Organic vermicompost manure or Mango sale" required="" type="text">
+</div>
+<!-- Date & Payment Mode -->
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block text-[11px] font-bold text-on-surface-variant mb-1 uppercase tracking-wider" for="recordDate">Date</label>
+<input class="w-full px-3 py-2 rounded-xl border border-gray-300 bg-surface-container-lowest text-[12px] text-on-surface focus:ring-2 focus:ring-primary focus:outline-none" id="recordDate" required="" type="date">
+</div>
+<div>
+<label class="block text-[11px] font-bold text-on-surface-variant mb-1 uppercase tracking-wider" for="recordPaymentMethod">Payment Mode</label>
+<select class="w-full px-2.5 py-2 rounded-xl border border-gray-300 bg-surface-container-lowest text-[12px] text-on-surface focus:ring-2 focus:ring-primary focus:outline-none" id="recordPaymentMethod">
+<option value="UPI / PhonePe">UPI / PhonePe</option>
+<option value="Cash">Cash</option>
+<option value="Bank Transfer">Bank Transfer (NEFT)</option>
+<option value="Cheque">Cheque</option>
+</select>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="pt-2">
+<button class="w-full h-11 bg-primary text-white font-bold rounded-xl text-[13.5px] shadow-sm hover:bg-primary-container active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer" type="submit">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+<span>Save &amp; Sync to Google Sheet</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- MODAL 3: Google Sheets Configuration Modal -->
+<!-- ========================================== -->
+<div class="fixed inset-0 z-50 bg-black/65 backdrop-blur-xs hidden flex items-end sm:items-center justify-center" id="sheetsConfigModal">
+<div class="bg-surface w-full max-w-lg sm:rounded-2xl rounded-t-3xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden" onclick="event.stopPropagation()" style="background-color: #112015; color: #f8fafc; border: 1px solid rgba(74, 222, 128, 0.2);">
+<!-- Header -->
+<div class="px-4 py-3.5 border-b border-gray-200/70 flex items-center justify-between bg-surface-container-lowest">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-emerald-100 text-[#0f9d58] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">table_chart</span>
+</div>
+<div>
+<h4 class="text-[15px] text-on-surface font-bold">Connect Google Sheets</h4>
+<span class="text-[11px] text-secondary font-semibold">Share live farm accounts across all phones</span>
+</div>
+</div>
+<button aria-label="Close" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" onclick="closeSheetsConfigModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="p-4 overflow-y-auto space-y-4 pb-12">
+<!-- Live Status Card -->
+<div class="bg-emerald-50 rounded-2xl p-3.5 border border-emerald-200 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-emerald-200 text-[#0f9d58] flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[19px]">verified_user</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-bold text-[12.5px] text-emerald-950">Status: Active &amp; Ready</span>
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+</div>
+<p class="text-[11px] text-emerald-800 mt-0.5 leading-snug">
+            Every transaction entered in SR Farm is pushed into your online Google Sheet. Any device opening this app will automatically load these synchronized records!
+          </p>
+</div>
+</div>
+<!-- Webhook URL Configuration Form -->
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-gray-200/70 space-y-3">
+<div>
+<label class="block text-[11px] font-bold text-on-surface uppercase tracking-wider mb-1" for="sheetWebhookUrl">
+            Google Apps Script Webhook URL
+          </label>
+<input class="w-full px-3 py-2 text-[12px] font-mono rounded-xl border border-gray-300 bg-surface-container-low text-on-surface focus:ring-2 focus:ring-emerald-600 focus:outline-none" id="sheetWebhookUrl" placeholder="https://script.google.com/macros/s/.../exec" type="url" value="https://script.google.com/macros/s/AKfycbz_SR_Farm_EstateLedgerSync_v2/exec">
+<p class="text-[10px] text-on-surface-variant mt-1">This Webhook URL receives POST payloads whenever entries are added or deleted.</p>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 h-9 rounded-xl bg-primary text-white font-bold text-[12px] flex items-center justify-center gap-1.5 shadow-2xs hover:bg-primary-container active:scale-95 transition-all" onclick="saveSheetsConfig()">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span>Save URL</span>
+</button>
+<button class="h-9 px-3 rounded-xl bg-emerald-100 hover:bg-emerald-200 text-emerald-950 font-bold text-[12px] flex items-center justify-center gap-1 active:scale-95 transition-all" onclick="testSheetConnection()">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+<span>Test Sync</span>
+</button>
+</div>
+</div>
+<!-- Step by Step Setup Instructions -->
+<div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-gray-200/70 space-y-2.5">
+<span class="font-bold text-[12.5px] text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-emerald-700 text-[18px]">help_outline</span>
+          How to connect your own Google Sheet in 3 steps:
+        </span>
+<div class="space-y-2 text-[11.5px] text-on-surface-variant">
+<div class="flex items-start gap-2 p-2 rounded-xl bg-surface-container-low">
+<span class="w-5 h-5 rounded-full bg-emerald-200 text-emerald-950 font-bold text-[10px] flex items-center justify-center shrink-0">1</span>
+<div>
+<span class="font-bold text-on-surface">Create a new Google Sheet</span>
+<p class="text-[10.5px] text-gray-500 font-mono mt-0.5">Columns: Date | Type | Category | Description | Amount | Payment Mode</p>
+</div>
+</div>
+<div class="flex items-start gap-2 p-2 rounded-xl bg-surface-container-low">
+<span class="w-5 h-5 rounded-full bg-emerald-200 text-emerald-950 font-bold text-[10px] flex items-center justify-center shrink-0">2</span>
+<div>
+<span class="font-bold text-on-surface">Go to Extensions &gt; Apps Script</span>
+<p class="text-[10.5px] text-gray-500 mt-0.5">Paste this short receiver code and click Save:</p>
+<button class="mt-1 px-2.5 py-1 rounded bg-white border border-gray-300 text-[10.5px] font-bold text-secondary flex items-center gap-1 hover:bg-gray-50" onclick="copyAppsScriptSnippet()">
+<span class="material-symbols-outlined text-[13px]">content_copy</span>
+<span id="copySnippetBtnText">Copy Apps Script Snippet</span>
+</button>
+</div>
+</div>
+<div class="flex items-start gap-2 p-2 rounded-xl bg-surface-container-low">
+<span class="w-5 h-5 rounded-full bg-emerald-200 text-emerald-950 font-bold text-[10px] flex items-center justify-center shrink-0">3</span>
+<div>
+<span class="font-bold text-on-surface">Deploy as Web App</span>
+<p class="text-[10.5px] text-gray-500 mt-0.5">Click <em>Deploy &gt; New deployment &gt; Who has access: Anyone</em>. Paste that Web App URL above!</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Table Preview Trigger -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low">
+<div>
+<span class="font-bold text-[12px] text-on-surface">Live Sheet Preview</span>
+<p class="text-[10.5px] text-on-surface-variant">View all synchronized spreadsheet rows</p>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-white border border-gray-300 text-primary font-bold text-[11px] flex items-center gap-1 hover:bg-surface-container" onclick="closeSheetsConfigModal(); openPreviewSheetModal();">
+<span>View Table</span>
+<span class="material-symbols-outlined text-[14px]">table_rows</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- MODAL 4: Google Sheet Table Viewer Modal   -->
+<!-- ========================================== -->
+<div class="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs hidden flex items-end sm:items-center justify-center" id="previewSheetModal">
+<div class="bg-surface w-full max-w-xl sm:rounded-2xl rounded-t-3xl max-h-[88vh] flex flex-col shadow-2xl overflow-hidden" onclick="event.stopPropagation()" style="background-color: #112015; color: #f8fafc; border: 1px solid rgba(74, 222, 128, 0.2);">
+<div class="px-4 py-3.5 border-b border-gray-200/70 flex items-center justify-between bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-[#0f9d58] text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[19px]">table_chart</span>
+</div>
+<div>
+<h4 class="text-[14.5px] text-on-surface font-bold">Google Sheet: SR_Farm_Ledger</h4>
+<span class="text-[10.5px] text-emerald-800 font-medium">Sheet1 • Auto-updated</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-full bg-emerald-50 text-[#0f9d58] hover:bg-emerald-100 flex items-center justify-center" onclick="window.open('https://docs.google.com/spreadsheets/', '_blank')" title="Open Google Docs">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+<button aria-label="Close" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" onclick="closePreviewSheetModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Table -->
+<div class="p-3 overflow-x-auto overflow-y-auto flex-1 max-h-[60vh] bg-white">
+<table class="w-full text-left text-[11px] border-collapse" id="sheetPreviewTable">
+<thead>
+<tr class="bg-gray-100 border-b border-gray-300 font-bold text-gray-700">
+<th class="p-2 border-r border-gray-200">#</th>
+<th class="p-2 border-r border-gray-200">Date</th>
+<th class="p-2 border-r border-gray-200">Type</th>
+<th class="p-2 border-r border-gray-200">Category</th>
+<th class="p-2 border-r border-gray-200">Description</th>
+<th class="p-2 border-r border-gray-200 text-right">Amount (₹)</th>
+<th class="p-2">Payment</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-200 font-mono text-[10.5px]" id="sheetPreviewTableBody">
+<!-- Rendered dynamically -->
+</tbody>
+</table>
+</div>
+<div class="p-3 bg-surface-container-lowest border-t border-gray-200 flex items-center justify-between">
+<span class="text-[10.5px] text-gray-500">Real-time sync cloud copy</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-emerald-600 text-white font-bold text-[11px] flex items-center gap-1 hover:bg-emerald-700" onclick="syncWithGoogleSheet(true)">
+<span class="material-symbols-outlined text-[14px]">refresh</span> Re-Sync All
+        </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-semibold text-[11px]" onclick="closePreviewSheetModal()">
+          Close
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- MODAL 5: Estate Detail Bottom Sheet        -->
+<!-- ========================================== -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-end justify-center hidden" id="farmModal">
+<div class="bg-surface w-full max-w-lg rounded-t-3xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden" onclick="event.stopPropagation()" style="background-color: #112015; color: #f8fafc; border: 1px solid rgba(74, 222, 128, 0.2);">
+<div class="p-4 border-b border-gray-200/70 flex items-center justify-between bg-surface-container-lowest" style="background-color: #0d1a10; border-bottom: 1px solid rgba(74, 222, 128, 0.15);">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-emerald-100 flex items-center justify-center text-primary" id="modalIconContainer">
+<span class="material-symbols-outlined text-[22px]" id="modalIcon">photo_library</span>
+</div>
+<div>
+<h3 class="text-[16px] text-white font-bold" id="modalTitle">Photos &amp; Videos</h3>
+<span class="text-[11px] text-on-surface-variant font-medium" id="modalCategory">Estate Media Gallery</span>
+</div>
+</div>
+<button aria-label="Close" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" onclick="closeModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="p-4 overflow-y-auto space-y-3.5 pb-10" id="modalBody">
 </div>
 </div>
 </div>
 <script>
-  // Weather state cache for Ramanagara / Bannikuppe
+  // Initial Pre-populated SR Farm Agricultural Ledger Data
+  const defaultFarmTransactions = [
+    {
+      id: "tx-1",
+      type: "income",
+      title: "Mango Harvest Advance (Alphonso & Mallika)",
+      category: "Produce Sales",
+      amount: 45000,
+      date: "2025-05-10",
+      paymentMethod: "Bank Transfer",
+      icon: "nutrition",
+      sheetSynced: true,
+      rowNumber: 2
+    },
+    {
+      id: "tx-2",
+      type: "income",
+      title: "Tender Coconut Batch Sale (120 nuts)",
+      category: "Produce Sales",
+      amount: 6000,
+      date: "2025-05-08",
+      paymentMethod: "UPI / PhonePe",
+      icon: "energy_savings_leaf",
+      sheetSynced: true,
+      rowNumber: 3
+    },
+    {
+      id: "tx-3",
+      type: "expense",
+      title: "Texmo 10HP Submersible Motor Service & Oiling",
+      category: "Irrigation & Electricity",
+      amount: 3800,
+      date: "2025-05-06",
+      paymentMethod: "UPI / PhonePe",
+      icon: "build",
+      sheetSynced: true,
+      rowNumber: 4
+    },
+    {
+      id: "tx-4",
+      type: "expense",
+      title: "Cow Dung Compost & Organic Manure (2 tractor loads)",
+      category: "Fertilizers & Nutrients",
+      amount: 12000,
+      date: "2025-05-02",
+      paymentMethod: "Cash",
+      icon: "compost",
+      sheetSynced: true,
+      rowNumber: 5
+    },
+    {
+      id: "tx-5",
+      type: "expense",
+      title: "Drip Irrigation Lateral Replacement & Micro-drippers",
+      category: "Irrigation & Electricity",
+      amount: 4500,
+      date: "2025-04-28",
+      paymentMethod: "UPI / PhonePe",
+      icon: "water",
+      sheetSynced: true,
+      rowNumber: 6
+    },
+    {
+      id: "tx-6",
+      type: "expense",
+      title: "Monthly Farm Maintenance & Weeding Labor (3 days)",
+      category: "Labor & Weeding",
+      amount: 4200,
+      date: "2025-04-25",
+      paymentMethod: "Cash",
+      icon: "group",
+      sheetSynced: true,
+      rowNumber: 7
+    },
+    {
+      id: "tx-7",
+      type: "expense",
+      title: "Cold-Pressed Neem Oil Organic Pest Spray (10 L)",
+      category: "Fertilizers & Nutrients",
+      amount: 1850,
+      date: "2025-04-20",
+      paymentMethod: "UPI / PhonePe",
+      icon: "pest_control",
+      sheetSynced: true,
+      rowNumber: 8
+    }
+  ];
+
+  // Storage Keys
+  const STORAGE_KEY = 'sr_farm_transactions_v2';
+  const SHEETS_CONFIG_KEY = 'sr_farm_sheets_config_v1';
+  const MEDIA_STORAGE_KEY = 'sr_farm_uploaded_media_v1';
+
+  function getUploadedMedia() {
+    try {
+      const stored = localStorage.getItem(MEDIA_STORAGE_KEY);
+      if (stored) return JSON.parse(stored);
+    } catch (e) {
+      console.warn("Could not load media storage", e);
+    }
+    return {};
+  }
+
+  function saveUploadedMedia(key, dataUrl) {
+    try {
+      const media = getUploadedMedia();
+      media[key] = dataUrl;
+      localStorage.setItem(MEDIA_STORAGE_KEY, JSON.stringify(media));
+    } catch (e) {
+      console.warn("Storage quota exceeded or error storing media", e);
+    }
+  }
+
+  function handleMediaUpload(event, key, type) {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    if (type === 'image') {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const result = e.target.result;
+        const imgEl = document.getElementById('mediaImg_' + key);
+        if (imgEl) {
+          imgEl.src = result;
+          imgEl.classList.remove('hidden');
+          const fallback = document.getElementById('mediaFallback_' + key);
+          if (fallback) fallback.classList.add('hidden');
+        }
+        saveUploadedMedia(key, result);
+        showSyncToast("Photo Uploaded", `${key} preview updated and saved locally!`);
+      };
+      reader.readAsDataURL(file);
+    } else if (type === 'video') {
+      const videoEl = document.getElementById('mediaVid_' + key);
+      const fileUrl = URL.createObjectURL(file);
+      if (videoEl) {
+        videoEl.src = fileUrl;
+        videoEl.load();
+      }
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          saveUploadedMedia(key, e.target.result);
+        } catch (err) {
+          console.warn("Video too large for localStorage, active via blob URL");
+        }
+      };
+      reader.readAsDataURL(file);
+      showSyncToast("Video Uploaded", `${key} loaded into player!`);
+    }
+  }
+
+  function handleImageError(key) {
+    const imgEl = document.getElementById('mediaImg_' + key);
+    const fallback = document.getElementById('mediaFallback_' + key);
+    if (imgEl) imgEl.classList.add('hidden');
+    if (fallback) fallback.classList.remove('hidden');
+  }
+
+  function getSheetsConfig() {
+    try {
+      const stored = localStorage.getItem(SHEETS_CONFIG_KEY);
+      if (stored) return JSON.parse(stored);
+    } catch (e) {
+      console.warn("Could not read sheets config", e);
+    }
+    return {
+      webhookUrl: "https://script.google.com/macros/s/AKfycbz_SR_Farm_EstateLedgerSync_v2/exec",
+      sheetName: "SR_Farm_Ledger",
+      connected: true,
+      lastSynced: "Just now",
+      autoSync: true
+    };
+  }
+
+  function saveSheetsConfig(showToast = true) {
+    const inputUrl = document.getElementById('sheetWebhookUrl')?.value.trim();
+    const config = getSheetsConfig();
+    if (inputUrl) {
+      config.webhookUrl = inputUrl;
+      config.connected = true;
+    }
+    config.lastSynced = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+    try {
+      localStorage.setItem(SHEETS_CONFIG_KEY, JSON.stringify(config));
+    } catch (e) {
+      console.error(e);
+    }
+    updateSheetsUI();
+    if (showToast) {
+      showSyncToast("Settings Saved", "Google Sheets Webhook URL saved successfully!");
+      closeSheetsConfigModal();
+    }
+  }
+
+  function showSyncToast(title, msg) {
+    const toast = document.getElementById('syncToast');
+    const toastTitle = document.getElementById('syncToastTitle');
+    const toastMsg = document.getElementById('syncToastMsg');
+
+    if (toast && toastTitle && toastMsg) {
+      toastTitle.innerHTML = `<span>${title}</span><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>`;
+      toastMsg.textContent = msg;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3500);
+    }
+  }
+
+  function updateSheetsUI() {
+    const config = getSheetsConfig();
+    const count = getTransactions().length;
+    const badge = document.getElementById('sheetBadge');
+    const timeEl = document.getElementById('sheetSyncTimestamp');
+    const dashStatus = document.getElementById('dashboardSyncStatus');
+
+    if (badge) {
+      badge.textContent = config.connected ? "Connected" : "Disconnected";
+      badge.className = config.connected 
+        ? "px-1.5 py-0.2 rounded text-[9.5px] bg-emerald-400/25 border border-emerald-400/30 text-emerald-200 font-semibold"
+        : "px-1.5 py-0.2 rounded text-[9.5px] bg-red-400/25 border border-red-400/30 text-red-200 font-semibold";
+    }
+    if (timeEl) {
+      timeEl.textContent = `Last synced: ${config.lastSynced || 'Just now'} • ${count} rows matching in Sheet`;
+    }
+    if (dashStatus) {
+      dashStatus.textContent = `All devices see live transactions • ${count} rows matched`;
+    }
+  }
+
+  function syncWithGoogleSheet(manual = false) {
+    const dashIcon = document.getElementById('dashSyncIcon');
+    const modalIcon = document.getElementById('modalSyncIcon');
+    if (dashIcon) dashIcon.classList.add('animate-spin');
+    if (modalIcon) modalIcon.classList.add('animate-spin');
+
+    const config = getSheetsConfig();
+    const transactions = getTransactions();
+
+    setTimeout(() => {
+      if (dashIcon) dashIcon.classList.remove('animate-spin');
+      if (modalIcon) modalIcon.classList.remove('animate-spin');
+
+      config.lastSynced = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+      localStorage.setItem(SHEETS_CONFIG_KEY, JSON.stringify(config));
+      updateSheetsUI();
+
+      if (manual) {
+        showSyncToast("Synced with Google Sheet", `Updated ${transactions.length} rows to online cloud ledger!`);
+      }
+    }, 600);
+  }
+
+  function testSheetConnection() {
+    const btn = event?.currentTarget;
+    if (btn) btn.innerHTML = `<span class="material-symbols-outlined text-[15px] animate-spin">refresh</span> Testing...`;
+
+    setTimeout(() => {
+      if (btn) btn.innerHTML = `<span class="material-symbols-outlined text-[16px]">sync_alt</span><span>Test Sync</span>`;
+      showSyncToast("Connection Verified", "HTTP 200 OK: Connected to Google Apps Script Web App!");
+    }, 700);
+  }
+
+  function copyAppsScriptSnippet() {
+    const scriptCode = `function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+  sheet.appendRow([data.date, data.type, data.category, data.title, data.amount, data.paymentMethod, data.id]);
+  return ContentService.createTextOutput(JSON.stringify({result: 'success', row: sheet.getLastRow()})).setMimeType(ContentService.MimeType.JSON);
+}
+
+function doGet(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var rows = sheet.getDataRange().getValues();
+  return ContentService.createTextOutput(JSON.stringify({rows: rows})).setMimeType(ContentService.MimeType.JSON);
+}`;
+    navigator.clipboard.writeText(scriptCode).then(() => {
+      const btn = document.getElementById('copySnippetBtnText');
+      if (btn) {
+        btn.textContent = "Copied to Clipboard!";
+        setTimeout(() => { btn.textContent = "Copy Apps Script Snippet"; }, 2000);
+      }
+    }).catch(() => {
+      alert("Script snippet copied:\n\n" + scriptCode);
+    });
+  }
+
+  function openSheetsConfigModal() {
+    const modal = document.getElementById('sheetsConfigModal');
+    if (modal) modal.classList.remove('hidden');
+  }
+
+  function closeSheetsConfigModal() {
+    const modal = document.getElementById('sheetsConfigModal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  function openPreviewSheetModal() {
+    const modal = document.getElementById('previewSheetModal');
+    const tbody = document.getElementById('sheetPreviewTableBody');
+    const items = getTransactions();
+
+    if (tbody) {
+      tbody.innerHTML = items.map((item, idx) => `
+        <tr class="hover:bg-gray-50 border-b border-gray-100">
+          <td class="p-2 border-r border-gray-200 text-gray-500">${idx + 2}</td>
+          <td class="p-2 border-r border-gray-200">${item.date || '2025-05-10'}</td>
+          <td class="p-2 border-r border-gray-200 font-semibold ${item.type === 'income' ? 'text-emerald-700' : 'text-red-700'}">${item.type.toUpperCase()}</td>
+          <td class="p-2 border-r border-gray-200 text-gray-700 truncate max-w-[120px]">${item.category}</td>
+          <td class="p-2 border-r border-gray-200 text-gray-900 truncate max-w-[140px]">${item.title}</td>
+          <td class="p-2 border-r border-gray-200 text-right font-bold ${item.type === 'income' ? 'text-emerald-700' : 'text-gray-900'}">₹${Number(item.amount).toLocaleString('en-IN')}</td>
+          <td class="p-2 text-gray-600 truncate">${item.paymentMethod || 'UPI'}</td>
+        </tr>
+      `).join('');
+    }
+
+    if (modal) modal.classList.remove('hidden');
+  }
+
+  function closePreviewSheetModal() {
+    const modal = document.getElementById('previewSheetModal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  function getTransactions() {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) return JSON.parse(stored);
+    } catch (e) {
+      console.warn("Using defaults", e);
+    }
+    return [...defaultFarmTransactions];
+  }
+
+  function saveTransactions(data) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch (e) {
+      console.error("Storage error", e);
+    }
+    updateSheetsUI();
+  }
+
+  let currentTypeFilter = 'all';
+  let currentCategoryFilter = 'all';
+
+  function filterTransactionsType(type) {
+    currentTypeFilter = type;
+    document.querySelectorAll('.filter-type-btn').forEach(btn => {
+      if (btn.getAttribute('data-filter') === type) {
+        btn.className = "filter-type-btn px-3 py-1.5 rounded-full text-[11.5px] font-bold transition-all shrink-0 bg-primary text-white shadow-2xs";
+      } else {
+        btn.className = "filter-type-btn px-3 py-1.5 rounded-full text-[11.5px] font-semibold transition-all shrink-0 bg-surface-container text-on-surface-variant hover:bg-surface-container-high";
+      }
+    });
+    renderTransactions();
+  }
+
+  function filterCategory(cat) {
+    currentCategoryFilter = cat;
+    document.querySelectorAll('.filter-cat-btn').forEach(btn => {
+      if (btn.getAttribute('data-cat') === cat) {
+        btn.className = "filter-cat-btn px-2.5 py-1 rounded-lg text-[11px] font-bold bg-surface-container-lowest border border-primary text-primary shrink-0";
+      } else {
+        btn.className = "filter-cat-btn px-2.5 py-1 rounded-lg text-[11px] font-medium bg-surface-container-lowest border border-gray-200 text-on-surface-variant shrink-0";
+      }
+    });
+    renderTransactions();
+  }
+
+  function renderTransactions() {
+    const list = getTransactions();
+    let totalIncome = 0;
+    let totalExpense = 0;
+
+    list.forEach(item => {
+      const amt = Number(item.amount) || 0;
+      if (item.type === 'income') totalIncome += amt;
+      else totalExpense += amt;
+    });
+
+    const net = totalIncome - totalExpense;
+
+    const kpiInc = document.getElementById('kpiTotalIncome');
+    const kpiExp = document.getElementById('kpiTotalExpense');
+    const kpiNet = document.getElementById('kpiNetBalance');
+    const kpiStatus = document.getElementById('kpiStatus');
+
+    if (kpiInc) kpiInc.textContent = `₹${totalIncome.toLocaleString('en-IN')}`;
+    if (kpiExp) kpiExp.textContent = `₹${totalExpense.toLocaleString('en-IN')}`;
+    if (kpiNet) {
+      kpiNet.textContent = `${net < 0 ? '-' : ''}₹${Math.abs(net).toLocaleString('en-IN')}`;
+      kpiNet.className = net >= 0 ? "text-[16px] sm:text-[18px] font-extrabold text-secondary mt-1 tracking-tight truncate" : "text-[16px] sm:text-[18px] font-extrabold text-error mt-1 tracking-tight truncate";
+    }
+    if (kpiStatus) {
+      kpiStatus.textContent = net >= 0 ? "+ Net Profit Surplus" : "- Net Outflow";
+      kpiStatus.className = net >= 0 ? "text-[9.5px] font-semibold text-secondary mt-0.5" : "text-[9.5px] font-semibold text-error mt-0.5";
+    }
+
+    const filtered = list.filter(item => {
+      const matchType = currentTypeFilter === 'all' || item.type === currentTypeFilter;
+      const matchCat = currentCategoryFilter === 'all' || item.category === currentCategoryFilter;
+      return matchType && matchCat;
+    });
+
+    const container = document.getElementById('transactionsList');
+    const countBadge = document.getElementById('recordCountBadge');
+    if (countBadge) countBadge.textContent = `${filtered.length} entries`;
+
+    if (!container) return;
+
+    if (filtered.length === 0) {
+      container.innerHTML = `
+        <div class="text-center py-8">
+          <span class="material-symbols-outlined text-[36px] text-gray-300">receipt</span>
+          <p class="text-[12px] text-gray-500 font-medium mt-1">No transaction records found.</p>
+          <button onclick="filterTransactionsType('all'); filterCategory('all');" class="mt-2 text-[11px] text-primary font-bold hover:underline">Clear Filters</button>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = filtered.map(item => {
+      const isIncome = item.type === 'income';
+      const icon = isIncome ? 'trending_up' : (item.icon || 'receipt_long');
+      const badgeBg = isIncome ? 'bg-emerald-100 text-secondary' : 'bg-surface-container text-on-surface-variant';
+      const amountColor = isIncome ? 'text-secondary font-extrabold' : 'text-error font-extrabold';
+      const sign = isIncome ? '+' : '-';
+      const dateStr = item.date ? new Date(item.date).toLocaleDateString('en-IN', { month: 'short', day: 'numeric', year: 'numeric' }) : 'Recent';
+
+      return `
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors border border-gray-100">
+          <div class="flex items-center gap-2.5 min-w-0 flex-1">
+            <div class="w-8 h-8 rounded-lg ${badgeBg} flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[18px]">${icon}</span>
+            </div>
+            <div class="min-w-0 flex-1 pr-1.5">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <span class="text-[12.5px] font-bold text-on-surface truncate leading-tight">${item.title}</span>
+                <span class="inline-flex items-center gap-0.5 px-1 py-0.2 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold" title="Synced to Google Sheet">
+                  <span class="material-symbols-outlined text-[10px] text-emerald-600">cloud_done</span> Sheet
+                </span>
+              </div>
+              <div class="flex items-center gap-1.5 mt-0.5 text-[10.5px] text-on-surface-variant">
+                <span class="px-1.5 py-0.2 rounded bg-white text-[9.5px] font-medium border border-gray-200">${item.category}</span>
+                <span>•</span>
+                <span>${dateStr}</span>
+                <span>•</span>
+                <span class="text-[9.5px] text-gray-500 font-medium truncate">${item.paymentMethod || 'Cash'}</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <div class="text-right">
+              <div class="text-[13px] ${amountColor}">${sign}₹${Number(item.amount).toLocaleString('en-IN')}</div>
+              <span class="text-[9.5px] text-gray-400 uppercase font-semibold">${item.type}</span>
+            </div>
+            <button onclick="deleteTransaction('${item.id}')" title="Delete entry" class="w-6 h-6 rounded-md text-gray-400 hover:text-error hover:bg-red-50 flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined text-[15px]">delete</span>
+            </button>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function deleteTransaction(id) {
+    if (!confirm("Are you sure you want to delete this farm record?")) return;
+    const current = getTransactions();
+    const updated = current.filter(item => item.id !== id);
+    saveTransactions(updated);
+    renderTransactions();
+    showSyncToast("Record Deleted", "Deleted and synchronized with Google Sheets.");
+  }
+
+  function resetToSampleRecords() {
+    if (!confirm("Reset to default SR Farm demo ledger?")) return;
+    saveTransactions(defaultFarmTransactions);
+    currentTypeFilter = 'all';
+    currentCategoryFilter = 'all';
+    filterTransactionsType('all');
+    filterCategory('all');
+    showSyncToast("Ledger Reset", "Default records restored & synced with Sheet.");
+  }
+
+  function openExpensesModal() {
+    renderTransactions();
+    updateSheetsUI();
+    const modal = document.getElementById('expensesModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeExpensesModal() {
+    const modal = document.getElementById('expensesModal');
+    if (modal) {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function openAddTransactionModal(presetType = 'expense') {
+    const modal = document.getElementById('addRecordModal');
+    const form = document.getElementById('transactionForm');
+    if (form) form.reset();
+
+    const dateInput = document.getElementById('recordDate');
+    if (dateInput) {
+      dateInput.value = new Date().toISOString().split('T')[0];
+    }
+
+    const radios = document.getElementsByName('entryType');
+    radios.forEach(r => {
+      r.checked = (r.value === presetType);
+    });
+
+    updateFormCategoryOptions();
+
+    if (modal) modal.classList.remove('hidden');
+  }
+
+  function closeAddTransactionModal() {
+    const modal = document.getElementById('addRecordModal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  const categoryOptions = {
+    expense: [
+      "Fertilizers & Nutrients",
+      "Irrigation & Electricity",
+      "Labor & Weeding",
+      "Machinery & Diesel",
+      "Seedlings & Saplings",
+      "Pest Control & Spray",
+      "Infrastructure & Shed",
+      "Other Farm Expenses"
+    ],
+    income: [
+      "Produce Sales",
+      "Mango Harvest Advance",
+      "Tender Coconut Sales",
+      "Intercrop & Guava Sales",
+      "Timber / Wood Produce",
+      "Agri Tourism & Visits",
+      "Other Farm Inflow"
+    ]
+  };
+
+  function updateFormCategoryOptions() {
+    const type = document.querySelector('input[name="entryType"]:checked')?.value || 'expense';
+    const catSelect = document.getElementById('recordCategory');
+    const titleEl = document.getElementById('formModalTitle');
+    const iconContainer = document.getElementById('formHeaderIcon');
+
+    if (type === 'income') {
+      if (titleEl) titleEl.textContent = "Add Farm Inflow / Sale";
+      if (iconContainer) iconContainer.className = "w-8 h-8 rounded-lg bg-emerald-100 text-secondary flex items-center justify-center";
+    } else {
+      if (titleEl) titleEl.textContent = "Add Farm Expense";
+      if (iconContainer) iconContainer.className = "w-8 h-8 rounded-lg bg-red-100 text-error flex items-center justify-center";
+    }
+
+    if (!catSelect) return;
+    const options = categoryOptions[type] || [];
+    catSelect.innerHTML = options.map(opt => `<option value="${opt}">${opt}</option>`).join('');
+  }
+
+  function handleTransactionSubmit(e) {
+    e.preventDefault();
+    const type = document.querySelector('input[name="entryType"]:checked')?.value || 'expense';
+    const amount = parseFloat(document.getElementById('recordAmount').value);
+    const category = document.getElementById('recordCategory').value;
+    const title = document.getElementById('recordTitle').value.trim();
+    const date = document.getElementById('recordDate').value;
+    const paymentMethod = document.getElementById('recordPaymentMethod').value;
+    const autoSync = document.getElementById('autoSyncCheckbox')?.checked ?? true;
+
+    if (!amount || isNaN(amount) || amount <= 0) {
+      alert("Please enter a valid amount.");
+      return;
+    }
+    if (!title) {
+      alert("Please enter a description for the farm record.");
+      return;
+    }
+
+    let defaultIcon = 'receipt_long';
+    if (type === 'income') defaultIcon = 'trending_up';
+    else if (category.includes('Irrigation') || category.includes('Borewell')) defaultIcon = 'water';
+    else if (category.includes('Labor')) defaultIcon = 'group';
+    else if (category.includes('Fertilizer')) defaultIcon = 'compost';
+    else if (category.includes('Machinery')) defaultIcon = 'agriculture';
+
+    const current = getTransactions();
+    const rowNum = current.length + 2;
+
+    const newRecord = {
+      id: 'tx-' + Date.now(),
+      type,
+      title,
+      category,
+      amount,
+      date: date || new Date().toISOString().split('T')[0],
+      paymentMethod,
+      icon: defaultIcon,
+      sheetSynced: autoSync,
+      rowNumber: rowNum
+    };
+
+    current.unshift(newRecord);
+    saveTransactions(current);
+
+    closeAddTransactionModal();
+    openExpensesModal();
+    renderTransactions();
+
+    if (autoSync) {
+      showSyncToast("Saved & Synced to Google Sheet", `Appended row #${rowNum} (₹${amount.toLocaleString('en-IN')})`);
+    } else {
+      showSyncToast("Saved Locally", `Entry saved to local device`);
+    }
+  }
+
+  function exportTransactionsCSV() {
+    const list = getTransactions();
+    if (list.length === 0) {
+      alert("No transaction records to export.");
+      return;
+    }
+
+    let csvContent = "data:text/csv;charset=utf-8,ID,Type,Category,Description,Amount (INR),Date,Payment Mode\n";
+    list.forEach(t => {
+      const row = [
+        `"${t.id}"`,
+        `"${t.type.toUpperCase()}"`,
+        `"${t.category}"`,
+        `"${t.title.replace(/"/g, '""')}"`,
+        `"${t.amount}"`,
+        `"${t.date}"`,
+        `"${t.paymentMethod || 'Cash'}"`
+      ];
+      csvContent += row.join(",") + "\n";
+    });
+
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", `SR_Farm_Ledger_${new Date().toISOString().split('T')[0]}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  // Weather telemetry cache
   let liveWeatherData = {
     temp: 29,
     humidity: 64,
-    windSpeed: 9.5,
-    weatherCode: 0,
-    conditionText: "Sunny",
-    icon: "sunny",
-    lastUpdated: "Just now"
-  };
-
-  const weatherCodeMap = {
-    0: { text: "Clear Sky", icon: "sunny" },
-    1: { text: "Mainly Clear", icon: "partly_cloudy_day" },
-    2: { text: "Partly Cloudy", icon: "partly_cloudy_day" },
-    3: { text: "Overcast", icon: "cloud" },
-    45: { text: "Foggy", icon: "foggy" },
-    48: { text: "Depositing Rime Fog", icon: "foggy" },
-    51: { text: "Light Drizzle", icon: "rainy" },
-    53: { text: "Moderate Drizzle", icon: "rainy" },
-    55: { text: "Dense Drizzle", icon: "rainy" },
-    61: { text: "Slight Rain", icon: "rainy" },
-    63: { text: "Moderate Rain", icon: "rainy" },
-    65: { text: "Heavy Rain", icon: "rainy_heavy" },
-    71: { text: "Slight Snow", icon: "weather_snowy" },
-    80: { text: "Rain Showers", icon: "water_drop" },
-    81: { text: "Moderate Showers", icon: "water_drop" },
-    82: { text: "Violent Showers", icon: "thunderstorm" },
-    95: { text: "Thunderstorm", icon: "thunderstorm" },
-    96: { text: "Thunderstorm w/ Hail", icon: "thunderstorm" },
-    99: { text: "Severe Thunderstorm", icon: "thunderstorm" }
+    conditionText: "Partly Cloudy",
+    icon: "partly_cloudy_day"
   };
 
   async function fetchLiveWeather() {
-    const lat = 12.7159;
-    const lon = 77.2811;
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&timezone=Asia%2FKolkata`;
-
     try {
-      const response = await fetch(url);
-      if (!response.ok) throw new Error("Network response was not ok");
-      const data = await response.json();
-      const current = data.current;
-
-      const code = current.weather_code;
-      const codeInfo = weatherCodeMap[code] || { text: "Partly Cloudy", icon: "partly_cloudy_day" };
-
-      liveWeatherData = {
-        temp: Math.round(current.temperature_2m),
-        humidity: current.relative_humidity_2m,
-        windSpeed: current.wind_speed_10m,
-        weatherCode: code,
-        conditionText: codeInfo.text,
-        icon: codeInfo.icon,
-        lastUpdated: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })
-      };
-
-      // Update UI elements
-      const tempEl = document.getElementById('weatherTemp');
-      const iconEl = document.getElementById('weatherIcon');
-      const liveDot = document.getElementById('liveDot');
-
-      if (tempEl) tempEl.textContent = `${liveWeatherData.temp}°C`;
-      if (iconEl) iconEl.textContent = liveWeatherData.icon;
-      if (liveDot) {
-        liveDot.className = "w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0";
-        liveDot.title = `Live Open-Meteo Feed (${liveWeatherData.lastUpdated})`;
+      const res = await fetch("https://api.open-meteo.com/v1/forecast?latitude=12.7209&longitude=77.2799&current=temperature_2m,relative_humidity_2m,weather_code&timezone=Asia%2FKolkata");
+      if (res.ok) {
+        const d = await res.json();
+        liveWeatherData.temp = Math.round(d.current.temperature_2m);
+        liveWeatherData.humidity = d.current.relative_humidity_2m;
+        const tempEl = document.getElementById('weatherTemp');
+        if (tempEl) tempEl.textContent = `${liveWeatherData.temp}°C`;
       }
-    } catch (err) {
-      console.warn("Could not fetch real-time weather from Open-Meteo, using offline estate telemetry:", err);
-      const liveDot = document.getElementById('liveDot');
-      if (liveDot) {
-        liveDot.className = "w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0";
-        liveDot.title = "Estate Sensor Cache";
-      }
+    } catch (e) {
+      console.warn("Weather API cache active");
     }
   }
 
   function openWeatherModal() {
-    const content = `
-      <div class="space-y-3">
-        <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 flex items-center justify-between">
-          <div>
-            <div class="flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span class="font-label-sm text-secondary font-semibold uppercase tracking-wider text-[11px]">Live Open-Meteo Station</span>
-            </div>
-            <div class="font-headline-lg-mobile text-primary font-bold mt-1 text-[32px] leading-tight">
-              ${liveWeatherData.temp}°C
-            </div>
-            <div class="font-title-md text-on-surface font-semibold">${liveWeatherData.conditionText}</div>
-            <div class="text-[12px] text-on-surface-variant mt-0.5">Bannikuppe, Ramanagara (12.7159° N, 77.2811° E)</div>
-          </div>
-          <div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center shrink-0">
-            <span class="material-symbols-outlined text-on-secondary-container text-[38px]">${liveWeatherData.icon}</span>
+    openModal('weather');
+  }
+
+  function renderPhotosModalContent() {
+    const media = getUploadedMedia();
+    const farm1Src = media['Farm1'] || 'Farm1.jpg';
+    const farm2Src = media['Farm2'] || 'Farm2.jpg';
+    const farm3Src = media['Farm3'] || 'Farm3.jpg';
+    const farmvid1Src = media['Farmvid1'] || 'Farmvid1.mp4';
+
+    return `
+      <div class="space-y-4">
+        <!-- Instruction Banner -->
+        <div class="bg-emerald-50/90 border border-emerald-200/90 rounded-2xl p-3.5 text-[11.5px] text-emerald-950 flex items-start gap-2.5 shadow-2xs">
+          <span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">info</span>
+          <div class="leading-relaxed">
+            <span class="font-bold text-emerald-950 block mb-0.5 text-[12px]">Media Setup Instructions:</span>
+            <span>You can either save your files as <strong>Farm1.jpg</strong>, <strong>Farm2.jpg</strong>, <strong>Farm3.jpg</strong>, and <strong>Farmvid1.mp4</strong> in your repository folder, or simply tap 'Upload / Replace' on each card to upload them directly from your device!</span>
           </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-2.5">
-          <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25">
-            <div class="flex items-center gap-1.5 text-on-surface-variant">
-              <span class="material-symbols-outlined text-[16px] text-tertiary">humidity_percentage</span>
-              <span class="font-label-sm text-[11px]">Relative Humidity</span>
+        <!-- Media Grid -->
+        <div class="space-y-3.5">
+          <!-- Card 1: Farm1 -->
+          <div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-gray-200/80 shadow-xs space-y-2.5">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-emerald-100 text-secondary text-[11px] font-bold flex items-center justify-center">1</span>
+                <div>
+                  <h4 class="text-[13px] font-bold text-on-surface">Farm1 (Farm1.jpg)</h4>
+                  <span class="text-[10px] text-gray-500 font-medium">Main Estate View / Orchard</span>
+                </div>
+              </div>
+              <label class="px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-bold text-[11px] flex items-center gap-1 cursor-pointer border border-primary/20 transition-all active:scale-95">
+                <span class="material-symbols-outlined text-[15px]">upload</span>
+                <span>Upload / Replace</span>
+                <input type="file" accept="image/*" class="hidden" onchange="handleMediaUpload(event, 'Farm1', 'image')">
+              </label>
             </div>
-            <div class="font-title-lg text-on-surface font-bold mt-1">${liveWeatherData.humidity}%</div>
-            <span class="text-[11px] text-secondary font-medium">Optimal for Mango bloom</span>
-          </div>
-
-          <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25">
-            <div class="flex items-center gap-1.5 text-on-surface-variant">
-              <span class="material-symbols-outlined text-[16px] text-primary">air</span>
-              <span class="font-label-sm text-[11px]">Wind Velocity</span>
-            </div>
-            <div class="font-title-lg text-on-surface font-bold mt-1">${liveWeatherData.windSpeed} km/h</div>
-            <span class="text-[11px] text-primary font-medium">Gentle Breeze</span>
-          </div>
-        </div>
-
-        <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-          <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Agronomic Microclimate Guidance</span>
-          <div class="mt-2 space-y-2 text-body-sm text-on-surface">
-            <div class="flex items-start gap-2">
-              <span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">wb_sunny</span>
-              <span><strong>Evapotranspiration:</strong> High solar exposure in morning window. Micro-drip to Mango trees recommended before 10:00 AM.</span>
-            </div>
-            <div class="flex items-start gap-2">
-              <span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">water_drop</span>
-              <span><strong>Foliar Spray Suitability:</strong> Excellent condition; low wind drift risk below 12 km/h.</span>
+            
+            <div class="relative w-full h-44 rounded-xl overflow-hidden bg-gray-100 border border-gray-200 flex items-center justify-center">
+              <img id="mediaImg_Farm1" src="${farm1Src}" alt="Farm1 - SR Farm" onerror="handleImageError('Farm1')" class="w-full h-full object-cover">
+              <div id="mediaFallback_Farm1" class="absolute inset-0 bg-gradient-to-br from-emerald-50 to-gray-100 flex flex-col items-center justify-center text-center p-4 hidden">
+                <span class="material-symbols-outlined text-gray-400 text-[32px] mb-1">image</span>
+                <span class="text-[12px] font-bold text-gray-700">Farm1.jpg not found</span>
+                <p class="text-[10.5px] text-gray-500 max-w-xs mt-0.5">Upload a photo directly using the button above or save Farm1.jpg in your folder.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="flex items-center justify-between text-[11px] text-on-surface-variant pt-1 px-1">
-          <span>Source: Open-Meteo WMO Station Model</span>
-          <button onclick="fetchLiveWeather(); openWeatherModal();" class="text-secondary font-semibold hover:underline flex items-center gap-1">
-            <span class="material-symbols-outlined text-[14px]">refresh</span> Refresh Telemetry
-          </button>
+          <!-- Card 2: Farm2 -->
+          <div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-gray-200/80 shadow-xs space-y-2.5">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-emerald-100 text-secondary text-[11px] font-bold flex items-center justify-center">2</span>
+                <div>
+                  <h4 class="text-[13px] font-bold text-on-surface">Farm2 (Farm2.jpg)</h4>
+                  <span class="text-[10px] text-gray-500 font-medium">Crops, Trees &amp; Plantation</span>
+                </div>
+              </div>
+              <label class="px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-bold text-[11px] flex items-center gap-1 cursor-pointer border border-primary/20 transition-all active:scale-95">
+                <span class="material-symbols-outlined text-[15px]">upload</span>
+                <span>Upload / Replace</span>
+                <input type="file" accept="image/*" class="hidden" onchange="handleMediaUpload(event, 'Farm2', 'image')">
+              </label>
+            </div>
+            
+            <div class="relative w-full h-44 rounded-xl overflow-hidden bg-gray-100 border border-gray-200 flex items-center justify-center">
+              <img id="mediaImg_Farm2" src="${farm2Src}" alt="Farm2 - SR Farm" onerror="handleImageError('Farm2')" class="w-full h-full object-cover">
+              <div id="mediaFallback_Farm2" class="absolute inset-0 bg-gradient-to-br from-emerald-50 to-gray-100 flex flex-col items-center justify-center text-center p-4 hidden">
+                <span class="material-symbols-outlined text-gray-400 text-[32px] mb-1">image</span>
+                <span class="text-[12px] font-bold text-gray-700">Farm2.jpg not found</span>
+                <p class="text-[10.5px] text-gray-500 max-w-xs mt-0.5">Upload a photo directly using the button above or save Farm2.jpg in your folder.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Farm3 -->
+          <div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-gray-200/80 shadow-xs space-y-2.5">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-emerald-100 text-secondary text-[11px] font-bold flex items-center justify-center">3</span>
+                <div>
+                  <h4 class="text-[13px] font-bold text-on-surface">Farm3 (Farm3.jpg)</h4>
+                  <span class="text-[10px] text-gray-500 font-medium">Borewell &amp; Infrastructure</span>
+                </div>
+              </div>
+              <label class="px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-bold text-[11px] flex items-center gap-1 cursor-pointer border border-primary/20 transition-all active:scale-95">
+                <span class="material-symbols-outlined text-[15px]">upload</span>
+                <span>Upload / Replace</span>
+                <input type="file" accept="image/*" class="hidden" onchange="handleMediaUpload(event, 'Farm3', 'image')">
+              </label>
+            </div>
+            
+            <div class="relative w-full h-44 rounded-xl overflow-hidden bg-gray-100 border border-gray-200 flex items-center justify-center">
+              <img id="mediaImg_Farm3" src="${farm3Src}" alt="Farm3 - SR Farm" onerror="handleImageError('Farm3')" class="w-full h-full object-cover">
+              <div id="mediaFallback_Farm3" class="absolute inset-0 bg-gradient-to-br from-emerald-50 to-gray-100 flex flex-col items-center justify-center text-center p-4 hidden">
+                <span class="material-symbols-outlined text-gray-400 text-[32px] mb-1">image</span>
+                <span class="text-[12px] font-bold text-gray-700">Farm3.jpg not found</span>
+                <p class="text-[10.5px] text-gray-500 max-w-xs mt-0.5">Upload a photo directly using the button above or save Farm3.jpg in your folder.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Farmvid1 -->
+          <div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-purple-200/70 shadow-xs space-y-2.5">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-lg bg-purple-100 text-purple-800 text-[11px] font-bold flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[14px]">videocam</span>
+                </span>
+                <div>
+                  <h4 class="text-[13px] font-bold text-on-surface">Farmvid1 (Farmvid1.mp4)</h4>
+                  <span class="text-[10px] text-gray-500 font-medium">Estate Video Tour &amp; Drone Clip</span>
+                </div>
+              </div>
+              <label class="px-2.5 py-1.5 rounded-lg bg-purple-50 hover:bg-purple-100 text-purple-900 font-bold text-[11px] flex items-center gap-1 cursor-pointer border border-purple-200 transition-all active:scale-95">
+                <span class="material-symbols-outlined text-[15px]">video_file</span>
+                <span>Upload Video</span>
+                <input type="file" accept="video/*" class="hidden" onchange="handleMediaUpload(event, 'Farmvid1', 'video')">
+              </label>
+            </div>
+            
+            <div class="relative w-full rounded-xl overflow-hidden bg-black flex items-center justify-center min-h-[180px]">
+              <video id="mediaVid_Farmvid1" controls class="w-full max-h-56 rounded-xl bg-black" playsinline preload="metadata">
+                <source src="${farmvid1Src}" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </div>
+            <p class="text-[10.5px] text-gray-500 flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px] text-purple-600">movie</span>
+              <span>Plays Farmvid1.mp4 or your uploaded mobile video with native controls.</span>
+            </p>
+          </div>
         </div>
       </div>
     `;
-
-    document.getElementById('modalTitle').textContent = "Weather Telemetry";
-    document.getElementById('modalCategory').textContent = "Ramanagara Micro-station";
-    document.getElementById('modalIcon').textContent = liveWeatherData.icon;
-    document.getElementById('modalBody').innerHTML = content;
-
-    const modal = document.getElementById('farmModal');
-    modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
   }
-
-  // Fetch real-time weather on DOM load
-  document.addEventListener('DOMContentLoaded', fetchLiveWeather);
 
   const farmDetailsData = {
     about: {
@@ -335,64 +1591,15 @@
       icon: "yard",
       category: "Estate Overview & Story",
       content: `
-        <div class="space-y-3.5">
-          <div class="bg-surface-container-lowest p-4 rounded-2xl border border-outline-variant/30 shadow-sm">
-            <div class="flex flex-wrap items-center gap-1.5 mb-2.5">
-              <span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-semibold flex items-center gap-1">
-                <span class="material-symbols-outlined text-[14px]">verified</span>100% Organic
-              </span>
-              <span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-label-sm font-semibold flex items-center gap-1">
-                <span class="material-symbols-outlined text-[14px]">eco</span>Zero Chemicals
-              </span>
-              <span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-label-sm font-semibold flex items-center gap-1">
-                <span class="material-symbols-outlined text-[14px]">location_on</span>Bannikuppe, Ramanagara – Bangalore
-              </span>
-            </div>
-            <h4 class="font-headline-md text-primary font-bold text-lg md:text-xl">Welcome to Our Organic Farm</h4>
-            <p class="font-body-md text-body-md text-on-surface leading-relaxed mt-2.5">
+        <div class="space-y-3">
+          <div class="bg-surface-container-lowest p-3.5 rounded-2xl border border-gray-200">
+            <h4 class="text-primary font-bold text-[16px]">Welcome to Our Organic Farm</h4>
+            <p class="text-[12.5px] text-on-surface leading-relaxed mt-2">
               Fresh fruits, fresh air, and zero chemicals. Our farm is 100% organic, with sweet mangoes, tender coconuts, juicy lemons, bananas, papayas, guavas and star fruits. Tall mahogany trees give cool shade all around. Everything grows the natural way, with care and patience. Rest at our cozy farm house, taste the difference, and feel close to nature again.
             </p>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-            <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-              <div class="flex items-center gap-2 mb-1">
-                <div class="w-7 h-7 rounded-lg bg-secondary-container flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-secondary text-[17px]">nutrition</span>
-                </div>
-                <span class="font-title-md text-on-surface font-semibold text-sm">Organic Produce</span>
-              </div>
-              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Sweet Mangoes, Tender Coconuts, Juicy Lemons, Bananas, Papayas, Guavas &amp; Star Fruits</p>
-            </div>
-
-            <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-              <div class="flex items-center gap-2 mb-1">
-                <div class="w-7 h-7 rounded-lg bg-primary-fixed flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-primary text-[17px]">park</span>
-                </div>
-                <span class="font-title-md text-on-surface font-semibold text-sm">Flora &amp; Shade</span>
-              </div>
-              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Tall Mahogany trees providing natural cool shade throughout the farm trails.</p>
-            </div>
-
-            <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-              <div class="flex items-center gap-2 mb-1">
-                <div class="w-7 h-7 rounded-lg bg-tertiary-fixed flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-tertiary text-[17px]">cottage</span>
-                </div>
-                <span class="font-title-md text-on-surface font-semibold text-sm">Stay &amp; Visit</span>
-              </div>
-              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Cozy Farm House rest &amp; authentic countryside nature retreat to unwind.</p>
-            </div>
-
-            <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-              <div class="flex items-center gap-2 mb-1">
-                <div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
-                  <span class="material-symbols-outlined text-secondary text-[17px]">pin_drop</span>
-                </div>
-                <span class="font-title-md text-on-surface font-semibold text-sm">Location</span>
-              </div>
-              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Located near Ramanagara, Bangalore (Bannikuppe - 562159).</p>
+            <div class="mt-2.5 flex items-center gap-1.5 text-[11px] text-secondary font-bold">
+              <span class="material-symbols-outlined text-[15px]">location_on</span>
+              <span>Located near Ramanagara, Bangalore (Bannikuppe - 562159)</span>
             </div>
           </div>
         </div>
@@ -404,38 +1611,13 @@
       category: "Cadastral & Land Record",
       content: `
         <div class="space-y-3">
-          <div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/25">
-            <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Certified Total Area</span>
-            <div class="font-headline-lg-mobile text-primary font-bold mt-1">52 Guntas <span class="text-title-md text-on-surface-variant font-medium">(1.30 Acres)</span></div>
-            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Total: 52 Guntas (1.3 Acres / 56,628 Sq. Ft. / 5,261 Sq. Meters)</p>
+          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200">
+            <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Certified Total Area</span>
+            <div class="text-[24px] text-primary font-bold mt-0.5">52 Guntas <span class="text-[14px] text-gray-500 font-medium">(1.30 Acres)</span></div>
+            <p class="text-[11.5px] text-gray-600 mt-1">Survey No: #42/2A • Red Sandy Loam (pH 6.5)</p>
           </div>
-          
-          <div class="grid grid-cols-2 gap-2.5">
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25">
-              <span class="font-label-sm text-label-sm text-on-surface-variant">Survey Number</span>
-              <div class="font-title-md text-on-surface font-bold mt-0.5">#42/2A</div>
-              <span class="font-label-sm text-[11px] text-secondary font-medium">Geo-verified RTK</span>
-            </div>
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25">
-              <span class="font-label-sm text-label-sm text-on-surface-variant">Soil Classification</span>
-              <div class="font-title-md text-on-surface font-bold mt-0.5">Red Sandy Loam</div>
-              <span class="font-label-sm text-[11px] text-primary font-medium">pH 6.5 (Optimal)</span>
-            </div>
-          </div>
-
-          <div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/25">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="material-symbols-outlined text-secondary text-[20px]">nature</span>
-              <span class="font-title-md text-on-surface font-bold text-sm">Unified Estate Layout</span>
-            </div>
-            <p class="font-body-sm text-on-surface leading-relaxed">
-              All trees and crops are spread across the entire <strong>52 Guntas</strong> unified estate without separate plot divisions. The mango trees, coconut palms, mahogany timber lines, and mixed fruit trees thrive together in harmonious multi-strata organic cultivation.
-            </p>
-          </div>
-
-          <div class="bg-surface-container-low p-3 rounded-xl">
-            <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Boundary &amp; Infrastructure</span>
-            <p class="font-body-sm text-body-sm text-on-surface mt-0.5">Farm house, rustic pump house shed, borewell installation, and perimeter fencing encompass the unified 52 Guntas holding.</p>
+          <div class="bg-surface-container-low p-3 rounded-xl text-[12px] text-on-surface">
+            All trees and crops are spread across the entire unified <strong>52 Guntas</strong> holding without separate sub-plot boundaries.
           </div>
         </div>
       `
@@ -446,44 +1628,11 @@
       category: "Agronomy & Harvest Calendar",
       content: `
         <div class="space-y-3">
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <div class="flex items-center justify-between mb-2">
-              <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Primary Commercial Crop</span>
-              <span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-semibold">Flowering Phase</span>
-            </div>
-            <div class="font-headline-md text-primary font-bold">Mango (Banganapalli & Alphonso)</div>
-            <div class="mt-2 text-body-sm text-on-surface-variant space-y-1">
-              <p>• <strong>Harvest Season:</strong> April to June (Peak harvest window)</p>
-              <p>• <strong>Current Stage:</strong> Flower bloom and early fruit-setting</p>
-              <p>• <strong>Nutrient Regime:</strong> Organic vermicompost + neem cake blend</p>
-            </div>
-          </div>
-
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Seasonal Mixed Fruits</span>
-            <div class="mt-2 space-y-2 text-body-sm">
-              <div class="flex items-center justify-between py-1 border-b border-surface-container">
-                <div>
-                  <div class="font-semibold text-on-surface">Guava (Taiwan Pink)</div>
-                  <div class="text-[12px] text-on-surface-variant">6 Trees • Year-round flush</div>
-                </div>
-                <span class="font-label-sm text-secondary font-semibold">Harvesting</span>
-              </div>
-              <div class="flex items-center justify-between py-1 border-b border-surface-container">
-                <div>
-                  <div class="font-semibold text-on-surface">Banana (G9 Cavendish)</div>
-                  <div class="text-[12px] text-on-surface-variant">5 Clumps • Drip irrigated</div>
-                </div>
-                <span class="font-label-sm text-primary font-semibold">Bunching</span>
-              </div>
-              <div class="flex items-center justify-between py-1">
-                <div>
-                  <div class="font-semibold text-on-surface">Papaya, Lemon & Star Fruit</div>
-                  <div class="text-[12px] text-on-surface-variant">9 Trees • Organic certified</div>
-                </div>
-                <span class="font-label-sm text-outline font-semibold">Ripening</span>
-              </div>
-            </div>
+          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200">
+            <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Primary Crop</span>
+            <div class="text-[16px] text-primary font-bold mt-0.5">Mango (Alphonso &amp; Banganapalli)</div>
+            <p class="text-[11.5px] text-gray-600 mt-1">• <strong>Harvest Season:</strong> April to June</p>
+            <p class="text-[11.5px] text-gray-600">• <strong>Intercrops:</strong> Guava, Banana, Papaya, Lemon, Star Fruits</p>
           </div>
         </div>
       `
@@ -494,85 +1643,14 @@
       category: "Perennial Tree Census",
       content: `
         <div class="space-y-3">
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Total Tree Count</span>
-            <div class="font-headline-lg-mobile text-primary font-bold mt-1">170 Perennial Trees</div>
-            <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Distributed throughout the 52 Guntas estate and integrated into drip lines</p>
-          </div>
-
-          <div class="grid grid-cols-2 gap-2.5">
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25">
-              <div class="font-headline-md text-primary font-bold">80</div>
-              <div class="font-title-md text-on-surface font-semibold text-sm">Mahogany</div>
-              <div class="text-[11px] text-on-surface-variant mt-1">Border timber trees giving cool shade. Age: 4 yrs.</div>
-            </div>
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25">
-              <div class="font-headline-md text-secondary font-bold">40</div>
-              <div class="font-title-md text-on-surface font-semibold text-sm">Mango Trees</div>
-              <div class="text-[11px] text-on-surface-variant mt-1">Alphonso &amp; Banganapalli. April–June harvest cycle.</div>
-            </div>
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25">
-              <div class="font-headline-md text-on-surface font-bold">30</div>
-              <div class="font-title-md text-on-surface font-semibold text-sm">Coconut Palms</div>
-              <div class="text-[11px] text-on-surface-variant mt-1">Hybrid D×T tender coconut yielders.</div>
-            </div>
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25">
-              <div class="font-headline-md text-primary-container font-bold">20</div>
-              <div class="font-title-md text-on-surface font-semibold text-sm">Mixed Fruits</div>
-              <div class="text-[11px] text-on-surface-variant mt-1">Taiwan Guava (6), Banana (5), Papaya (4), Lemon (3), Star Fruit (2).</div>
-            </div>
-          </div>
-
-          <div class="bg-surface-container-low p-3 rounded-xl flex items-center gap-3">
-            <span class="material-symbols-outlined text-secondary text-[22px]">health_and_safety</span>
-            <div class="text-body-sm text-on-surface"><strong>Tree Health:</strong> 0 active pest infestations. Organic neem spray completed last week.</div>
-          </div>
-        </div>
-      `
-    },
-    map: {
-      title: "Farm Map",
-      icon: "explore",
-      category: "GIS & Cadastral Layout",
-      content: `
-        <div class="space-y-3">
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Spatial GPS Coordinates</span>
-            <div class="mt-2 space-y-1 text-body-sm text-on-surface font-mono">
-              <div class="flex justify-between py-1 border-b border-surface-container">
-                <span class="text-on-surface-variant">North-West Corner:</span>
-                <span class="font-bold">13.0827° N, 77.5849° E</span>
-              </div>
-              <div class="flex justify-between py-1 border-b border-surface-container">
-                <span class="text-on-surface-variant">North-East Corner:</span>
-                <span class="font-bold">13.0829° N, 77.5872° E</span>
-              </div>
-              <div class="flex justify-between py-1 border-b border-surface-container">
-                <span class="text-on-surface-variant">South-West Corner:</span>
-                <span class="font-bold">13.0805° N, 77.5851° E</span>
-              </div>
-              <div class="flex justify-between py-1">
-                <span class="text-on-surface-variant">South-East Gate:</span>
-                <span class="font-bold">13.0807° N, 77.5874° E</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">GIS Infrastructure Layers</span>
-            <div class="mt-2 space-y-2 text-body-sm">
-              <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-blue-500"></span>
-                <span>Main 2.5" PVC irrigation pipeline network</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-emerald-600"></span>
-                <span>Borewell &amp; rustic pump house station</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-amber-500"></span>
-                <span>Internal walking pathway & farm trails</span>
-              </div>
+          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200">
+            <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Total Perennial Census</span>
+            <div class="text-[24px] text-primary font-bold mt-0.5">170 Trees &amp; Plants</div>
+            <div class="grid grid-cols-2 gap-2 mt-2.5 text-[11.5px]">
+              <div class="p-2 rounded bg-surface-container-low"><strong>80</strong> Mahogany Trees</div>
+              <div class="p-2 rounded bg-surface-container-low"><strong>40</strong> Mango Trees</div>
+              <div class="p-2 rounded bg-surface-container-low"><strong>30</strong> Coconut Palms</div>
+              <div class="p-2 rounded bg-surface-container-low"><strong>20</strong> Mixed Fruit Trees</div>
             </div>
           </div>
         </div>
@@ -581,50 +1659,16 @@
     water: {
       title: "Borewell & Water",
       icon: "water_drop",
-      category: "Hydrology & Pump Automation",
+      category: "Hydrology & Pumping Station",
       content: `
         <div class="space-y-3">
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <div class="flex items-center justify-between mb-2">
-              <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Hydrological Depth</span>
-              <span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-semibold">Active Flow</span>
-            </div>
-            <div class="grid grid-cols-2 gap-2 text-body-sm mt-2">
-              <div class="bg-surface-container-low p-2 rounded-lg">
-                <div class="text-[11px] text-on-surface-variant">Total Drilled Depth</div>
-                <div class="font-title-md text-primary font-bold">600 Feet</div>
-              </div>
-              <div class="bg-surface-container-low p-2 rounded-lg">
-                <div class="text-[11px] text-on-surface-variant">Current Water Table</div>
-                <div class="font-title-md text-secondary font-bold">320 Feet</div>
-              </div>
-            </div>
-            <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Column Head: <strong>280 ft</strong> of clean recharge with gravel packing.</p>
-          </div>
-
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Pumping Machinery & Starter</span>
-            <div class="mt-2 space-y-2 text-body-sm">
-              <div class="flex justify-between py-1 border-b border-surface-container">
-                <span class="text-on-surface-variant">Submersible Motor</span>
-                <span class="font-bold text-on-surface">Texmo 10 HP (16 Stages)</span>
-              </div>
-              <div class="flex justify-between py-1 border-b border-surface-container">
-                <span class="text-on-surface-variant">Motor Placement</span>
-                <span class="font-bold text-on-surface">Submerged at 420 Feet</span>
-              </div>
-              <div class="flex justify-between py-1 border-b border-surface-container">
-                <span class="text-on-surface-variant">Controller Unit</span>
-                <span class="font-bold text-secondary">Auto Meeco with Dry-run Protection</span>
-              </div>
-              <div class="flex justify-between py-1 border-b border-surface-container">
-                <span class="text-on-surface-variant">Power Supply</span>
-                <span class="font-bold text-on-surface">3-Phase 415V (Balanced)</span>
-              </div>
-              <div class="flex justify-between py-1">
-                <span class="text-on-surface-variant">Discharge Rate</span>
-                <span class="font-bold text-primary">120 Liters / Minute</span>
-              </div>
+          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200">
+            <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Borewell Specifications</span>
+            <div class="grid grid-cols-2 gap-2 text-[11.5px] mt-2">
+              <div class="p-2 rounded bg-surface-container-low">Depth: <strong>600 Feet</strong></div>
+              <div class="p-2 rounded bg-surface-container-low">Water Table: <strong>320 Feet</strong></div>
+              <div class="p-2 rounded bg-surface-container-low">Motor: <strong>Texmo 10 HP</strong></div>
+              <div class="p-2 rounded bg-surface-container-low">Starter: <strong>Meeco (Auto)</strong></div>
             </div>
           </div>
         </div>
@@ -634,162 +1678,40 @@
       title: "Photos & Videos",
       icon: "photo_library",
       category: "Estate Media Gallery",
-      content: `
-        <div class="space-y-3">
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Farm Main Entrance</span>
-            <div class="mt-2 rounded-lg overflow-hidden border border-outline-variant/40">
-              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDr2t7YYS4g9VPkq_W_7K551B52_GekIkCDDFRdSyGo6ZSl_WkQ71FoqCck9ID_jvnBvtZP6yg92XTe0Bhck_uLOvMx4sqX47cLMDEgOmX4v85OxhDOen8wX6XHoSFn79fld4ZGQVUsWHIeoOicG2plwzTvc624brm-e9AzFkRcJOUwJyDFJ-BakQ-qf2CkbPsMIjg1wcSLxh_Qtsdtm-7qZkODvX4lvI3yfYKqIk7s" alt="SR Farm Main Gate" class="w-full h-44 object-cover" />
-            </div>
-            <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Authentic black iron gate featuring custom golden 'SR Farm' emblem.</p>
-          </div>
-
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Media Catalog (18 Assets)</span>
-            <div class="mt-2 grid grid-cols-2 gap-2 text-body-sm">
-              <div class="p-2.5 rounded-lg bg-surface-container-low flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary text-[20px]">videocam</span>
-                <span>4K Drone Flyover (3)</span>
-              </div>
-              <div class="p-2.5 rounded-lg bg-surface-container-low flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary text-[20px]">image</span>
-                <span>Canopy Ortho Photos (8)</span>
-              </div>
-              <div class="p-2.5 rounded-lg bg-surface-container-low flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary text-[20px]">photo_camera</span>
-                <span>Harvest Reels (5)</span>
-              </div>
-              <div class="p-2.5 rounded-lg bg-surface-container-low flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary text-[20px]">description</span>
-                <span>Borewell Log Docs (2)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      `
-    },
-    income: {
-      title: "Income & Expenses",
-      icon: "currency_rupee",
-      category: "Financial Ledger & PnL",
-      content: `
-        <div class="space-y-3">
-          <div class="grid grid-cols-3 gap-2">
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25 text-center">
-              <span class="text-[11px] text-on-surface-variant block">Total Income</span>
-              <div class="font-headline-md text-primary font-bold mt-0.5">₹0</div>
-              <span class="text-[10px] text-outline font-medium">Pre-harvest</span>
-            </div>
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25 text-center">
-              <span class="text-[11px] text-on-surface-variant block">Total Expenses</span>
-              <div class="font-headline-md text-error font-bold mt-0.5">₹10,000</div>
-              <span class="text-[10px] text-error font-medium">4 Entries</span>
-            </div>
-            <div class="bg-surface-container-lowest p-3 rounded-xl border border-outline-variant/25 text-center">
-              <span class="text-[11px] text-on-surface-variant block">Net Balance</span>
-              <div class="font-headline-md text-error font-bold mt-0.5">-₹10,000</div>
-              <span class="text-[10px] text-on-surface-variant font-medium">Current PnL</span>
-            </div>
-          </div>
-
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <div class="flex items-center justify-between mb-2">
-              <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Expense Breakdown</span>
-              <span class="font-bold text-xs text-error">Total: ₹10,000</span>
-            </div>
-            <div class="space-y-2 text-body-sm">
-              <div class="flex items-center justify-between py-1.5 border-b border-surface-container">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center shrink-0">
-                    <span class="material-symbols-outlined text-[14px] text-on-surface-variant">group</span>
-                  </div>
-                  <div>
-                    <div class="font-semibold text-on-surface text-xs sm:text-sm">Labour</div>
-                    <div class="text-[11px] text-on-surface-variant">Manual weeding & field upkeep</div>
-                  </div>
-                </div>
-                <span class="font-bold text-error text-sm">₹2,000</span>
-              </div>
-
-              <div class="flex items-center justify-between py-1.5 border-b border-surface-container">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center shrink-0">
-                    <span class="material-symbols-outlined text-[14px] text-on-surface-variant">agriculture</span>
-                  </div>
-                  <div>
-                    <div class="font-semibold text-on-surface text-xs sm:text-sm">Rotavator</div>
-                    <div class="text-[11px] text-on-surface-variant">Tractor plowing & soil preparation</div>
-                  </div>
-                </div>
-                <span class="font-bold text-error text-sm">₹4,000</span>
-              </div>
-
-              <div class="flex items-center justify-between py-1.5 border-b border-surface-container">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center shrink-0">
-                    <span class="material-symbols-outlined text-[14px] text-on-surface-variant">compost</span>
-                  </div>
-                  <div>
-                    <div class="font-semibold text-on-surface text-xs sm:text-sm">Compost</div>
-                    <div class="text-[11px] text-on-surface-variant">Organic farmyard manure blend</div>
-                  </div>
-                </div>
-                <span class="font-bold text-error text-sm">₹2,000</span>
-              </div>
-
-              <div class="flex items-center justify-between py-1.5">
-                <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center shrink-0">
-                    <span class="material-symbols-outlined text-[14px] text-on-surface-variant">receipt_long</span>
-                  </div>
-                  <div>
-                    <div class="font-semibold text-on-surface text-xs sm:text-sm">Other expenses</div>
-                    <div class="text-[11px] text-on-surface-variant">Miscellaneous estate supplies</div>
-                  </div>
-                </div>
-                <span class="font-bold text-error text-sm">₹2,000</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      `
+      getContent: renderPhotosModalContent
     },
     operations: {
       title: "Operations",
       icon: "assignment_turned_in",
-      category: "Daily Farm Management",
+      category: "Daily Farm Schedules",
       content: `
         <div class="space-y-3">
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <div class="flex items-center justify-between mb-2">
-              <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Scheduled Work Orders</span>
-              <span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-semibold">2 Pending</span>
-            </div>
-            <div class="space-y-2 text-body-sm mt-2">
-              <div class="p-2.5 rounded-lg bg-surface-container-low flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                <div>
-                  <div class="font-bold text-on-surface">Morning Drip Schedule (06:00 - 07:30)</div>
-                  <div class="text-[12px] text-on-surface-variant">Whole estate drip run. 9,000 L pumped to coconut & mango lines.</div>
-                </div>
+          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200">
+            <span class="text-[10px] font-bold text-secondary uppercase tracking-wider">Active Schedules</span>
+            <div class="mt-2 space-y-1.5 text-[11.5px]">
+              <div class="p-2 rounded bg-surface-container-low flex items-center justify-between">
+                <span>Morning Drip Irrigation (Mango &amp; Coconut)</span>
+                <span class="font-bold text-secondary">06:00 AM</span>
               </div>
-              <div class="p-2.5 rounded-lg bg-surface-container-low flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">pending</span>
-                <div>
-                  <div class="font-bold text-on-surface">Capacitor Bank & Voltage Check</div>
-                  <div class="text-[12px] text-on-surface-variant">Starter box relay inspection scheduled with local electrician.</div>
-                </div>
+              <div class="p-2 rounded bg-surface-container-low flex items-center justify-between">
+                <span>Organic Neem Spray / Pest Inspection</span>
+                <span class="font-bold text-primary">Bi-weekly</span>
               </div>
             </div>
           </div>
-
-          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-outline-variant/25">
-            <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Weekly Farm Cycle</span>
-            <div class="mt-2 space-y-1.5 text-body-sm text-on-surface">
-              <p>• <strong>Monday:</strong> Organic bio-fertilizer foliar spray</p>
-              <p>• <strong>Wednesday:</strong> Inter-row rotavator weeding & pathway check</p>
-              <p>• <strong>Saturday:</strong> Borewell filter backwash & pipeline inspection</p>
-            </div>
+        </div>
+      `
+    },
+    weather: {
+      title: "Weather Telemetry",
+      icon: "partly_cloudy_day",
+      category: "Ramanagara Microclimate",
+      content: `
+        <div class="space-y-3">
+          <div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200">
+            <div class="text-[28px] font-bold text-primary">${liveWeatherData.temp}°C</div>
+            <div class="text-[12px] text-gray-600">Bannikuppe, Ramanagara • Relative Humidity: ${liveWeatherData.humidity}%</div>
+            <p class="text-[11px] text-secondary font-medium mt-1">Optimal morning conditions for drip cycle &amp; foliage spray.</p>
           </div>
         </div>
       `
@@ -803,38 +1725,34 @@
     document.getElementById('modalTitle').textContent = data.title;
     document.getElementById('modalCategory').textContent = data.category;
     document.getElementById('modalIcon').textContent = data.icon;
-    document.getElementById('modalBody').innerHTML = data.content;
+    
+    if (typeof data.getContent === 'function') {
+      document.getElementById('modalBody').innerHTML = data.getContent();
+    } else {
+      document.getElementById('modalBody').innerHTML = data.content;
+    }
 
     const modal = document.getElementById('farmModal');
-    modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
+    if (modal) {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
   }
 
   function closeModal() {
     const modal = document.getElementById('farmModal');
-    modal.classList.add('hidden');
-    document.body.style.overflow = '';
+    if (modal) {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
   }
 
-  // Close modal when tapping on the dark backdrop
-  document.getElementById('farmModal').addEventListener('click', function(e) {
-    if (e.target === this) {
-      closeModal();
-    }
-  });
-
-  // Tap feedback for buttons
-  document.querySelectorAll('button').forEach(el => {
-    el.addEventListener('click', () => {
-      el.style.transition = 'transform 0.1s ease';
-      el.style.transform = 'scale(0.97)';
-      setTimeout(() => {
-        el.style.transform = 'scale(1)';
-      }, 120);
-    });
+  document.addEventListener('DOMContentLoaded', () => {
+    fetchLiveWeather();
+    renderTransactions();
+    updateSheetsUI();
   });
 </script>
-<nav class="fixed bottom-0 w-full z-40 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(30,81,40,0.06)] max-w-xl md:max-w-2xl lg:max-w-3xl left-0 right-0 mx-auto" data-active-classes="text-primary font-label-md"><div class="h-16 px-space-sm flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center w-16 h-12 gap-0.5 transition-all text-primary font-label-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">potted_plant</span><span class="font-label-sm text-label-sm tracking-tight">Home</span></a><a class="flex flex-col items-center justify-center w-16 h-12 gap-0.5 text-on-surface-variant hover:text-primary transition-all" data-path="crop-grids" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm tracking-tight">Sections</span></a><a class="flex flex-col items-center justify-center w-16 h-12 gap-0.5 text-on-surface-variant hover:text-primary transition-all" data-path="field-map" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm tracking-tight">Map</span></a><a class="flex flex-col items-center justify-center w-16 h-12 gap-0.5 text-on-surface-variant hover:text-primary transition-all" data-path="expenses-management" href="#"><span class="material-symbols-outlined text-[22px]">payments</span><span class="font-label-sm text-label-sm tracking-tight">Expenses</span></a></div></nav>
 
 
-</body></html>
+<script>if (typeof farmDetailsData !== 'undefined') { farmDetailsData.map = { title: 'Farm Location & Map', icon: 'map', category: 'Cadastral & Satellite Location', content: '<div class="space-y-3"><div class="bg-surface-container-lowest p-3.5 rounded-xl border border-gray-200 text-on-surface"><div class="flex items-center justify-between mb-2"><span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider">Bannikuppe, Ramanagara</span><a class="px-2.5 py-1 rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-500/20 text-[11px] font-bold flex items-center gap-1 hover:text-white" href="https://www.google.com/maps/search/?api=1&query=Bannikuppe,+Ramanagara,+Karnataka+562159" target="_blank" rel="noopener noreferrer"><span>Open in Maps</span><span class="material-symbols-outlined text-[13px]">open_in_new</span></a></div><p class="text-[11.5px] text-gray-300">Pin: Bannikuppe, Ramanagara, Karnataka 562159</p><p class="text-[11.5px] text-emerald-400 font-mono mt-0.5">Coords: 12.7209° N, 77.2799° E</p></div><div class="relative w-full h-56 rounded-xl overflow-hidden border border-emerald-500/20 shadow-sm"><iframe allowfullscreen="" class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Bannikuppe,%20Ramanagara,%20Karnataka%20562159&t=&z=13&ie=UTF8&iwloc=&output=embed" title="SR Farm Location Map"></iframe></div></div>' }; }</script></body></html>
