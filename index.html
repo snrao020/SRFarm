@@ -70,7 +70,7 @@ tailwind.config = {
 <div class="h-16 px-4 flex items-center justify-between">
 <div class="flex items-center gap-2.5">
 <div class="relative w-10 h-10 rounded-full bg-emerald-50 border-2 border-emerald-600 flex items-center justify-center shrink-0 overflow-hidden shadow-sm">
-<img alt="SR Farm Logo" class="w-10 h-10 rounded-full object-cover relative z-10" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuABW8VKT-7of57cwj4LWnKlqA3JodslfZVG4w4ZABiULcPMykLUC4xRZxFfFelLDL-yyGMJamlYLJdJnKsbZgL3q9VxWZ2tmtX9cqysKoEdg9h_n5wwBCOY4F2W8u6dbMU1L7EoEz2J9hgQvAeGl6-s7PpEtdDZ4H5EPxmMLWv7kP1yToeD43B6aGtas_DYM7h1IVrKdcJ4uogeE73LndUSEnkBGZV152KPMZVd7fIQL1BmuYAwWoT5';" src="logo.jpg">
+<img alt="SR Farm Logo" class="w-10 h-10 rounded-full object-cover border border-white/20 shadow-sm" onerror="this.onerror=null;this.src='logo.jpg';" src="https://lh3.googleusercontent.com/aida/ALJJyrCnbUoOrN5CvpuKj6gQLDqCI5575YNdNHuJtaz2NXOCk9VppEStHYXYuEhh0CFak3pBQqilRo7jXx9o9La-zXMRXOZrmFBEP-CNN6layYU_Y1-vE_qEPtTobeYsJGuP76v-zcz0usDy74pwzurFaAqT_JlNM3EgxB3rERkAtD6j5ArvyUCbiej3ZDaV0_k4Rgaec94UkS593ZJ_o0vdIgCOGE8hUCZDDolKMkRwlTJZ">
 </div>
 <div class="flex items-center gap-1.5">
 <span class="font-display text-[26px] text-emerald-800 font-extrabold tracking-tight leading-none">SR Farm</span>
@@ -90,10 +90,35 @@ tailwind.config = {
 <div class="flex flex-col w-full">
 <!-- Plantation Hero Feature Card -->
 <div class="px-4 pt-3 pb-2">
-<div class="relative w-full h-40 sm:h-48 rounded-2xl overflow-hidden shadow-md bg-gray-100 border border-gray-200"><img alt="SR Farm Landscape" class="w-full h-full object-cover object-center rounded-2xl" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida/ALJJyrBvDB3J3UQ-iBYxmOH8tIPtMZzmnjoIf57ZSHCZc7mQEwUVrCZfmYKKlv23jXViHwQZ97ubc7RXpNDTg5SDtONWmP16ypV51zKxnW7cog8brcT2nLbOpW_zTdXyhxXwjQVrq1HZurbcxTMhl123z96cGjgmorCdLIOdLlQW7AU6k2mNOtV5sptBPcdkyO6NNP8M54ju2PNRh0yQLI0-QU6xKFlTZ_bVipJuNSUH6vuB';" src="Farm.jpg"></div>
+<div class="relative w-full rounded-2xl overflow-hidden shadow-md bg-gray-100 border border-gray-200">
+<img alt="SR Farm Landscape" class="w-full h-52 object-cover rounded-2xl shadow-sm" onerror="this.onerror=null;this.src='Farm.jpg';" src="https://lh3.googleusercontent.com/aida/ALJJyrBvDB3J3UQ-iBYxmOH8tIPtMZzmnjoIf57ZSHCZc7mQEwUVrCZfmYKKlv23jXViHwQZ97ubc7RXpNDTg5SDtONWmP16ypV51zKxnW7cog8brcT2nLbOpW_zTdXyhxXwjQVrq1HZurbcxTMhl123z96cGjgmorCdLIOdLlQW7AU6k2mNOtV5sptBPcdkyO6NNP8M54ju2PNRh0yQLI0-QU6xKFlTZ_bVipJuNSUH6vuB">
+</div>
 </div>
 <!-- Live Telemetry Status Bar -->
-<div class="px-4 py-1"><div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex flex-col gap-3"><div class="flex items-center justify-between gap-1 sm:gap-2 overflow-x-auto pb-0.5"><div class="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shrink-0 bg-[#0a2e1b] border border-emerald-500/20 shadow-sm" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);"><div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-[#16472b] flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-emerald-400 text-[12px] sm:text-[16px]">location_on</span></div><span class="font-semibold text-[11px] sm:text-[13px] text-white">Ramanagar</span></div><div class="flex items-center gap-1 sm:gap-1.5 shrink-0"><button class="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg transition-colors text-left active:scale-95 cursor-pointer border border-emerald-500/20 shadow-sm hover:border-emerald-400/40 bg-[#0a2e1b]" id="weatherPill" onclick="openWeatherModal()" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" title="Tap for live weather" type="button"><span class="material-symbols-outlined text-amber-400 text-[14px] sm:text-[17px]" id="weatherIcon">wb_sunny</span><span class="font-bold text-[11px] sm:text-[13px] text-white" id="weatherTemp">21°C</span><span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" id="liveDot" title="Live Open-Meteo Feed"></span></button><div class="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-emerald-500/20 shadow-sm bg-[#0a2e1b]" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);"><span class="material-symbols-outlined text-sky-400 text-[14px] sm:text-[17px]">water_drop</span><span class="font-bold text-[11px] sm:text-[13px] text-white">64% <span class="text-[9.5px] sm:text-[11px] text-emerald-300 font-semibold">opt</span></span></div></div></div><p class="text-[12px] text-gray-900 leading-relaxed font-medium">Welcome to <span class="font-bold text-gray-900">SR Farm</span>, a peaceful orchard home where nature does the growing. Enjoy sun-ripened fruit, breezy tree-lined paths, and a quiet stay in the heart of the countryside.</p></div></div>
+<div class="px-4 py-1">
+<div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex flex-col gap-3">
+<div class="flex items-center justify-between gap-1 sm:gap-2 overflow-x-auto pb-0.5">
+<a href="https://www.google.com/maps/dir//Bannikuppe+Shri+Dattatreya+Temple,+M78M%2BVWH,+Datta+Mandira,+Datta+Mandir+Rd,+Bannikuppe,+Bengaluru,+Karnataka+562159/@12.6671772,77.2657933,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3bae521d959af523:0xec58e70faaf4b3c3!2m2!1d77.2849016!2d12.667186!3e0" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shrink-0 bg-[#0a2e1b] border border-emerald-500/20 shadow-sm hover:border-emerald-400/40 cursor-pointer active:scale-95 transition-all" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" title="Open Google Maps Directions">
+<div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-[#16472b] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-emerald-400 text-[12px] sm:text-[16px]">location_on</span>
+</div>
+<span class="font-semibold text-[11px] sm:text-[13px] text-white">Ramanagar</span>
+</a>
+<div class="flex items-center gap-1 sm:gap-1.5 shrink-0">
+<button class="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg transition-colors text-left active:scale-95 cursor-pointer border border-emerald-500/20 shadow-sm hover:border-emerald-400/40 bg-[#0a2e1b]" id="weatherPill" onclick="openModal('operations')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" title="Tap for live telemetry" type="button">
+<span class="material-symbols-outlined text-amber-400 text-[14px] sm:text-[17px]" id="weatherIcon">wb_sunny</span>
+<span class="font-bold text-[11px] sm:text-[13px] text-white" id="weatherTemp">21°C</span>
+<span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" id="liveDot" title="Live Sensor Feed"></span>
+</button>
+<div class="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-emerald-500/20 shadow-sm bg-[#0a2e1b]" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);">
+<span class="material-symbols-outlined text-sky-400 text-[14px] sm:text-[17px]">water_drop</span>
+<span class="font-bold text-[11px] sm:text-[13px] text-white">64% <span class="text-[9.5px] sm:text-[11px] text-emerald-300 font-semibold">opt</span></span>
+</div>
+</div>
+</div>
+<p class="text-[12px] text-gray-900 leading-relaxed font-medium">Welcome to <span class="font-bold text-gray-900">SR Farm</span>, a peaceful orchard home where nature does the growing. Enjoy sun-ripened fruit, breezy tree-lined paths, and a quiet stay in the heart of the countryside.</p>
+</div>
+</div>
 <!-- Section Title -->
 <div class="px-4 pt-3 pb-1 flex items-center justify-between scroll-mt-20" id="estate-sections">
 <div class="flex items-center gap-2">
@@ -105,57 +130,59 @@ tailwind.config = {
 </div>
 </div>
 <!-- 8 Core Estate Cards Grid in Deep Agritech Green -->
-<div class="px-4 grid grid-cols-2 gap-2.5"><button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" onclick="openModal('about')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);">
-<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm">
+<div class="px-4 grid grid-cols-2 gap-2.5">
+<button class="farm-card w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" data-section="about" onclick="openModal('about')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
+<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm pointer-events-none">
 <span class="material-symbols-outlined text-[19px]">yard</span>
 </div>
-<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm">About Farm</span>
+<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm pointer-events-none">About Farm</span>
 </button>
-<button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 min-w-0 relative overflow-hidden" onclick="openModal('measurements')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);">
-<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm">
+<button class="farm-card w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 min-w-0 relative overflow-hidden" data-section="measurements" onclick="openModal('measurements')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
+<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm pointer-events-none">
 <span class="material-symbols-outlined text-[19px]">straighten</span>
 </div>
-<span class="text-[12px] sm:text-[13px] font-semibold text-white leading-tight min-w-0 truncate drop-shadow-sm">Measurements</span>
+<span class="text-[12px] sm:text-[13px] font-semibold text-white leading-tight min-w-0 truncate drop-shadow-sm pointer-events-none">Measurements</span>
 </button>
-<button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" onclick="openModal('crops')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);">
-<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-amber-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm">
+<button class="farm-card w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" data-section="crops" onclick="openModal('crops')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
+<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-amber-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm pointer-events-none">
 <span class="material-symbols-outlined text-[19px]">potted_plant</span>
 </div>
-<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm">Crops</span>
+<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm pointer-events-none">Crops</span>
 </button>
-<button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" onclick="openModal('plants')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);">
-<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm">
+<button class="farm-card w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" data-section="plants" onclick="openModal('plants')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
+<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm pointer-events-none">
 <span class="material-symbols-outlined text-[19px]">forest</span>
 </div>
-<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm">Plants &amp; Trees</span>
+<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm pointer-events-none">Plants &amp; Trees</span>
 </button>
-<button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" onclick="openModal('water')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);">
-<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-sky-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm">
+<button class="farm-card w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" data-section="borewell" onclick="openModal('borewell')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
+<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-sky-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm pointer-events-none">
 <span class="material-symbols-outlined text-[19px]">water_drop</span>
 </div>
-<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm">Borewell &amp; Water</span>
+<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm pointer-events-none">Borewell &amp; Water</span>
 </button>
-<button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" onclick="openModal('photos')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);">
-<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-purple-200 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm">
+<button class="farm-card w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" data-section="media" onclick="openModal('media')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
+<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-purple-200 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm pointer-events-none">
 <span class="material-symbols-outlined text-[19px]">photo_library</span>
 </div>
-<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm">Photos &amp; Videos</span>
+<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm pointer-events-none">Photos &amp; Videos</span>
 </button>
-<button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" onclick="openExpensesModal()" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);">
-<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm">
+<button class="farm-card w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" data-section="expenses" onclick="openModal('expenses')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
+<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm pointer-events-none">
 <span class="material-symbols-outlined text-[19px]">account_balance_wallet</span>
 </div>
-<span class="text-[13px] font-semibold text-white leading-tight flex flex-col drop-shadow-sm"><span>Expenses &amp;</span><span>Income</span></span>
+<span class="text-[13px] font-semibold text-white leading-tight flex flex-col drop-shadow-sm pointer-events-none"><span>Expenses &amp;</span><span>Income</span></span>
 </button>
-<button class="w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" onclick="openModal('operations')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);">
-<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm">
+<button class="farm-card w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" data-section="operations" onclick="openModal('operations')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
+<div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm pointer-events-none">
 <span class="material-symbols-outlined text-[19px]">assignment_turned_in</span>
 </div>
-<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm">Operations</span>
-</button></div>
+<span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm pointer-events-none">Operations</span>
+</button>
+</div>
 <!-- Quick Farm Log Action Button -->
 <div class="px-4 pt-3.5">
-<button class="w-full h-12 text-white rounded-xl font-semibold text-[13.5px] flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-all cursor-pointer hover:bg-emerald-500 border border-emerald-400/30" onclick="openAddTransactionModal('expense')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
+<button class="w-full h-12 text-white rounded-xl font-semibold text-[13.5px] flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-all cursor-pointer hover:bg-emerald-500 border border-emerald-400/30" onclick="openModal('expenses')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
 <span class="material-symbols-outlined text-[20px] text-white">add_circle</span>
 <span>+ Quick Farm Log / Entry</span>
 <span class="text-[10.5px] px-2 py-0.5 rounded-full bg-white/20 text-white flex items-center gap-1 ml-1">
@@ -173,7 +200,7 @@ tailwind.config = {
 <span class="material-symbols-outlined text-emerald-300 text-[18px] transition-transform duration-200" id="activityToggleChevron">expand_more</span>
 </div>
 <div class="flex items-center gap-2">
-<button class="text-[11.5px] text-emerald-300 font-bold hover:underline cursor-pointer" onclick="event.stopPropagation(); openExpensesModal()">View All</button>
+<button class="text-[11.5px] text-emerald-300 font-bold hover:underline cursor-pointer" onclick="event.stopPropagation(); openModal('expenses')">View All</button>
 </div>
 </div>
 <div class="space-y-2 hidden" id="recentActivityList">
@@ -189,13 +216,13 @@ tailwind.config = {
 <p class="text-[11px] text-emerald-100/90 truncate">Sub-lateral drip 45 mins • 4,200 L delivered across 52 Guntas</p>
 </div>
 </div>
-<div class="flex items-start gap-3 p-2.5 rounded-xl cursor-pointer transition-colors bg-[#16472b] border border-emerald-400/20" onclick="openExpensesModal()">
+<div class="flex items-start gap-3 p-2.5 rounded-xl cursor-pointer transition-colors bg-[#16472b] border border-emerald-400/20" onclick="openModal('expenses')">
 <div class="w-7 h-7 rounded-full bg-red-100 text-red-700 border border-red-200 flex items-center justify-center shrink-0 mt-0.5 font-bold">
 <span class="material-symbols-outlined text-[16px]">compost</span>
 </div>
 <div class="flex-1 min-w-0">
 <div class="flex items-center justify-between">
-<span class="text-[12px] font-bold text-red-700 truncate">Farm Operations: -₹5,000</span>
+<span class="text-[12px] font-bold text-red-400 truncate">Farm Operations: -₹5,000</span>
 <span class="text-[10px] text-emerald-300 font-bold shrink-0 flex items-center gap-0.5">
 <span class="material-symbols-outlined text-[12px]">cloud_done</span>Synced
 </span>
@@ -203,13 +230,13 @@ tailwind.config = {
 <p class="text-[11px] text-emerald-100/90 truncate">Organic Manure &amp; Field Labor Operations • Cash Payment</p>
 </div>
 </div>
-<div class="flex items-start gap-3 p-2.5 rounded-xl cursor-pointer transition-colors bg-[#16472b] border border-emerald-400/20" onclick="openExpensesModal()">
+<div class="flex items-start gap-3 p-2.5 rounded-xl cursor-pointer transition-colors bg-[#16472b] border border-emerald-400/20" onclick="openModal('expenses')">
 <div class="w-7 h-7 rounded-full bg-red-100 text-red-700 border border-red-200 flex items-center justify-center shrink-0 mt-0.5 font-bold">
 <span class="material-symbols-outlined text-[16px]">build</span>
 </div>
 <div class="flex-1 min-w-0">
 <div class="flex items-center justify-between">
-<span class="text-[12px] font-bold text-red-700 truncate">Drip Maintenance: -₹3,000</span>
+<span class="text-[12px] font-bold text-red-400 truncate">Drip Maintenance: -₹3,000</span>
 <span class="text-[10px] text-emerald-300 font-bold shrink-0 flex items-center gap-0.5">
 <span class="material-symbols-outlined text-[12px]">cloud_done</span>Synced
 </span>
@@ -254,13 +281,336 @@ tailwind.config = {
 <span class="material-symbols-outlined text-[22px]">grid_view</span>
 <span class="text-[12px] font-extrabold tracking-wide mt-0.5">Sections</span>
 </button>
-<button class="flex flex-col items-center justify-center flex-1 py-1 text-gray-500 hover:text-emerald-700 transition-colors cursor-pointer" onclick="openModal('map')">
+<a class="flex flex-col items-center justify-center flex-1 py-1 text-gray-500 hover:text-emerald-700 transition-colors cursor-pointer" href="https://www.google.com/maps/dir//Bannikuppe+Shri+Dattatreya+Temple,+M78M%2BVWH,+Datta+Mandira,+Datta+Mandir+Rd,+Bannikuppe,+Bengaluru,+Karnataka+562159/@12.6671772,77.2657933,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3bae521d959af523:0xec58e70faaf4b3c3!2m2!1d77.2849016!2d12.667186!3e0" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[22px]">location_on</span>
 <span class="text-[12px] font-extrabold tracking-wide mt-0.5">Location</span>
-</button>
+</a>
 </div>
 </nav>
-<!-- Modals retain their structure and scripts -->
+<!-- Single Robust Modal Container -->
+<div class="fixed inset-0 z-50 bg-black/60 items-end sm:items-center justify-center p-4 backdrop-blur-sm hidden" id="farmModal" onclick="if(event.target === this) closeModal()">
+<div class="bg-white rounded-2xl p-6 max-h-[85vh] overflow-y-auto w-full max-w-lg shadow-2xl relative text-gray-900 border border-gray-100 flex flex-col" id="modalDialog">
+<!-- Header with title & close button -->
+<div class="flex items-center justify-between pb-3 mb-3 border-b border-gray-100">
+<a href="https://www.google.com/maps/dir//Bannikuppe+Shri+Dattatreya+Temple,+M78M%2BVWH,+Datta+Mandira,+Datta+Mandir+Rd,+Bannikuppe,+Bengaluru,+Karnataka+562159/@12.6671772,77.2657933,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3bae521d959af523:0xec58e70faaf4b3c3!2m2!1d77.2849016!2d12.667186!3e0" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shrink-0 bg-[#0a2e1b] border border-emerald-500/20 shadow-sm hover:border-emerald-400/40 cursor-pointer active:scale-95 transition-all" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" title="Open Google Maps Directions">
+<div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-[#16472b] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-emerald-400 text-[12px] sm:text-[16px]">location_on</span>
+</div>
+<span class="font-semibold text-[11px] sm:text-[13px] text-white">Ramanagar</span>
+</a>
+<button aria-label="Close modal" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition-colors text-base font-bold" id="closeModalBtn" onclick="closeModal()" type="button">✕</button>
+</div>
+<!-- Modal Dynamic Content Body -->
+<div class="text-sm text-gray-700 space-y-4 leading-relaxed" id="modalContent">
+</div>
+</div>
+</div>
+<script>
+// Notification Helper
+function showSyncToast(title, msg) {
+  const toast = document.getElementById('syncToast');
+  if (!toast) return;
+  const tTitle = document.getElementById('syncToastTitle');
+  const tMsg = document.getElementById('syncToastMsg');
+  if (tTitle && title) tTitle.firstElementChild.textContent = title;
+  if (tMsg && msg) tMsg.textContent = msg;
+  toast.classList.remove('hidden');
+  setTimeout(() => {
+    toast.classList.add('hidden');
+  }, 3200);
+}
+
+// 8 Verified Data Modules for SR Farm
+const farmData = {
+  about: {
+    title: "About Farm",
+    html: `
+      <div class="space-y-3">
+        <div class="bg-emerald-50 text-emerald-900 p-3.5 rounded-xl border border-emerald-200">
+          <p class="font-bold text-xs uppercase tracking-wider text-emerald-700 mb-1">Organic Farm & Estate Overview</p>
+          <p class="font-medium text-[13.5px]">Welcome to Our Organic Farm. Fresh fruits, fresh air, and zero pesticides. Experience the difference, and feel close to nature again.</p>
+        </div>
+        <div class="space-y-2 text-xs">
+          <div class="flex items-start gap-2.5 p-2 rounded-lg bg-gray-50 border border-gray-200/70">
+            <span class="material-symbols-outlined text-emerald-600 text-base mt-0.5">pin_drop</span>
+            <div><span class="font-bold text-gray-900">Location:</span> Bannikuppe, Ramanagara (near Bangalore), Karnataka.</div>
+          </div>
+          <div class="flex items-start gap-2.5 p-2 rounded-lg bg-gray-50 border border-gray-200/70">
+            <span class="material-symbols-outlined text-emerald-600 text-base mt-0.5">landscape</span>
+            <div><span class="font-bold text-gray-900">Total Land Area:</span> Spanning 52 guntas of fertile land dedicated to sustainable farming.</div>
+          </div>
+          <div class="flex items-start gap-2.5 p-2 rounded-lg bg-gray-50 border border-gray-200/70">
+            <span class="material-symbols-outlined text-emerald-600 text-base mt-0.5">eco</span>
+            <div><span class="font-bold text-gray-900">Farming Method:</span> Natural regenerative agronomy with zero chemical pesticides.</div>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  measurements: {
+    title: "Farm Measurements",
+    html: `
+      <div class="space-y-3">
+        <div class="grid grid-cols-2 gap-2 text-center">
+          <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200">
+            <span class="text-xs text-emerald-800 font-semibold block">Total Land Area</span>
+            <span class="text-lg font-bold text-emerald-950">52 Guntas</span>
+            <span class="text-[11px] text-emerald-700 block mt-0.5">(~1.3 Acres)</span>
+          </div>
+          <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200">
+            <span class="text-xs text-emerald-800 font-semibold block">Square Footage</span>
+            <span class="text-lg font-bold text-emerald-950">56,628 sq ft</span>
+            <span class="text-[11px] text-emerald-700 block mt-0.5">Calculated layout</span>
+          </div>
+        </div>
+        <div class="space-y-2 text-xs text-gray-700">
+          <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200">
+            <span class="font-bold text-gray-900">Perimeter:</span> Fully fenced boundary with secure gates and wire mesh fencing.
+          </div>
+          <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200">
+            <span class="font-bold text-gray-900">Soil Profile:</span> Natural red fertile loamy soil enriched with organic humus.
+          </div>
+          <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200">
+            <span class="font-bold text-gray-900">Boundary Plantation:</span> Dense mahogany tree row offering natural windbreak and border stability.
+          </div>
+        </div>
+      </div>
+    `
+  },
+  crops: {
+    title: "Crops & Harvesting",
+    html: `
+      <div class="space-y-3">
+        <div class="p-3 bg-amber-50 rounded-xl border border-amber-200">
+          <div class="flex items-center gap-1.5 text-amber-900 font-bold text-xs uppercase tracking-wide">
+            <span class="material-symbols-outlined text-[17px] text-amber-600">calendar_month</span>
+            <span>Primary Crop & Harvest Season</span>
+          </div>
+          <p class="text-xs font-semibold text-gray-900 mt-1">Mango Varieties: Mallika, Banganapalli, Badam, Sindhura</p>
+          <p class="text-[11px] text-amber-800 mt-0.5">Harvest window: Peak summer from <strong class="font-bold">April to June</strong> annually.</p>
+        </div>
+        <div class="p-3 bg-gray-50 rounded-xl border border-gray-200 text-xs space-y-1.5">
+          <span class="font-bold text-gray-900 block">Intercrops & Seasonal Fruit Trees:</span>
+          <div class="grid grid-cols-2 gap-2 text-gray-700 pt-1">
+            <span class="px-2 py-1 bg-white rounded border border-gray-200">🍈 Guava</span>
+            <span class="px-2 py-1 bg-white rounded border border-gray-200">🍌 Banana</span>
+            <span class="px-2 py-1 bg-white rounded border border-gray-200">🥭 Papaya</span>
+            <span class="px-2 py-1 bg-white rounded border border-gray-200">🍋 Lemon</span>
+            <span class="px-2 py-1 bg-white rounded border border-gray-200 col-span-2">⭐ Star Fruits</span>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  plants: {
+    title: "Plants & Trees Inventory",
+    html: `
+      <div class="space-y-3">
+        <div class="flex items-center justify-between p-3 bg-emerald-50 border border-emerald-200 rounded-xl">
+          <div>
+            <span class="text-xs font-bold uppercase text-emerald-800">Total Live Count</span>
+            <div class="text-2xl font-extrabold text-emerald-950">170</div>
+          </div>
+          <span class="material-symbols-outlined text-3xl text-emerald-600">forest</span>
+        </div>
+        <div class="space-y-2 text-xs">
+          <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg border border-gray-200">
+            <div>
+              <span class="font-bold text-gray-900 block">40 Mango Trees</span>
+              <span class="text-[11px] text-gray-500">Mallika, Banganapalli, Badam, Sindhura</span>
+            </div>
+            <span class="font-bold text-emerald-700 text-sm">40</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg border border-gray-200">
+            <div>
+              <span class="font-bold text-gray-900 block">30 Coconut Plants</span>
+              <span class="text-[11px] text-gray-500">High-yield hybrid varieties</span>
+            </div>
+            <span class="font-bold text-emerald-700 text-sm">30</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg border border-gray-200">
+            <div>
+              <span class="font-bold text-gray-900 block">80 Mahogany Plants</span>
+              <span class="text-[11px] text-gray-500">Perimeter fence boundary</span>
+            </div>
+            <span class="font-bold text-emerald-700 text-sm">80</span>
+          </div>
+          <div class="flex items-center justify-between p-2.5 bg-gray-50 rounded-lg border border-gray-200">
+            <div>
+              <span class="font-bold text-gray-900 block">20 Mixed Fruit Plants</span>
+              <span class="text-[11px] text-gray-500">Guava, Banana, Papaya, Lemon, Star Fruit</span>
+            </div>
+            <span class="font-bold text-emerald-700 text-sm">20</span>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  borewell: {
+    title: "Water & Borewell Details",
+    html: `
+      <div class="space-y-3">
+        <div class="grid grid-cols-2 gap-2 text-center">
+          <div class="p-3 bg-sky-50 rounded-xl border border-sky-200">
+            <span class="text-xs text-sky-800 font-semibold block">Total Depth</span>
+            <span class="text-lg font-bold text-sky-950">600 ft</span>
+          </div>
+          <div class="p-3 bg-sky-50 rounded-xl border border-sky-200">
+            <span class="text-xs text-sky-800 font-semibold block">Water Level</span>
+            <span class="text-lg font-bold text-sky-950">320 ft</span>
+          </div>
+        </div>
+        <div class="space-y-2 text-xs">
+          <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 flex items-center justify-between">
+            <span class="font-semibold text-gray-700">Submersible Motor:</span>
+            <span class="font-bold text-gray-900">Texmo, 10 HP, 16 Stages</span>
+          </div>
+          <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 flex items-center justify-between">
+            <span class="font-semibold text-gray-700">Controller Starter:</span>
+            <span class="font-bold text-gray-900">Meeco (Auto Controller)</span>
+          </div>
+          <div class="p-2.5 bg-emerald-50 rounded-lg border border-emerald-200 text-emerald-900">
+            <span class="font-bold block mb-0.5">Drip Irrigation System:</span>
+            <span>Comprehensive sub-lateral drip network reaching all 52 Guntas of orchard blocks with automated timers.</span>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  media: {
+    title: "Farm Photos & Videos",
+    html: `
+      <div class="space-y-3">
+        <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl text-xs space-y-1">
+          <span class="font-bold text-purple-900 block">Estate Media Archive</span>
+          <p class="text-purple-800">Photo tags: <span class="font-semibold">Farm1, Farm2, Farm3</span></p>
+          <p class="text-purple-800">Video tag: <span class="font-semibold">Farmvid1</span></p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <div class="border border-dashed border-gray-300 rounded-xl p-3 text-center flex flex-col items-center justify-center gap-1 hover:bg-gray-50 cursor-pointer" onclick="showSyncToast('Upload Ready', 'Select farm images to sync with cloud ledger.')">
+            <span class="material-symbols-outlined text-emerald-600 text-2xl">add_photo_alternate</span>
+            <span class="font-bold text-gray-800">Upload Photo</span>
+            <span class="text-[10px] text-gray-500">JPG, PNG up to 15MB</span>
+          </div>
+          <div class="border border-dashed border-gray-300 rounded-xl p-3 text-center flex flex-col items-center justify-center gap-1 hover:bg-gray-50 cursor-pointer" onclick="showSyncToast('Video Stream', 'Drone flyover & field clip archive synced.')">
+            <span class="material-symbols-outlined text-purple-600 text-2xl">video_call</span>
+            <span class="font-bold text-gray-800">Upload Clip</span>
+            <span class="text-[10px] text-gray-500">MP4, MOV 4K</span>
+          </div>
+        </div>
+        <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 text-xs text-gray-600 flex items-center justify-between">
+          <span>Synced with Cloud Storage</span>
+          <span class="text-emerald-700 font-bold flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Active</span>
+        </div>
+      </div>
+    `
+  },
+  expenses: {
+    title: "Expenses & Income Ledger",
+    html: `
+      <div class="space-y-3">
+        <div class="grid grid-cols-2 gap-2 text-center text-xs">
+          <div class="p-3 bg-red-50 rounded-xl border border-red-200">
+            <span class="text-red-700 font-semibold block">Total Expenses</span>
+            <span class="text-lg font-bold text-red-700">₹8,000</span>
+          </div>
+          <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200">
+            <span class="text-emerald-800 font-semibold block">Total Income</span>
+            <span class="text-lg font-bold text-emerald-700">₹0</span>
+          </div>
+        </div>
+        <div class="p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-gray-900">Google Sheets Webhook</span>
+            <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold text-[10px]">Connected</span>
+          </div>
+          <p class="text-[11px] text-gray-500 break-all font-mono">...exec/AKfycbxk_WONbbnzMZIlmFjV_k15pX6jJdXU8UNvUIr_aFW9ruFXxqBIzBi7x3TtKDfCaFet</p>
+        </div>
+        <div class="space-y-1.5 text-xs">
+          <span class="font-bold text-gray-900 block">Recent Transactions:</span>
+          <div class="p-2 bg-gray-50 rounded border border-gray-200 flex justify-between items-center">
+            <div>
+              <div class="font-bold text-gray-900">Organic Manure & Labor</div>
+              <div class="text-[10px] text-gray-500">Field Operations • Cash</div>
+            </div>
+            <span class="text-red-600 font-bold">-₹5,000</span>
+          </div>
+          <div class="p-2 bg-gray-50 rounded border border-gray-200 flex justify-between items-center">
+            <div>
+              <div class="font-bold text-gray-900">Drip Emitter Maintenance</div>
+              <div class="text-[10px] text-gray-500">Borewell Servicing • UPI</div>
+            </div>
+            <span class="text-red-600 font-bold">-₹3,000</span>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  operations: {
+    title: "Farm Operations & Logs",
+    html: `
+      <div class="space-y-3 text-xs">
+        <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-xl">
+          <span class="font-bold text-emerald-950 block mb-1">Agronomy & Maintenance Plan</span>
+          <p class="text-emerald-800 text-[12px] leading-relaxed">Daily field management tasks including automated drip irrigation cycles, organic neem spray, pruning, and soil moisture telemetry monitoring.</p>
+        </div>
+        <div class="space-y-2">
+          <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 flex items-start gap-2">
+            <span class="material-symbols-outlined text-emerald-600 text-base">check_circle</span>
+            <div><span class="font-bold text-gray-900">Irrigation:</span> 45-min scheduled early morning watering cycle via Meeco auto-controller.</div>
+          </div>
+          <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 flex items-start gap-2">
+            <span class="material-symbols-outlined text-emerald-600 text-base">check_circle</span>
+            <div><span class="font-bold text-gray-900">Soil Health:</span> Cow-dung slurry and vermicompost applied around fruit tree root rings.</div>
+          </div>
+          <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 flex items-start gap-2">
+            <span class="material-symbols-outlined text-emerald-600 text-base">check_circle</span>
+            <div><span class="font-bold text-gray-900">Security:</span> Perimeter check along mahogany boundary wireline.</div>
+          </div>
+        </div>
+      </div>
+    `
+  }
+};
+
+// Modal Control Functions
+function openModal(sectionKey) {
+  const data = farmData[sectionKey];
+  if (!data) return;
+  const titleEl = document.getElementById('modalTitle');
+  const contentEl = document.getElementById('modalContent');
+  const modal = document.getElementById('farmModal');
+  
+  if (titleEl) titleEl.textContent = data.title;
+  if (contentEl) contentEl.innerHTML = data.html;
+  if (modal) {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  const modal = document.getElementById('farmModal');
+  if (modal) {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+  document.body.style.overflow = '';
+}
+
+// Double safety: Attach direct DOM event listeners to all farm-card buttons on load
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.farm-card').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const section = btn.getAttribute('data-section');
+      if (section) {
+        openModal(section);
+      }
+    });
+  });
+});
+</script>
 
 
 </body></html>
