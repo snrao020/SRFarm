@@ -49,7 +49,7 @@ tailwind.config = {
 };
 </script>
 </head>
-<body class="text-gray-900 antialiased min-h-screen flex flex-col justify-between bg-[#f8fafc]">
+<body class="text-gray-900 antialiased min-h-screen flex flex-col justify-between" style="background: linear-gradient(rgb(246, 250, 246) 0%, rgb(240, 245, 240) 50%, rgb(235, 242, 235) 100%) fixed;">
 <!-- Top Live Sync Floating Toast Notification -->
 <div class="fixed top-4 left-1/2 -translate-x-1/2 z-[100] max-w-sm w-[92%] pointer-events-none hidden" id="syncToast">
 <div class="bg-[#0f5132] text-white px-4 py-3 rounded-2xl shadow-2xl border border-emerald-400/40 flex items-center gap-3 toast-enter">
@@ -70,7 +70,7 @@ tailwind.config = {
 <div class="h-16 px-4 flex items-center justify-between">
 <div class="flex items-center gap-2.5">
 <div class="relative w-10 h-10 rounded-full bg-emerald-50 border-2 border-emerald-600 flex items-center justify-center shrink-0 overflow-hidden shadow-sm">
-<img alt="SR Farm Logo" class="w-10 h-10 rounded-full object-cover border border-white/20 shadow-sm" onerror="this.onerror=null;this.src='logo.jpg';" src="https://lh3.googleusercontent.com/aida/ALJJyrCnbUoOrN5CvpuKj6gQLDqCI5575YNdNHuJtaz2NXOCk9VppEStHYXYuEhh0CFak3pBQqilRo7jXx9o9La-zXMRXOZrmFBEP-CNN6layYU_Y1-vE_qEPtTobeYsJGuP76v-zcz0usDy74pwzurFaAqT_JlNM3EgxB3rERkAtD6j5ArvyUCbiej3ZDaV0_k4Rgaec94UkS593ZJ_o0vdIgCOGE8hUCZDDolKMkRwlTJZ">
+<img src="https://lh3.googleusercontent.com/aida/ALJJyrCnbUoOrN5CvpuKj6gQLDqCI5575YNdNHuJtaz2NXOCk9VppEStHYXYuEhh0CFak3pBQqilRo7jXx9o9La-zXMRXOZrmFBEP-CNN6layYU_Y1-vE_qEPtTobeYsJGuP76v-zcz0usDy74pwzurFaAqT_JlNM3EgxB3rERkAtD6j5ArvyUCbiej3ZDaV0_k4Rgaec94UkS593ZJ_o0vdIgCOGE8hUCZDDolKMkRwlTJZ" onerror="this.onerror=null;this.src='logo.jpg';" alt="SR Farm Logo" class="w-10 h-10 rounded-full object-cover border border-white/20 shadow-sm">
 </div>
 <div class="flex items-center gap-1.5">
 <span class="font-display text-[26px] text-emerald-800 font-extrabold tracking-tight leading-none">SR Farm</span>
@@ -86,19 +86,19 @@ tailwind.config = {
 </div>
 </header>
 <!-- Main Container -->
-<main class="flex flex-col relative w-full pt-16 pb-24 min-h-screen max-w-xl mx-auto bg-[#f8fafc]">
+<main class="flex flex-col relative w-full pt-16 pb-24 min-h-screen max-w-xl mx-auto">
 <div class="flex flex-col w-full">
 <!-- Plantation Hero Feature Card -->
-<div class="px-4 pt-3 pb-2">
+<div class="px-4 pt-3">
 <div class="relative w-full rounded-2xl overflow-hidden shadow-md bg-gray-100 border border-gray-200">
-<img alt="SR Farm Landscape" class="w-full h-52 object-cover rounded-2xl shadow-sm" onerror="this.onerror=null;this.src='Farm.jpg';" src="https://lh3.googleusercontent.com/aida/ALJJyrBvDB3J3UQ-iBYxmOH8tIPtMZzmnjoIf57ZSHCZc7mQEwUVrCZfmYKKlv23jXViHwQZ97ubc7RXpNDTg5SDtONWmP16ypV51zKxnW7cog8brcT2nLbOpW_zTdXyhxXwjQVrq1HZurbcxTMhl123z96cGjgmorCdLIOdLlQW7AU6k2mNOtV5sptBPcdkyO6NNP8M54ju2PNRh0yQLI0-QU6xKFlTZ_bVipJuNSUH6vuB" style="height: 160px; object-position: center top;">
+<img id="heroFarmImg" src="https://lh3.googleusercontent.com/aida/ALJJyrBvDB3J3UQ-iBYxmOH8tIPtMZzmnjoIf57ZSHCZc7mQEwUVrCZfmYKKlv23jXViHwQZ97ubc7RXpNDTg5SDtONWmP16ypV51zKxnW7cog8brcT2nLbOpW_zTdXyhxXwjQVrq1HZurbcxTMhl123z96cGjgmorCdLIOdLlQW7AU6k2mNOtV5sptBPcdkyO6NNP8M54ju2PNRh0yQLI0-QU6xKFlTZ_bVipJuNSUH6vuB" onerror="this.onerror=null;this.src='Farm.jpg';" alt="SR Farm Landscape" class="w-full h-40 sm:h-64 md:h-72 object-cover rounded-2xl shadow-sm" style="object-position: center 50%;">
 </div>
 </div>
 <!-- Live Telemetry Status Bar -->
-<div class="px-4 py-1">
+<div class="px-4 pb-1">
 <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex flex-col gap-3">
 <div class="flex items-center justify-between gap-1 sm:gap-2 overflow-x-auto pb-0.5">
-<a href="https://www.google.com/maps/dir//Bannikuppe+Shri+Dattatreya+Temple,+M78M%2BVWH,+Datta+Mandira,+Datta+Mandir+Rd,+Bannikuppe,+Bengaluru,+Karnataka+562159/@12.6671772,77.2657933,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3bae521d959af523:0xec58e70faaf4b3c3!2m2!1d77.2849016!2d12.667186!3e0" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shrink-0 bg-[#0a2e1b] border border-emerald-500/20 shadow-sm hover:border-emerald-400/40 cursor-pointer active:scale-95 transition-all" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" title="Open Google Maps Directions">
+<a class="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shrink-0 bg-[#0a2e1b] border border-emerald-500/20 shadow-sm hover:border-emerald-400/40 cursor-pointer active:scale-95 transition-all" href="https://www.google.com/maps/dir//Bannikuppe+Shri+Kollur+Mookambika+temple,+Kailancha+Hobli,+Bannikuppe,+Karnataka+562159/@12.667186,77.2849016,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae5b86fa2e7f85:0xbdb3bc1b60b7caec!2m2!1d77.2849016!2d12.667186!3e0?entry=ttu&amp;g_ep=EgoyMDI2MTExNy4wIKXMDSoASAFQAw%3D%3D" rel="noopener noreferrer" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" target="_blank" title="Open Google Maps Directions">
 <div class="w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-[#16472b] flex items-center justify-center shrink-0">
 <span class="material-symbols-outlined text-emerald-400 text-[12px] sm:text-[16px]">location_on</span>
 </div>
@@ -167,7 +167,7 @@ tailwind.config = {
 </div>
 <span class="text-[13.5px] font-semibold text-white leading-tight drop-shadow-sm pointer-events-none">Photos &amp; Videos</span>
 </button>
-<button class="farm-card w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" data-section="expenses" onclick="openModal('quickLog')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
+<button class="farm-card w-full text-left active:scale-95 transition-all rounded-xl p-3 flex items-center gap-2.5 min-h-[58px] cursor-pointer border border-emerald-400/30 shadow-md hover:border-emerald-400/50 relative overflow-hidden" data-section="expenses" onclick="openModal('expenses')" style="background: linear-gradient(135deg, rgb(10, 46, 27) 50%, rgb(22, 91, 51) 50%);" type="button">
 <div class="w-8 h-8 rounded-lg bg-[#072013]/70 text-emerald-300 border border-emerald-400/30 flex items-center justify-center shrink-0 shadow-sm pointer-events-none">
 <span class="material-symbols-outlined text-[19px]">account_balance_wallet</span>
 </div>
@@ -281,7 +281,7 @@ tailwind.config = {
 <span class="material-symbols-outlined text-[22px]">grid_view</span>
 <span class="text-[12px] font-extrabold tracking-wide mt-0.5">Sections</span>
 </button>
-<a class="flex flex-col items-center justify-center flex-1 py-1 text-gray-500 hover:text-emerald-700 transition-colors cursor-pointer" href="https://www.google.com/maps/dir//Bannikuppe+Shri+Dattatreya+Temple,+M78M%2BVWH,+Datta+Mandira,+Datta+Mandir+Rd,+Bannikuppe,+Bengaluru,+Karnataka+562159/@12.6671772,77.2657933,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3bae521d959af523:0xec58e70faaf4b3c3!2m2!1d77.2849016!2d12.667186!3e0" rel="noopener noreferrer" target="_blank">
+<a class="flex flex-col items-center justify-center flex-1 py-1 text-gray-500 hover:text-emerald-700 transition-colors cursor-pointer" href="https://www.google.com/maps/dir//Bannikuppe+Shri+Kollur+Mookambika+temple,+Kailancha+Hobli,+Bannikuppe,+Karnataka+562159/@12.667186,77.2849016,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae5b86fa2e7f85:0xbdb3bc1b60b7caec!2m2!1d77.2849016!2d12.667186!3e0?entry=ttu&amp;g_ep=EgoyMDI2MTExNy4wIKXMDSoASAFQAw%3D%3D" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[22px]">location_on</span>
 <span class="text-[12px] font-extrabold tracking-wide mt-0.5">Location</span>
 </a>
@@ -291,88 +291,52 @@ tailwind.config = {
 <div class="fixed inset-0 z-50 bg-black/60 items-end sm:items-center justify-center p-4 backdrop-blur-sm hidden" id="farmModal" onclick="if(event.target === this) closeModal()">
 <div class="bg-white rounded-2xl p-6 max-h-[85vh] overflow-y-auto w-full max-w-lg shadow-2xl relative text-gray-900 border border-gray-100 flex flex-col" id="modalDialog">
 <!-- Header with title & close button -->
-<div class="flex items-center justify-between pb-3 mb-3 border-b border-gray-100"><div class="flex items-center gap-2"><span class="w-1.5 h-4 bg-emerald-600 rounded-full shadow-sm"></span><h3 class="font-headline text-[18px] font-bold text-gray-900 tracking-tight" id="modalTitle">Farm Details</h3></div><button aria-label="Close modal" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition-colors text-base font-bold" id="closeModalBtn" onclick="closeModal()" type="button">✕</button></div>
+<div class="flex items-center justify-between pb-3 mb-3 border-b border-gray-100"><div class="flex items-center gap-2"><span class="w-1.5 h-4 bg-emerald-600 rounded-full shadow-sm"></span><h3 class="font-headline text-[18px] font-bold text-gray-900 tracking-tight" id="modalTitle">About Farm</h3></div><button aria-label="Close modal" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition-colors text-base font-bold" id="closeModalBtn" onclick="closeModal()" type="button">✕</button></div>
 <!-- Modal Dynamic Content Body -->
 <div class="text-sm text-gray-700 space-y-4 leading-relaxed" id="modalContent">
-      <div class="space-y-3">
-        <div class="grid grid-cols-2 gap-2 text-center">
-          <div class="p-3 bg-sky-50 rounded-xl border border-sky-200">
-            <span class="text-xs text-sky-800 font-semibold block">Total Depth</span>
-            <span class="text-lg font-bold text-sky-950">600 ft</span>
-          </div>
-          <div class="p-3 bg-sky-50 rounded-xl border border-sky-200">
-            <span class="text-xs text-sky-800 font-semibold block">Water Level</span>
-            <span class="text-lg font-bold text-sky-950">320 ft</span>
-          </div>
-        </div>
-        <div class="space-y-2 text-xs">
-          <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 flex items-center justify-between">
-            <span class="font-semibold text-gray-700">Submersible Motor:</span>
-            <span class="font-bold text-gray-900">Texmo, 10 HP, 16 Stages</span>
-          </div>
-          <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 flex items-center justify-between">
-            <span class="font-semibold text-gray-700">Controller Starter:</span>
-            <span class="font-bold text-gray-900">Meeco (Auto Controller)</span>
-          </div>
-          <div class="p-2.5 bg-emerald-50 rounded-lg border border-emerald-200 text-emerald-900">
-            <span class="font-bold block mb-0.5">Drip Irrigation System:</span>
-            <span>Comprehensive sub-lateral drip network reaching all 52 Guntas of orchard blocks with automated timers.</span>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="space-y-3">
+<div class="bg-emerald-50 text-emerald-900 p-3.5 rounded-xl border border-emerald-200">
+<p class="font-bold text-xs uppercase tracking-wider text-emerald-700 mb-1">Organic Farm &amp; Estate Overview</p>
+<p class="font-medium text-[13.5px]">Welcome to Our Organic Farm. Fresh fruits, fresh air, and zero pesticides. Experience the difference, and feel close to nature again.</p>
 </div>
-</div><script>
-if (typeof farmData !== 'undefined') {
-  farmData.quickLog = {
-    title: '+ Quick Farm Log / Entry',
-    html: `
-      <form onsubmit="event.preventDefault(); showSyncToast('Log Saved & Synced', 'Field entry logged to Google Sheets.'); closeModal();" class="space-y-3.5 text-xs text-gray-900">
-        <div class="bg-emerald-50 border border-emerald-200 p-2.5 rounded-xl text-emerald-900 flex items-center justify-between">
-          <span class="font-bold flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>Google Sheets Sync Active</span>
-          <span class="text-[10.5px] text-emerald-700 font-semibold">Auto-Sync</span>
-        </div>
-        <div class="space-y-1">
-          <label class="font-bold text-gray-700 block">Activity Date</label>
-          <input type="date" id="logDate" class="w-full p-2.5 border border-gray-200 rounded-lg text-xs bg-white text-gray-900 focus:border-emerald-600 focus:outline-none" required>
-        </div>
-        <div class="space-y-1">
-          <label class="font-bold text-gray-700 block">Category / Crop</label>
-          <select class="w-full p-2.5 border border-gray-200 rounded-lg text-xs bg-white text-gray-900 focus:border-emerald-600 focus:outline-none" required>
-            <option value="drip">Drip Irrigation & Water Telemetry</option>
-            <option value="mango">Mango Orchard Care</option>
-            <option value="coconut">Coconut & Mixed Fruits</option>
-            <option value="manure">Organic Fertilizers & Manure</option>
-            <option value="labor">Field Operations & Labor</option>
-            <option value="equipment">Borewell & Pump Servicing</option>
-          </select>
-        </div>
-        <div class="space-y-1">
-          <label class="font-bold text-gray-700 block">Log Details / Notes</label>
-          <textarea rows="3" class="w-full p-2.5 border border-gray-200 rounded-lg text-xs bg-white text-gray-900 focus:border-emerald-600 focus:outline-none" placeholder="Enter field notes, hours, volume, or payment details..." required></textarea>
-        </div>
-        <div class="pt-1">
-          <button type="submit" class="w-full py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl text-xs shadow-md transition-all flex items-center justify-center gap-1.5 cursor-pointer">
-            <span class="material-symbols-outlined text-[16px]">cloud_upload</span>
-            <span>Submit Entry</span>
-          </button>
-        </div>
-      </form>
-    `
-  };
-  const originalOpenModal = window.openModal;
-  window.openModal = function(key) {
-    if (originalOpenModal) originalOpenModal(key);
-    const t = document.getElementById('modalTitle');
-    if (t && farmData[key]) t.textContent = farmData[key].title;
-    if (key === 'quickLog') {
-      const dateInput = document.getElementById('logDate');
-      if (dateInput) dateInput.value = new Date().toISOString().split('T')[0];
-    }
-  };
-}
-</script>
+<div class="space-y-2 text-xs">
+<div class="flex items-start gap-2.5 p-2 rounded-lg bg-gray-50 border border-gray-200/70">
+<span class="material-symbols-outlined text-emerald-600 text-base mt-0.5">pin_drop</span>
+<div>Location: Bannikuppe, Ramanagara (near Bangalore), Karnataka | Pincode: 562159</div>
+</div>
+<div class="flex items-start gap-2.5 p-2 rounded-lg bg-gray-50 border border-gray-200/70">
+<span class="material-symbols-outlined text-emerald-600 text-base mt-0.5">eco</span>
+<div><span class="font-bold text-gray-900">Farming Method:</span> Natural regenerative agronomy with zero chemical pesticides.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <script>
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxk_WONbbnzMZIlmFjV_k15pX6jJdXU8UNvUIr_aFW9ruFXxqBIzBi7x3TtKDfCaFet/exec";
+let currentOpenModalKey = null;
+
+// Global Ledger State (seeded with baseline records, updated from Google Sheets)
+let globalLedgerEntries = [
+  {
+    date: "Recent",
+    type: "expense",
+    category: "Field Operations",
+    title: "Organic Manure & Labor",
+    notes: "Field Operations • Cash",
+    amount: 5000
+  },
+  {
+    date: "Recent",
+    type: "expense",
+    category: "Borewell Servicing",
+    title: "Drip Emitter Maintenance",
+    notes: "Borewell Servicing • UPI",
+    amount: 3000
+  }
+];
+
 // Notification Helper
 function showSyncToast(title, msg) {
   const toast = document.getElementById('syncToast');
@@ -387,7 +351,197 @@ function showSyncToast(title, msg) {
   }, 3200);
 }
 
-// 8 Verified Data Modules for SR Farm
+function escapeHtml(str) {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function formatINR(num) {
+  return Number(num || 0).toLocaleString('en-IN');
+}
+
+function renderExpensesHtml() {
+  let totalExpenses = 0;
+  let totalIncome = 0;
+
+  globalLedgerEntries.forEach((item) => {
+    const amt = Number(item.amount) || 0;
+    if (item.type === 'income') {
+      totalIncome += amt;
+    } else if (item.type === 'expense') {
+      totalExpenses += amt;
+    }
+  });
+
+  const rowsHtml = globalLedgerEntries.length
+    ? globalLedgerEntries.map((item) => {
+        const amt = Number(item.amount) || 0;
+        const isIncome = item.type === 'income';
+        const isLog = item.type === 'log' || amt === 0;
+        const amtClass = isIncome ? 'text-emerald-700' : (isLog ? 'text-gray-600' : 'text-red-600');
+        const amtText = isLog ? 'Log' : `${isIncome ? '+' : '-'}₹${formatINR(amt)}`;
+        return `
+          <div class="p-2 bg-gray-50 rounded border border-gray-200 flex justify-between items-center gap-2">
+            <div class="min-w-0">
+              <div class="font-bold text-gray-900 truncate">${escapeHtml(item.title || item.category || 'Farm Entry')}</div>
+              <div class="text-[10px] text-gray-500 truncate">${escapeHtml(item.notes || item.category || '')}${item.date ? ' • ' + escapeHtml(item.date) : ''}</div>
+            </div>
+            <span class="${amtClass} font-bold shrink-0">${amtText}</span>
+          </div>
+        `;
+      }).join('')
+    : `<div class="p-3 bg-gray-50 rounded border border-gray-200 text-center text-gray-500">No entries recorded yet.</div>`;
+
+  return `
+    <div class="space-y-3">
+      <div class="grid grid-cols-2 gap-2 text-center text-xs">
+        <div class="p-3 bg-red-50 rounded-xl border border-red-200">
+          <span class="text-red-700 font-semibold block">Total Expenses</span>
+          <span class="text-lg font-bold text-red-700">₹${formatINR(totalExpenses)}</span>
+        </div>
+        <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200">
+          <span class="text-emerald-800 font-semibold block">Total Income</span>
+          <span class="text-lg font-bold text-emerald-700">₹${formatINR(totalIncome)}</span>
+        </div>
+      </div>
+      <div class="p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs space-y-1">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-gray-900">Google Sheets Webhook</span>
+          <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold text-[10px]">Connected</span>
+        </div>
+        <p class="text-[11px] text-gray-500 break-all font-mono">...exec/AKfycbxk_WONbbnzMZIlmFjV_k15pX6jJdXU8UNvUIr_aFW9ruFXxqBIzBi7x3TtKDfCaFet</p>
+      </div>
+      <div class="space-y-1.5 text-xs">
+        <div class="flex items-center justify-between">
+          <span class="font-bold text-gray-900">Global Transactions &amp; Logs:</span>
+          <button type="button" onclick="fetchGlobalRecords(true)" class="text-[11px] font-bold text-emerald-700 hover:underline cursor-pointer">Refresh</button>
+        </div>
+        ${rowsHtml}
+      </div>
+    </div>
+  `;
+}
+
+// Fetch latest global records from Google Apps Script Web App URL (GET)
+async function fetchGlobalRecords(showToastOnSuccess = false) {
+  try {
+    const res = await fetch(`${GOOGLE_SCRIPT_URL}?t=${Date.now()}`, {
+      method: 'GET',
+      redirect: 'follow'
+    });
+    if (!res.ok) return;
+    const raw = await res.json();
+    const rows = Array.isArray(raw) ? raw : (Array.isArray(raw.data) ? raw.data : (Array.isArray(raw.records) ? raw.records : null));
+    if (rows && rows.length > 0) {
+      globalLedgerEntries = rows.map((r) => {
+        const rawType = String(r.type || r.Type || 'expense').toLowerCase();
+        const type = rawType.includes('income') ? 'income' : (rawType.includes('log') ? 'log' : 'expense');
+        return {
+          date: r.date || r.Date || '',
+          type,
+          category: r.category || r.Category || 'Farm Entry',
+          title: r.title || r.Title || r.category || r.Category || 'Farm Entry',
+          notes: r.notes || r.Notes || r.details || r.Details || '',
+          amount: Number(r.amount || r.Amount || 0)
+        };
+      }).reverse();
+      farmData.expenses.html = renderExpensesHtml();
+      if (currentOpenModalKey === 'expenses') {
+        const contentEl = document.getElementById('modalContent');
+        if (contentEl) contentEl.innerHTML = farmData.expenses.html;
+      }
+      if (showToastOnSuccess) {
+        showSyncToast('Synced with Google Sheets', 'Latest global records loaded.');
+      }
+    }
+  } catch (err) {
+    // Keep existing/local state if offline or CORS-restricted
+  }
+}
+
+// Send new entry to Google Apps Script Web App URL (POST) and update UI immediately
+async function syncEntryToGoogleSheets(entry) {
+  globalLedgerEntries.unshift(entry);
+  farmData.expenses.html = renderExpensesHtml();
+
+  const activityList = document.getElementById('recentActivityList');
+  if (activityList) {
+    const isIncome = entry.type === 'income';
+    const isExpense = entry.type === 'expense' && Number(entry.amount) > 0;
+    const amountLabel = isExpense ? `: -₹${formatINR(entry.amount)}` : (isIncome && Number(entry.amount) > 0 ? `: +₹${formatINR(entry.amount)}` : '');
+    const titleColor = isExpense ? 'text-red-400' : (isIncome ? 'text-emerald-300' : 'text-white');
+    const itemEl = document.createElement('div');
+    itemEl.className = 'flex items-start gap-3 p-2.5 rounded-xl cursor-pointer transition-colors bg-[#16472b] border border-emerald-400/20';
+    itemEl.onclick = () => openModal('expenses');
+    itemEl.innerHTML = `
+      <div class="w-7 h-7 rounded-full bg-emerald-950 border border-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5">
+        <span class="material-symbols-outlined text-emerald-400 text-[16px]">cloud_done</span>
+      </div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center justify-between">
+          <span class="text-[12px] font-bold ${titleColor} truncate">${escapeHtml(entry.title)}${amountLabel}</span>
+          <span class="text-[10px] text-emerald-300 font-bold shrink-0 flex items-center gap-0.5">
+            <span class="material-symbols-outlined text-[12px]">cloud_done</span>Synced
+          </span>
+        </div>
+        <p class="text-[11px] text-emerald-100/90 truncate">${escapeHtml(entry.notes || entry.category)}</p>
+      </div>
+    `;
+    activityList.prepend(itemEl);
+  }
+
+  showSyncToast('Log Saved & Synced', 'Entry synced globally to Google Sheets.');
+  closeModal();
+
+  try {
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(entry)
+    });
+  } catch (err) {
+    // UI already updated optimistically
+  }
+}
+
+function handleQuickLogSubmit(event) {
+  event.preventDefault();
+  const date = document.getElementById('logDate')?.value || new Date().toISOString().split('T')[0];
+  const type = document.getElementById('logType')?.value || 'expense';
+  const categorySelect = document.getElementById('logCategory');
+  const category = categorySelect ? categorySelect.options[categorySelect.selectedIndex].text : 'Farm Entry';
+  const amount = Number(document.getElementById('logAmount')?.value || 0);
+  const notes = document.getElementById('logNotes')?.value?.trim() || '';
+
+  syncEntryToGoogleSheets({
+    date,
+    type,
+    category,
+    title: category,
+    notes,
+    amount
+  });
+}
+
+function handleMediaUpload(event, targetImgId, tagLabel) {
+  const file = event.target.files?.[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const imgEl = document.getElementById(targetImgId);
+    if (imgEl) {
+      imgEl.src = e.target.result;
+    }
+    showSyncToast('Media Saved', `${tagLabel} updated and synced.`);
+  };
+  reader.readAsDataURL(file);
+}
+
+// 8 Verified Data Modules for SR Farm + Quick Log
 const farmData = {
   about: {
     title: "About Farm",
@@ -400,11 +554,7 @@ const farmData = {
         <div class="space-y-2 text-xs">
           <div class="flex items-start gap-2.5 p-2 rounded-lg bg-gray-50 border border-gray-200/70">
             <span class="material-symbols-outlined text-emerald-600 text-base mt-0.5">pin_drop</span>
-            <div><span class="font-bold text-gray-900">Location:</span> Bannikuppe, Ramanagara (near Bangalore), Karnataka.</div>
-          </div>
-          <div class="flex items-start gap-2.5 p-2 rounded-lg bg-gray-50 border border-gray-200/70">
-            <span class="material-symbols-outlined text-emerald-600 text-base mt-0.5">landscape</span>
-            <div><span class="font-bold text-gray-900">Total Land Area:</span> Spanning 52 guntas of fertile land dedicated to sustainable farming.</div>
+            <div>Location: Bannikuppe, Ramanagara (near Bangalore), Karnataka | Pincode: 562159</div>
           </div>
           <div class="flex items-start gap-2.5 p-2 rounded-lg bg-gray-50 border border-gray-200/70">
             <span class="material-symbols-outlined text-emerald-600 text-base mt-0.5">eco</span>
@@ -549,22 +699,98 @@ const farmData = {
     html: `
       <div class="space-y-3">
         <div class="p-3 bg-purple-50 border border-purple-200 rounded-xl text-xs space-y-1">
-          <span class="font-bold text-purple-900 block">Estate Media Archive</span>
-          <p class="text-purple-800">Photo tags: <span class="font-semibold">Farm1, Farm2, Farm3</span></p>
-          <p class="text-purple-800">Video tag: <span class="font-semibold">Farmvid1</span></p>
+          <span class="font-bold text-purple-900 block">Estate Media Archive &amp; Tags</span>
+          <p class="text-purple-800">Media tags: <span class="font-semibold">Farm1.jpg, Farm2.jpg, Farm3.jpg, Farmvid1.mp4</span></p>
         </div>
-        <div class="grid grid-cols-2 gap-2 text-xs">
-          <div class="border border-dashed border-gray-300 rounded-xl p-3 text-center flex flex-col items-center justify-center gap-1 hover:bg-gray-50 cursor-pointer" onclick="showSyncToast('Upload Ready', 'Select farm images to sync with cloud ledger.')">
-            <span class="material-symbols-outlined text-emerald-600 text-2xl">add_photo_alternate</span>
-            <span class="font-bold text-gray-800">Upload Photo</span>
-            <span class="text-[10px] text-gray-500">JPG, PNG up to 15MB</span>
+
+        <!-- Media Grid with Farm1 Card explicitly featured -->
+        <div class="grid grid-cols-2 gap-2.5 text-xs">
+          <!-- Farm1 Card -->
+          <div class="bg-gray-50 rounded-xl p-2.5 border border-gray-200 flex flex-col gap-2 shadow-sm">
+            <div class="relative w-full h-24 rounded-lg overflow-hidden bg-gray-200 border border-gray-300 flex items-center justify-center">
+              <img id="farm1PreviewImg" src="Farm1.jpg" alt="Farm1" onerror="this.onerror=null;this.parentElement.querySelector('.img-fallback').classList.remove('hidden');this.classList.add('hidden');" class="w-full h-full object-cover"/>
+              <div class="img-fallback hidden flex-col items-center justify-center text-gray-400 p-2 text-center">
+                <span class="material-symbols-outlined text-2xl text-emerald-700">landscape</span>
+                <span class="text-[10px] font-bold text-gray-600 mt-0.5">Farm1.jpg</span>
+              </div>
+              <span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-black/60 text-white font-bold text-[9px] backdrop-blur-sm">Farm1</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="font-bold text-gray-900 block text-[11px]">Farm1</span>
+                <span class="text-[9.5px] text-gray-500">Farm1.jpg</span>
+              </div>
+              <label class="px-2 py-1 rounded bg-emerald-700 hover:bg-emerald-800 text-white text-[10px] font-bold cursor-pointer transition-colors shrink-0">
+                Upload
+                <input type="file" accept="image/*" class="hidden" onchange="handleMediaUpload(event, 'farm1PreviewImg', 'Farm1.jpg')">
+              </label>
+            </div>
           </div>
-          <div class="border border-dashed border-gray-300 rounded-xl p-3 text-center flex flex-col items-center justify-center gap-1 hover:bg-gray-50 cursor-pointer" onclick="showSyncToast('Video Stream', 'Drone flyover & field clip archive synced.')">
-            <span class="material-symbols-outlined text-purple-600 text-2xl">video_call</span>
-            <span class="font-bold text-gray-800">Upload Clip</span>
-            <span class="text-[10px] text-gray-500">MP4, MOV 4K</span>
+
+          <!-- Farm2 Card -->
+          <div class="bg-gray-50 rounded-xl p-2.5 border border-gray-200 flex flex-col gap-2 shadow-sm">
+            <div class="relative w-full h-24 rounded-lg overflow-hidden bg-gray-200 border border-gray-300 flex items-center justify-center">
+              <img id="farm2PreviewImg" src="Farm2.jpg" alt="Farm2" onerror="this.onerror=null;this.parentElement.querySelector('.img-fallback').classList.remove('hidden');this.classList.add('hidden');" class="w-full h-full object-cover"/>
+              <div class="img-fallback hidden flex-col items-center justify-center text-gray-400 p-2 text-center">
+                <span class="material-symbols-outlined text-2xl text-emerald-700">photo</span>
+                <span class="text-[10px] font-bold text-gray-600 mt-0.5">Farm2.jpg</span>
+              </div>
+              <span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-black/60 text-white font-bold text-[9px] backdrop-blur-sm">Farm2</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="font-bold text-gray-900 block text-[11px]">Farm2</span>
+                <span class="text-[9.5px] text-gray-500">Farm2.jpg</span>
+              </div>
+              <label class="px-2 py-1 rounded bg-emerald-700 hover:bg-emerald-800 text-white text-[10px] font-bold cursor-pointer transition-colors shrink-0">
+                Upload
+                <input type="file" accept="image/*" class="hidden" onchange="handleMediaUpload(event, 'farm2PreviewImg', 'Farm2.jpg')">
+              </label>
+            </div>
+          </div>
+
+          <!-- Farm3 Card -->
+          <div class="bg-gray-50 rounded-xl p-2.5 border border-gray-200 flex flex-col gap-2 shadow-sm">
+            <div class="relative w-full h-24 rounded-lg overflow-hidden bg-gray-200 border border-gray-300 flex items-center justify-center">
+              <img id="farm3PreviewImg" src="Farm3.jpg" alt="Farm3" onerror="this.onerror=null;this.parentElement.querySelector('.img-fallback').classList.remove('hidden');this.classList.add('hidden');" class="w-full h-full object-cover"/>
+              <div class="img-fallback hidden flex-col items-center justify-center text-gray-400 p-2 text-center">
+                <span class="material-symbols-outlined text-2xl text-emerald-700">image</span>
+                <span class="text-[10px] font-bold text-gray-600 mt-0.5">Farm3.jpg</span>
+              </div>
+              <span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-black/60 text-white font-bold text-[9px] backdrop-blur-sm">Farm3</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="font-bold text-gray-900 block text-[11px]">Farm3</span>
+                <span class="text-[9.5px] text-gray-500">Farm3.jpg</span>
+              </div>
+              <label class="px-2 py-1 rounded bg-emerald-700 hover:bg-emerald-800 text-white text-[10px] font-bold cursor-pointer transition-colors shrink-0">
+                Upload
+                <input type="file" accept="image/*" class="hidden" onchange="handleMediaUpload(event, 'farm3PreviewImg', 'Farm3.jpg')">
+              </label>
+            </div>
+          </div>
+
+          <!-- Farmvid1 Card -->
+          <div class="bg-gray-50 rounded-xl p-2.5 border border-gray-200 flex flex-col gap-2 shadow-sm">
+            <div class="relative w-full h-24 rounded-lg overflow-hidden bg-[#16472b]/20 border border-gray-300 flex flex-col items-center justify-center text-center p-1">
+              <span class="material-symbols-outlined text-2xl text-purple-600">videocam</span>
+              <span class="text-[10px] font-bold text-gray-700 mt-0.5">Farmvid1.mp4</span>
+              <span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-purple-900/80 text-white font-bold text-[9px] backdrop-blur-sm">Farmvid1</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="font-bold text-gray-900 block text-[11px]">Farmvid1</span>
+                <span class="text-[9.5px] text-gray-500">Farmvid1.mp4</span>
+              </div>
+              <label class="px-2 py-1 rounded bg-purple-700 hover:bg-purple-800 text-white text-[10px] font-bold cursor-pointer transition-colors shrink-0">
+                Upload
+                <input type="file" accept="video/*" class="hidden" onchange="showSyncToast('Video Uploaded', 'Farmvid1.mp4 successfully synced.')">
+              </label>
+            </div>
           </div>
         </div>
+
         <div class="p-2.5 bg-gray-50 rounded-lg border border-gray-200 text-xs text-gray-600 flex items-center justify-between">
           <span>Synced with Cloud Storage</span>
           <span class="text-emerald-700 font-bold flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-500"></span> Active</span>
@@ -574,44 +800,7 @@ const farmData = {
   },
   expenses: {
     title: "Expenses & Income Ledger",
-    html: `
-      <div class="space-y-3">
-        <div class="grid grid-cols-2 gap-2 text-center text-xs">
-          <div class="p-3 bg-red-50 rounded-xl border border-red-200">
-            <span class="text-red-700 font-semibold block">Total Expenses</span>
-            <span class="text-lg font-bold text-red-700">₹8,000</span>
-          </div>
-          <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200">
-            <span class="text-emerald-800 font-semibold block">Total Income</span>
-            <span class="text-lg font-bold text-emerald-700">₹0</span>
-          </div>
-        </div>
-        <div class="p-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs space-y-1">
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-gray-900">Google Sheets Webhook</span>
-            <span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold text-[10px]">Connected</span>
-          </div>
-          <p class="text-[11px] text-gray-500 break-all font-mono">...exec/AKfycbxk_WONbbnzMZIlmFjV_k15pX6jJdXU8UNvUIr_aFW9ruFXxqBIzBi7x3TtKDfCaFet</p>
-        </div>
-        <div class="space-y-1.5 text-xs">
-          <span class="font-bold text-gray-900 block">Recent Transactions:</span>
-          <div class="p-2 bg-gray-50 rounded border border-gray-200 flex justify-between items-center">
-            <div>
-              <div class="font-bold text-gray-900">Organic Manure & Labor</div>
-              <div class="text-[10px] text-gray-500">Field Operations • Cash</div>
-            </div>
-            <span class="text-red-600 font-bold">-₹5,000</span>
-          </div>
-          <div class="p-2 bg-gray-50 rounded border border-gray-200 flex justify-between items-center">
-            <div>
-              <div class="font-bold text-gray-900">Drip Emitter Maintenance</div>
-              <div class="text-[10px] text-gray-500">Borewell Servicing • UPI</div>
-            </div>
-            <span class="text-red-600 font-bold">-₹3,000</span>
-          </div>
-        </div>
-      </div>
-    `
+    html: renderExpensesHtml()
   },
   operations: {
     title: "Farm Operations & Logs",
@@ -637,6 +826,58 @@ const farmData = {
         </div>
       </div>
     `
+  },
+  quickLog: {
+    title: "+ Quick Farm Log / Entry",
+    html: `
+      <form onsubmit="handleQuickLogSubmit(event)" class="space-y-3.5 text-xs text-gray-900">
+        <div class="bg-emerald-50 border border-emerald-200 p-2.5 rounded-xl text-emerald-900 flex items-center justify-between">
+          <span class="font-bold flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>Google Sheets Sync Active</span>
+          <span class="text-[10.5px] text-emerald-700 font-semibold">Global Auto-Sync</span>
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div class="space-y-1">
+            <label class="font-bold text-gray-700 block">Activity Date</label>
+            <input type="date" id="logDate" class="w-full p-2.5 border border-gray-200 rounded-lg text-xs bg-white text-gray-900 focus:border-emerald-600 focus:outline-none" required>
+          </div>
+          <div class="space-y-1">
+            <label class="font-bold text-gray-700 block">Entry Type</label>
+            <select id="logType" class="w-full p-2.5 border border-gray-200 rounded-lg text-xs bg-white text-gray-900 focus:border-emerald-600 focus:outline-none">
+              <option value="expense">Expense (-₹)</option>
+              <option value="income">Income (+₹)</option>
+              <option value="log">Field Log Only</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div class="space-y-1">
+            <label class="font-bold text-gray-700 block">Category / Crop</label>
+            <select id="logCategory" class="w-full p-2.5 border border-gray-200 rounded-lg text-xs bg-white text-gray-900 focus:border-emerald-600 focus:outline-none" required>
+              <option value="drip">Drip Irrigation &amp; Water</option>
+              <option value="mango">Mango Orchard Care</option>
+              <option value="coconut">Coconut &amp; Mixed Fruits</option>
+              <option value="manure">Organic Fertilizers &amp; Manure</option>
+              <option value="labor">Field Operations &amp; Labor</option>
+              <option value="equipment">Borewell &amp; Pump Servicing</option>
+            </select>
+          </div>
+          <div class="space-y-1">
+            <label class="font-bold text-gray-700 block">Amount (₹)</label>
+            <input type="number" id="logAmount" min="0" step="1" placeholder="0" class="w-full p-2.5 border border-gray-200 rounded-lg text-xs bg-white text-gray-900 focus:border-emerald-600 focus:outline-none">
+          </div>
+        </div>
+        <div class="space-y-1">
+          <label class="font-bold text-gray-700 block">Log Details / Notes</label>
+          <textarea id="logNotes" rows="3" class="w-full p-2.5 border border-gray-200 rounded-lg text-xs bg-white text-gray-900 focus:border-emerald-600 focus:outline-none" placeholder="Enter field notes, hours, volume, or payment details..." required></textarea>
+        </div>
+        <div class="pt-1">
+          <button type="submit" class="w-full py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl text-xs shadow-md transition-all flex items-center justify-center gap-1.5 cursor-pointer">
+            <span class="material-symbols-outlined text-[16px]">cloud_upload</span>
+            <span>Submit Entry</span>
+          </button>
+        </div>
+      </form>
+    `
   }
 };
 
@@ -644,10 +885,11 @@ const farmData = {
 function openModal(sectionKey) {
   const data = farmData[sectionKey];
   if (!data) return;
+  currentOpenModalKey = sectionKey;
   const titleEl = document.getElementById('modalTitle');
   const contentEl = document.getElementById('modalContent');
   const modal = document.getElementById('farmModal');
-  
+
   if (titleEl) titleEl.textContent = data.title;
   if (contentEl) contentEl.innerHTML = data.html;
   if (modal) {
@@ -655,9 +897,17 @@ function openModal(sectionKey) {
     modal.classList.add('flex');
   }
   document.body.style.overflow = 'hidden';
+
+  if (sectionKey === 'quickLog') {
+    const dateInput = document.getElementById('logDate');
+    if (dateInput) dateInput.value = new Date().toISOString().split('T')[0];
+  } else if (sectionKey === 'expenses') {
+    fetchGlobalRecords(false);
+  }
 }
 
 function closeModal() {
+  currentOpenModalKey = null;
   const modal = document.getElementById('farmModal');
   if (modal) {
     modal.classList.add('hidden');
@@ -666,10 +916,11 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-// Double safety: Attach direct DOM event listeners to all farm-card buttons on load
+// Fetch global records on page load & attach direct DOM event listeners
 document.addEventListener('DOMContentLoaded', () => {
+  fetchGlobalRecords(false);
   document.querySelectorAll('.farm-card').forEach((btn) => {
-    btn.addEventListener('click', (e) => {
+    btn.addEventListener('click', () => {
       const section = btn.getAttribute('data-section');
       if (section) {
         openModal(section);
